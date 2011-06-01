@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C02A1C81339F92E00AD4275 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C02A1C71339F92E00AD4275 /* UIKit.framework */; };
+		2C02A1CA1339F92E00AD4275 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C02A1C91339F92E00AD4275 /* Foundation.framework */; };
+		2C02A1CC1339F92E00AD4275 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C02A1CB1339F92E00AD4275 /* CoreGraphics.framework */; };
+		2C02A1D21339F92E00AD4275 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C02A1D01339F92E00AD4275 /* InfoPlist.strings */; };
+		2C02A1D51339F92E00AD4275 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02A1D41339F92E00AD4275 /* main.m */; };
+		2C02A1D81339F92E00AD4275 /* PagingExerciseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02A1D71339F92E00AD4275 /* PagingExerciseAppDelegate.m */; };
+		2C02A1DB1339F92E00AD4275 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C02A1D91339F92E00AD4275 /* MainWindow.xib */; };
+		2C02A1DE1339F92E00AD4275 /* PagingExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02A1DD1339F92E00AD4275 /* PagingExerciseViewController.m */; };
+		2C02A1E11339F92E00AD4275 /* PagingExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C02A1DF1339F92E00AD4275 /* PagingExerciseViewController.xib */; };
+		2C02A1E91339FA5E00AD4275 /* image0.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C02A1E81339FA5E00AD4275 /* image0.png */; };
+		2C02A1ED1339FB3500AD4275 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C02A1EC1339FB3500AD4275 /* image2.png */; };
+		2C02A1F41339FCD400AD4275 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C02A1F21339FCD400AD4275 /* image1.png */; };
+		2C02A1F51339FCD400AD4275 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C02A1F31339FCD400AD4275 /* image3.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C02A1C31339F92E00AD4275 /* PagingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C02A1C71339F92E00AD4275 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C02A1C91339F92E00AD4275 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C02A1CB1339F92E00AD4275 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C02A1CF1339F92E00AD4275 /* PagingExercise-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PagingExercise-Info.plist"; sourceTree = "<group>"; };
+		2C02A1D11339F92E00AD4275 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C02A1D31339F92E00AD4275 /* PagingExercise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PagingExercise-Prefix.pch"; sourceTree = "<group>"; };
+		2C02A1D41339F92E00AD4275 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C02A1D61339F92E00AD4275 /* PagingExerciseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingExerciseAppDelegate.h; sourceTree = "<group>"; };
+		2C02A1D71339F92E00AD4275 /* PagingExerciseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagingExerciseAppDelegate.m; sourceTree = "<group>"; };
+		2C02A1DA1339F92E00AD4275 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2C02A1DC1339F92E00AD4275 /* PagingExerciseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingExerciseViewController.h; sourceTree = "<group>"; };
+		2C02A1DD1339F92E00AD4275 /* PagingExerciseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagingExerciseViewController.m; sourceTree = "<group>"; };
+		2C02A1E01339F92E00AD4275 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PagingExerciseViewController.xib; sourceTree = "<group>"; };
+		2C02A1E81339FA5E00AD4275 /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image0.png; sourceTree = "<group>"; };
+		2C02A1EC1339FB3500AD4275 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		2C02A1F21339FCD400AD4275 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		2C02A1F31339FCD400AD4275 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C02A1C01339F92E00AD4275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C02A1C81339F92E00AD4275 /* UIKit.framework in Frameworks */,
+				2C02A1CA1339F92E00AD4275 /* Foundation.framework in Frameworks */,
+				2C02A1CC1339F92E00AD4275 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C02A1B81339F92E00AD4275 = {
+			isa = PBXGroup;
+			children = (
+				2C02A1CD1339F92E00AD4275 /* PagingExercise */,
+				2C02A1C61339F92E00AD4275 /* Frameworks */,
+				2C02A1C41339F92E00AD4275 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C02A1C41339F92E00AD4275 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C02A1C31339F92E00AD4275 /* PagingExercise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C02A1C61339F92E00AD4275 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C02A1C71339F92E00AD4275 /* UIKit.framework */,
+				2C02A1C91339F92E00AD4275 /* Foundation.framework */,
+				2C02A1CB1339F92E00AD4275 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C02A1CD1339F92E00AD4275 /* PagingExercise */ = {
+			isa = PBXGroup;
+			children = (
+				2C02A1E71339FA5200AD4275 /* images */,
+				2C02A1D61339F92E00AD4275 /* PagingExerciseAppDelegate.h */,
+				2C02A1D71339F92E00AD4275 /* PagingExerciseAppDelegate.m */,
+				2C02A1D91339F92E00AD4275 /* MainWindow.xib */,
+				2C02A1DC1339F92E00AD4275 /* PagingExerciseViewController.h */,
+				2C02A1DD1339F92E00AD4275 /* PagingExerciseViewController.m */,
+				2C02A1DF1339F92E00AD4275 /* PagingExerciseViewController.xib */,
+				2C02A1CE1339F92E00AD4275 /* Supporting Files */,
+			);
+			path = PagingExercise;
+			sourceTree = "<group>";
+		};
+		2C02A1CE1339F92E00AD4275 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C02A1CF1339F92E00AD4275 /* PagingExercise-Info.plist */,
+				2C02A1D01339F92E00AD4275 /* InfoPlist.strings */,
+				2C02A1D31339F92E00AD4275 /* PagingExercise-Prefix.pch */,
+				2C02A1D41339F92E00AD4275 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C02A1E71339FA5200AD4275 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2C02A1E81339FA5E00AD4275 /* image0.png */,
+				2C02A1F21339FCD400AD4275 /* image1.png */,
+				2C02A1EC1339FB3500AD4275 /* image2.png */,
+				2C02A1F31339FCD400AD4275 /* image3.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C02A1C21339F92E00AD4275 /* PagingExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C02A1E41339F92E00AD4275 /* Build configuration list for PBXNativeTarget "PagingExercise" */;
+			buildPhases = (
+				2C02A1BF1339F92E00AD4275 /* Sources */,
+				2C02A1C01339F92E00AD4275 /* Frameworks */,
+				2C02A1C11339F92E00AD4275 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagingExercise;
+			productName = PagingExercise;
+			productReference = 2C02A1C31339F92E00AD4275 /* PagingExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C02A1BA1339F92E00AD4275 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2C02A1BD1339F92E00AD4275 /* Build configuration list for PBXProject "PagingExercise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C02A1B81339F92E00AD4275;
+			productRefGroup = 2C02A1C41339F92E00AD4275 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C02A1C21339F92E00AD4275 /* PagingExercise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C02A1C11339F92E00AD4275 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C02A1D21339F92E00AD4275 /* InfoPlist.strings in Resources */,
+				2C02A1DB1339F92E00AD4275 /* MainWindow.xib in Resources */,
+				2C02A1E11339F92E00AD4275 /* PagingExerciseViewController.xib in Resources */,
+				2C02A1E91339FA5E00AD4275 /* image0.png in Resources */,
+				2C02A1ED1339FB3500AD4275 /* image2.png in Resources */,
+				2C02A1F41339FCD400AD4275 /* image1.png in Resources */,
+				2C02A1F51339FCD400AD4275 /* image3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C02A1BF1339F92E00AD4275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C02A1D51339F92E00AD4275 /* main.m in Sources */,
+				2C02A1D81339F92E00AD4275 /* PagingExerciseAppDelegate.m in Sources */,
+				2C02A1DE1339F92E00AD4275 /* PagingExerciseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C02A1D01339F92E00AD4275 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C02A1D11339F92E00AD4275 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2C02A1D91339F92E00AD4275 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C02A1DA1339F92E00AD4275 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		2C02A1DF1339F92E00AD4275 /* PagingExerciseViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C02A1E01339F92E00AD4275 /* en */,
+			);
+			name = PagingExerciseViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C02A1E21339F92E00AD4275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C02A1E31339F92E00AD4275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		2C02A1E51339F92E00AD4275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PagingExercise/PagingExercise-Prefix.pch";
+				INFOPLIST_FILE = "PagingExercise/PagingExercise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C02A1E61339F92E00AD4275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PagingExercise/PagingExercise-Prefix.pch";
+				INFOPLIST_FILE = "PagingExercise/PagingExercise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C02A1BD1339F92E00AD4275 /* Build configuration list for PBXProject "PagingExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C02A1E21339F92E00AD4275 /* Debug */,
+				2C02A1E31339F92E00AD4275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C02A1E41339F92E00AD4275 /* Build configuration list for PBXNativeTarget "PagingExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C02A1E51339F92E00AD4275 /* Debug */,
+				2C02A1E61339F92E00AD4275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C02A1BA1339F92E00AD4275 /* Project object */;
+}

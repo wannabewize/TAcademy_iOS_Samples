@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F742C105139552E300B0DE97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F742C104139552E300B0DE97 /* UIKit.framework */; };
+		F742C107139552E300B0DE97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F742C106139552E300B0DE97 /* Foundation.framework */; };
+		F742C109139552E300B0DE97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F742C108139552E300B0DE97 /* CoreGraphics.framework */; };
+		F742C10F139552E300B0DE97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F742C10D139552E300B0DE97 /* InfoPlist.strings */; };
+		F742C112139552E300B0DE97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F742C111139552E300B0DE97 /* main.m */; };
+		F742C115139552E300B0DE97 /* VariousTableExerciseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F742C114139552E300B0DE97 /* VariousTableExerciseAppDelegate.m */; };
+		F742C118139552E300B0DE97 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F742C116139552E300B0DE97 /* MainWindow.xib */; };
+		F742C11B139552E300B0DE97 /* VariousTableExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F742C11A139552E300B0DE97 /* VariousTableExerciseViewController.m */; };
+		F742C11E139552E300B0DE97 /* VariousTableExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F742C11C139552E300B0DE97 /* VariousTableExerciseViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F742C100139552E300B0DE97 /* VariousTableExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VariousTableExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F742C104139552E300B0DE97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F742C106139552E300B0DE97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F742C108139552E300B0DE97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F742C10C139552E300B0DE97 /* VariousTableExercise-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VariousTableExercise-Info.plist"; sourceTree = "<group>"; };
+		F742C10E139552E300B0DE97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F742C110139552E300B0DE97 /* VariousTableExercise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VariousTableExercise-Prefix.pch"; sourceTree = "<group>"; };
+		F742C111139552E300B0DE97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F742C113139552E300B0DE97 /* VariousTableExerciseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariousTableExerciseAppDelegate.h; sourceTree = "<group>"; };
+		F742C114139552E300B0DE97 /* VariousTableExerciseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariousTableExerciseAppDelegate.m; sourceTree = "<group>"; };
+		F742C117139552E300B0DE97 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		F742C119139552E300B0DE97 /* VariousTableExerciseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariousTableExerciseViewController.h; sourceTree = "<group>"; };
+		F742C11A139552E300B0DE97 /* VariousTableExerciseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariousTableExerciseViewController.m; sourceTree = "<group>"; };
+		F742C11D139552E300B0DE97 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VariousTableExerciseViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F742C0FD139552E300B0DE97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F742C105139552E300B0DE97 /* UIKit.framework in Frameworks */,
+				F742C107139552E300B0DE97 /* Foundation.framework in Frameworks */,
+				F742C109139552E300B0DE97 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F742C0F5139552E300B0DE97 = {
+			isa = PBXGroup;
+			children = (
+				F742C10A139552E300B0DE97 /* VariousTableExercise */,
+				F742C103139552E300B0DE97 /* Frameworks */,
+				F742C101139552E300B0DE97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F742C101139552E300B0DE97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F742C100139552E300B0DE97 /* VariousTableExercise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F742C103139552E300B0DE97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F742C104139552E300B0DE97 /* UIKit.framework */,
+				F742C106139552E300B0DE97 /* Foundation.framework */,
+				F742C108139552E300B0DE97 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F742C10A139552E300B0DE97 /* VariousTableExercise */ = {
+			isa = PBXGroup;
+			children = (
+				F742C113139552E300B0DE97 /* VariousTableExerciseAppDelegate.h */,
+				F742C114139552E300B0DE97 /* VariousTableExerciseAppDelegate.m */,
+				F742C116139552E300B0DE97 /* MainWindow.xib */,
+				F742C119139552E300B0DE97 /* VariousTableExerciseViewController.h */,
+				F742C11A139552E300B0DE97 /* VariousTableExerciseViewController.m */,
+				F742C11C139552E300B0DE97 /* VariousTableExerciseViewController.xib */,
+				F742C10B139552E300B0DE97 /* Supporting Files */,
+			);
+			path = VariousTableExercise;
+			sourceTree = "<group>";
+		};
+		F742C10B139552E300B0DE97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F742C10C139552E300B0DE97 /* VariousTableExercise-Info.plist */,
+				F742C10D139552E300B0DE97 /* InfoPlist.strings */,
+				F742C110139552E300B0DE97 /* VariousTableExercise-Prefix.pch */,
+				F742C111139552E300B0DE97 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F742C0FF139552E300B0DE97 /* VariousTableExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F742C121139552E300B0DE97 /* Build configuration list for PBXNativeTarget "VariousTableExercise" */;
+			buildPhases = (
+				F742C0FC139552E300B0DE97 /* Sources */,
+				F742C0FD139552E300B0DE97 /* Frameworks */,
+				F742C0FE139552E300B0DE97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VariousTableExercise;
+			productName = VariousTableExercise;
+			productReference = F742C100139552E300B0DE97 /* VariousTableExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F742C0F7139552E300B0DE97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = iNEED;
+			};
+			buildConfigurationList = F742C0FA139552E300B0DE97 /* Build configuration list for PBXProject "VariousTableExercise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F742C0F5139552E300B0DE97;
+			productRefGroup = F742C101139552E300B0DE97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F742C0FF139552E300B0DE97 /* VariousTableExercise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F742C0FE139552E300B0DE97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F742C10F139552E300B0DE97 /* InfoPlist.strings in Resources */,
+				F742C118139552E300B0DE97 /* MainWindow.xib in Resources */,
+				F742C11E139552E300B0DE97 /* VariousTableExerciseViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F742C0FC139552E300B0DE97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F742C112139552E300B0DE97 /* main.m in Sources */,
+				F742C115139552E300B0DE97 /* VariousTableExerciseAppDelegate.m in Sources */,
+				F742C11B139552E300B0DE97 /* VariousTableExerciseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F742C10D139552E300B0DE97 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F742C10E139552E300B0DE97 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F742C116139552E300B0DE97 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F742C117139552E300B0DE97 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		F742C11C139552E300B0DE97 /* VariousTableExerciseViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F742C11D139552E300B0DE97 /* en */,
+			);
+			name = VariousTableExerciseViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F742C11F139552E300B0DE97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F742C120139552E300B0DE97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		F742C122139552E300B0DE97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VariousTableExercise/VariousTableExercise-Prefix.pch";
+				INFOPLIST_FILE = "VariousTableExercise/VariousTableExercise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F742C123139552E300B0DE97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VariousTableExercise/VariousTableExercise-Prefix.pch";
+				INFOPLIST_FILE = "VariousTableExercise/VariousTableExercise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F742C0FA139552E300B0DE97 /* Build configuration list for PBXProject "VariousTableExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F742C11F139552E300B0DE97 /* Debug */,
+				F742C120139552E300B0DE97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F742C121139552E300B0DE97 /* Build configuration list for PBXNativeTarget "VariousTableExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F742C122139552E300B0DE97 /* Debug */,
+				F742C123139552E300B0DE97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F742C0F7139552E300B0DE97 /* Project object */;
+}

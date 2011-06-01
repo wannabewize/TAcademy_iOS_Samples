@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C2C8D9913560EDF00D80288 /* remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C8D9813560EDF00D80288 /* remove.png */; };
+		2C2C8D9E13560EFD00D80288 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C8D9D13560EFD00D80288 /* add.png */; };
+		F7E1328813558487003717E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E1328713558487003717E5 /* UIKit.framework */; };
+		F7E1328A13558487003717E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E1328913558487003717E5 /* Foundation.framework */; };
+		F7E1328C13558487003717E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E1328B13558487003717E5 /* CoreGraphics.framework */; };
+		F7E1329213558487003717E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7E1329013558487003717E5 /* InfoPlist.strings */; };
+		F7E1329513558487003717E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E1329413558487003717E5 /* main.m */; };
+		F7E1329813558488003717E5 /* CustomCellEventExerciseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E1329713558488003717E5 /* CustomCellEventExerciseAppDelegate.m */; };
+		F7E1329B13558488003717E5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E1329913558488003717E5 /* MainWindow.xib */; };
+		F7E1329E13558488003717E5 /* CustomCellEventExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E1329D13558488003717E5 /* CustomCellEventExerciseViewController.m */; };
+		F7E132A113558488003717E5 /* CustomCellEventExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E1329F13558488003717E5 /* CustomCellEventExerciseViewController.xib */; };
+		F7E132AD135584A5003717E5 /* nano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7E132A7135584A5003717E5 /* nano.jpg */; };
+		F7E132AE135584A5003717E5 /* macbook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7E132A8135584A5003717E5 /* macbook.jpg */; };
+		F7E132AF135584A5003717E5 /* iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7E132A9135584A5003717E5 /* iphone.jpg */; };
+		F7E132B0135584A5003717E5 /* imac.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7E132AA135584A5003717E5 /* imac.jpg */; };
+		F7E132B1135584A5003717E5 /* ipad2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F7E132AB135584A5003717E5 /* ipad2.jpg */; };
+		F7E132B2135584A5003717E5 /* cart.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F7E132AC135584A5003717E5 /* cart.jpeg */; };
+		F7E132B7135584B1003717E5 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E132B4135584B1003717E5 /* CustomCell.m */; };
+		F7E132B8135584B1003717E5 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E132B5135584B1003717E5 /* CustomCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C2C8D9813560EDF00D80288 /* remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove.png; sourceTree = "<group>"; };
+		2C2C8D9D13560EFD00D80288 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		F7E1328313558487003717E5 /* CustomCellEventExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCellEventExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E1328713558487003717E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F7E1328913558487003717E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F7E1328B13558487003717E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F7E1328F13558487003717E5 /* CustomCellEventExercise-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomCellEventExercise-Info.plist"; sourceTree = "<group>"; };
+		F7E1329113558487003717E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7E1329313558487003717E5 /* CustomCellEventExercise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomCellEventExercise-Prefix.pch"; sourceTree = "<group>"; };
+		F7E1329413558487003717E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7E1329613558487003717E5 /* CustomCellEventExerciseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCellEventExerciseAppDelegate.h; sourceTree = "<group>"; };
+		F7E1329713558488003717E5 /* CustomCellEventExerciseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCellEventExerciseAppDelegate.m; sourceTree = "<group>"; };
+		F7E1329A13558488003717E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		F7E1329C13558488003717E5 /* CustomCellEventExerciseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCellEventExerciseViewController.h; sourceTree = "<group>"; };
+		F7E1329D13558488003717E5 /* CustomCellEventExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellEventExerciseViewController.m; sourceTree = "<group>"; };
+		F7E132A013558488003717E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CustomCellEventExerciseViewController.xib; sourceTree = "<group>"; };
+		F7E132A7135584A5003717E5 /* nano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nano.jpg; sourceTree = "<group>"; };
+		F7E132A8135584A5003717E5 /* macbook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macbook.jpg; sourceTree = "<group>"; };
+		F7E132A9135584A5003717E5 /* iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone.jpg; sourceTree = "<group>"; };
+		F7E132AA135584A5003717E5 /* imac.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imac.jpg; sourceTree = "<group>"; };
+		F7E132AB135584A5003717E5 /* ipad2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipad2.jpg; sourceTree = "<group>"; };
+		F7E132AC135584A5003717E5 /* cart.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cart.jpeg; sourceTree = "<group>"; };
+		F7E132B3135584B1003717E5 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		F7E132B4135584B1003717E5 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		F7E132B5135584B1003717E5 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		F7E132B6135584B1003717E5 /* CustomCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7E1328013558487003717E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E1328813558487003717E5 /* UIKit.framework in Frameworks */,
+				F7E1328A13558487003717E5 /* Foundation.framework in Frameworks */,
+				F7E1328C13558487003717E5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7E1327813558487003717E5 = {
+			isa = PBXGroup;
+			children = (
+				F7E1328D13558487003717E5 /* CustomCellEventExercise */,
+				F7E1328613558487003717E5 /* Frameworks */,
+				F7E1328413558487003717E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7E1328413558487003717E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7E1328313558487003717E5 /* CustomCellEventExercise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7E1328613558487003717E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7E1328713558487003717E5 /* UIKit.framework */,
+				F7E1328913558487003717E5 /* Foundation.framework */,
+				F7E1328B13558487003717E5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7E1328D13558487003717E5 /* CustomCellEventExercise */ = {
+			isa = PBXGroup;
+			children = (
+				F7E132B3135584B1003717E5 /* CustomCell.h */,
+				F7E132B4135584B1003717E5 /* CustomCell.m */,
+				F7E132B5135584B1003717E5 /* CustomCell.xib */,
+				F7E132B6135584B1003717E5 /* CustomCellDelegate.h */,
+				F7E1329613558487003717E5 /* CustomCellEventExerciseAppDelegate.h */,
+				F7E1329713558488003717E5 /* CustomCellEventExerciseAppDelegate.m */,
+				F7E1329913558488003717E5 /* MainWindow.xib */,
+				F7E1329C13558488003717E5 /* CustomCellEventExerciseViewController.h */,
+				F7E1329D13558488003717E5 /* CustomCellEventExerciseViewController.m */,
+				F7E1329F13558488003717E5 /* CustomCellEventExerciseViewController.xib */,
+				F7E1328E13558487003717E5 /* Supporting Files */,
+			);
+			path = CustomCellEventExercise;
+			sourceTree = "<group>";
+		};
+		F7E1328E13558487003717E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C2C8D9D13560EFD00D80288 /* add.png */,
+				2C2C8D9813560EDF00D80288 /* remove.png */,
+				F7E132A7135584A5003717E5 /* nano.jpg */,
+				F7E132A8135584A5003717E5 /* macbook.jpg */,
+				F7E132A9135584A5003717E5 /* iphone.jpg */,
+				F7E132AA135584A5003717E5 /* imac.jpg */,
+				F7E132AB135584A5003717E5 /* ipad2.jpg */,
+				F7E132AC135584A5003717E5 /* cart.jpeg */,
+				F7E1328F13558487003717E5 /* CustomCellEventExercise-Info.plist */,
+				F7E1329013558487003717E5 /* InfoPlist.strings */,
+				F7E1329313558487003717E5 /* CustomCellEventExercise-Prefix.pch */,
+				F7E1329413558487003717E5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7E1328213558487003717E5 /* CustomCellEventExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E132A413558488003717E5 /* Build configuration list for PBXNativeTarget "CustomCellEventExercise" */;
+			buildPhases = (
+				F7E1327F13558487003717E5 /* Sources */,
+				F7E1328013558487003717E5 /* Frameworks */,
+				F7E1328113558487003717E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomCellEventExercise;
+			productName = CustomCellEventExercise;
+			productReference = F7E1328313558487003717E5 /* CustomCellEventExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7E1327A13558487003717E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = iNEED;
+			};
+			buildConfigurationList = F7E1327D13558487003717E5 /* Build configuration list for PBXProject "CustomCellEventExercise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F7E1327813558487003717E5;
+			productRefGroup = F7E1328413558487003717E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7E1328213558487003717E5 /* CustomCellEventExercise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7E1328113558487003717E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E1329213558487003717E5 /* InfoPlist.strings in Resources */,
+				F7E1329B13558488003717E5 /* MainWindow.xib in Resources */,
+				F7E132A113558488003717E5 /* CustomCellEventExerciseViewController.xib in Resources */,
+				F7E132AD135584A5003717E5 /* nano.jpg in Resources */,
+				F7E132AE135584A5003717E5 /* macbook.jpg in Resources */,
+				F7E132AF135584A5003717E5 /* iphone.jpg in Resources */,
+				F7E132B0135584A5003717E5 /* imac.jpg in Resources */,
+				F7E132B1135584A5003717E5 /* ipad2.jpg in Resources */,
+				F7E132B2135584A5003717E5 /* cart.jpeg in Resources */,
+				F7E132B8135584B1003717E5 /* CustomCell.xib in Resources */,
+				2C2C8D9913560EDF00D80288 /* remove.png in Resources */,
+				2C2C8D9E13560EFD00D80288 /* add.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E1327F13558487003717E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E1329513558487003717E5 /* main.m in Sources */,
+				F7E1329813558488003717E5 /* CustomCellEventExerciseAppDelegate.m in Sources */,
+				F7E1329E13558488003717E5 /* CustomCellEventExerciseViewController.m in Sources */,
+				F7E132B7135584B1003717E5 /* CustomCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7E1329013558487003717E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7E1329113558487003717E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F7E1329913558488003717E5 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7E1329A13558488003717E5 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		F7E1329F13558488003717E5 /* CustomCellEventExerciseViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7E132A013558488003717E5 /* en */,
+			);
+			name = CustomCellEventExerciseViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7E132A213558488003717E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F7E132A313558488003717E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		F7E132A513558488003717E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomCellEventExercise/CustomCellEventExercise-Prefix.pch";
+				INFOPLIST_FILE = "CustomCellEventExercise/CustomCellEventExercise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F7E132A613558488003717E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomCellEventExercise/CustomCellEventExercise-Prefix.pch";
+				INFOPLIST_FILE = "CustomCellEventExercise/CustomCellEventExercise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7E1327D13558487003717E5 /* Build configuration list for PBXProject "CustomCellEventExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E132A213558488003717E5 /* Debug */,
+				F7E132A313558488003717E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E132A413558488003717E5 /* Build configuration list for PBXNativeTarget "CustomCellEventExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E132A513558488003717E5 /* Debug */,
+				F7E132A613558488003717E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7E1327A13558487003717E5 /* Project object */;
+}
