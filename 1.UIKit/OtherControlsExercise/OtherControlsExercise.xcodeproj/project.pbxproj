@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C8554BD133A5133006A8FCD /* star_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8554BC133A5133006A8FCD /* star_red.png */; };
+		2CFE0DF7133A2C91001218E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE0DF6133A2C91001218E3 /* UIKit.framework */; };
+		2CFE0DF9133A2C91001218E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE0DF8133A2C91001218E3 /* Foundation.framework */; };
+		2CFE0DFB133A2C91001218E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE0DFA133A2C91001218E3 /* CoreGraphics.framework */; };
+		2CFE0E01133A2C91001218E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE0DFF133A2C91001218E3 /* InfoPlist.strings */; };
+		2CFE0E04133A2C91001218E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE0E03133A2C91001218E3 /* main.m */; };
+		2CFE0E07133A2C91001218E3 /* OtherControlsExerciseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE0E06133A2C91001218E3 /* OtherControlsExerciseAppDelegate.m */; };
+		2CFE0E0A133A2C91001218E3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE0E08133A2C91001218E3 /* MainWindow.xib */; };
+		2CFE0E0D133A2C91001218E3 /* OtherControlsExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE0E0C133A2C91001218E3 /* OtherControlsExerciseViewController.m */; };
+		2CFE0E10133A2C91001218E3 /* OtherControlsExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE0E0E133A2C91001218E3 /* OtherControlsExerciseViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C8554BC133A5133006A8FCD /* star_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_red.png; sourceTree = "<group>"; };
+		2CFE0DF2133A2C91001218E3 /* OtherControlsExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtherControlsExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CFE0DF6133A2C91001218E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2CFE0DF8133A2C91001218E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CFE0DFA133A2C91001218E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2CFE0DFE133A2C91001218E3 /* OtherControlsExercise-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OtherControlsExercise-Info.plist"; sourceTree = "<group>"; };
+		2CFE0E00133A2C91001218E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CFE0E02133A2C91001218E3 /* OtherControlsExercise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OtherControlsExercise-Prefix.pch"; sourceTree = "<group>"; };
+		2CFE0E03133A2C91001218E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CFE0E05133A2C91001218E3 /* OtherControlsExerciseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherControlsExerciseAppDelegate.h; sourceTree = "<group>"; };
+		2CFE0E06133A2C91001218E3 /* OtherControlsExerciseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherControlsExerciseAppDelegate.m; sourceTree = "<group>"; };
+		2CFE0E09133A2C91001218E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2CFE0E0B133A2C91001218E3 /* OtherControlsExerciseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherControlsExerciseViewController.h; sourceTree = "<group>"; };
+		2CFE0E0C133A2C91001218E3 /* OtherControlsExerciseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherControlsExerciseViewController.m; sourceTree = "<group>"; };
+		2CFE0E0F133A2C91001218E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OtherControlsExerciseViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CFE0DEF133A2C91001218E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFE0DF7133A2C91001218E3 /* UIKit.framework in Frameworks */,
+				2CFE0DF9133A2C91001218E3 /* Foundation.framework in Frameworks */,
+				2CFE0DFB133A2C91001218E3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CFE0DE7133A2C91001218E3 = {
+			isa = PBXGroup;
+			children = (
+				2CFE0DFC133A2C91001218E3 /* OtherControlsExercise */,
+				2CFE0DF5133A2C91001218E3 /* Frameworks */,
+				2CFE0DF3133A2C91001218E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CFE0DF3133A2C91001218E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE0DF2133A2C91001218E3 /* OtherControlsExercise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CFE0DF5133A2C91001218E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE0DF6133A2C91001218E3 /* UIKit.framework */,
+				2CFE0DF8133A2C91001218E3 /* Foundation.framework */,
+				2CFE0DFA133A2C91001218E3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CFE0DFC133A2C91001218E3 /* OtherControlsExercise */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE0E05133A2C91001218E3 /* OtherControlsExerciseAppDelegate.h */,
+				2CFE0E06133A2C91001218E3 /* OtherControlsExerciseAppDelegate.m */,
+				2CFE0E08133A2C91001218E3 /* MainWindow.xib */,
+				2CFE0E0B133A2C91001218E3 /* OtherControlsExerciseViewController.h */,
+				2CFE0E0C133A2C91001218E3 /* OtherControlsExerciseViewController.m */,
+				2CFE0E0E133A2C91001218E3 /* OtherControlsExerciseViewController.xib */,
+				2CFE0DFD133A2C91001218E3 /* Supporting Files */,
+			);
+			path = OtherControlsExercise;
+			sourceTree = "<group>";
+		};
+		2CFE0DFD133A2C91001218E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C8554BC133A5133006A8FCD /* star_red.png */,
+				2CFE0DFE133A2C91001218E3 /* OtherControlsExercise-Info.plist */,
+				2CFE0DFF133A2C91001218E3 /* InfoPlist.strings */,
+				2CFE0E02133A2C91001218E3 /* OtherControlsExercise-Prefix.pch */,
+				2CFE0E03133A2C91001218E3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CFE0DF1133A2C91001218E3 /* OtherControlsExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CFE0E13133A2C91001218E3 /* Build configuration list for PBXNativeTarget "OtherControlsExercise" */;
+			buildPhases = (
+				2CFE0DEE133A2C91001218E3 /* Sources */,
+				2CFE0DEF133A2C91001218E3 /* Frameworks */,
+				2CFE0DF0133A2C91001218E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OtherControlsExercise;
+			productName = OtherControlsExercise;
+			productReference = 2CFE0DF2133A2C91001218E3 /* OtherControlsExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CFE0DE9133A2C91001218E3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2CFE0DEC133A2C91001218E3 /* Build configuration list for PBXProject "OtherControlsExercise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2CFE0DE7133A2C91001218E3;
+			productRefGroup = 2CFE0DF3133A2C91001218E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CFE0DF1133A2C91001218E3 /* OtherControlsExercise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CFE0DF0133A2C91001218E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFE0E01133A2C91001218E3 /* InfoPlist.strings in Resources */,
+				2CFE0E0A133A2C91001218E3 /* MainWindow.xib in Resources */,
+				2CFE0E10133A2C91001218E3 /* OtherControlsExerciseViewController.xib in Resources */,
+				2C8554BD133A5133006A8FCD /* star_red.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CFE0DEE133A2C91001218E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFE0E04133A2C91001218E3 /* main.m in Sources */,
+				2CFE0E07133A2C91001218E3 /* OtherControlsExerciseAppDelegate.m in Sources */,
+				2CFE0E0D133A2C91001218E3 /* OtherControlsExerciseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CFE0DFF133A2C91001218E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CFE0E00133A2C91001218E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2CFE0E08133A2C91001218E3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CFE0E09133A2C91001218E3 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		2CFE0E0E133A2C91001218E3 /* OtherControlsExerciseViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CFE0E0F133A2C91001218E3 /* en */,
+			);
+			name = OtherControlsExerciseViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CFE0E11133A2C91001218E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2CFE0E12133A2C91001218E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		2CFE0E14133A2C91001218E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OtherControlsExercise/OtherControlsExercise-Prefix.pch";
+				INFOPLIST_FILE = "OtherControlsExercise/OtherControlsExercise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2CFE0E15133A2C91001218E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OtherControlsExercise/OtherControlsExercise-Prefix.pch";
+				INFOPLIST_FILE = "OtherControlsExercise/OtherControlsExercise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CFE0DEC133A2C91001218E3 /* Build configuration list for PBXProject "OtherControlsExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CFE0E11133A2C91001218E3 /* Debug */,
+				2CFE0E12133A2C91001218E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CFE0E13133A2C91001218E3 /* Build configuration list for PBXNativeTarget "OtherControlsExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CFE0E14133A2C91001218E3 /* Debug */,
+				2CFE0E15133A2C91001218E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CFE0DE9133A2C91001218E3 /* Project object */;
+}

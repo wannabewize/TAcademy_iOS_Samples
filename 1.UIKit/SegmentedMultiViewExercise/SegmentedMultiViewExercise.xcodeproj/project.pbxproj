@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CFE0DC4133A1653001218E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE0DC3133A1653001218E3 /* UIKit.framework */; };
+		2CFE0DC6133A1653001218E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE0DC5133A1653001218E3 /* Foundation.framework */; };
+		2CFE0DC8133A1653001218E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE0DC7133A1653001218E3 /* CoreGraphics.framework */; };
+		2CFE0DCE133A1653001218E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE0DCC133A1653001218E3 /* InfoPlist.strings */; };
+		2CFE0DD1133A1653001218E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE0DD0133A1653001218E3 /* main.m */; };
+		2CFE0DD4133A1653001218E3 /* SegmentedMultiViewExerciseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE0DD3133A1653001218E3 /* SegmentedMultiViewExerciseAppDelegate.m */; };
+		2CFE0DD7133A1653001218E3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE0DD5133A1653001218E3 /* MainWindow.xib */; };
+		2CFE0DDA133A1653001218E3 /* SegmentedMultiViewExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE0DD9133A1653001218E3 /* SegmentedMultiViewExerciseViewController.m */; };
+		2CFE0DDD133A1653001218E3 /* SegmentedMultiViewExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE0DDB133A1653001218E3 /* SegmentedMultiViewExerciseViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CFE0DBF133A1653001218E3 /* SegmentedMultiViewExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentedMultiViewExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CFE0DC3133A1653001218E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2CFE0DC5133A1653001218E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CFE0DC7133A1653001218E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2CFE0DCB133A1653001218E3 /* SegmentedMultiViewExercise-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SegmentedMultiViewExercise-Info.plist"; sourceTree = "<group>"; };
+		2CFE0DCD133A1653001218E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2CFE0DCF133A1653001218E3 /* SegmentedMultiViewExercise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SegmentedMultiViewExercise-Prefix.pch"; sourceTree = "<group>"; };
+		2CFE0DD0133A1653001218E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CFE0DD2133A1653001218E3 /* SegmentedMultiViewExerciseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentedMultiViewExerciseAppDelegate.h; sourceTree = "<group>"; };
+		2CFE0DD3133A1653001218E3 /* SegmentedMultiViewExerciseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentedMultiViewExerciseAppDelegate.m; sourceTree = "<group>"; };
+		2CFE0DD6133A1653001218E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2CFE0DD8133A1653001218E3 /* SegmentedMultiViewExerciseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentedMultiViewExerciseViewController.h; sourceTree = "<group>"; };
+		2CFE0DD9133A1653001218E3 /* SegmentedMultiViewExerciseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentedMultiViewExerciseViewController.m; sourceTree = "<group>"; };
+		2CFE0DDC133A1653001218E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SegmentedMultiViewExerciseViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CFE0DBC133A1653001218E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFE0DC4133A1653001218E3 /* UIKit.framework in Frameworks */,
+				2CFE0DC6133A1653001218E3 /* Foundation.framework in Frameworks */,
+				2CFE0DC8133A1653001218E3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CFE0DB4133A1653001218E3 = {
+			isa = PBXGroup;
+			children = (
+				2CFE0DC9133A1653001218E3 /* SegmentedMultiViewExercise */,
+				2CFE0DC2133A1653001218E3 /* Frameworks */,
+				2CFE0DC0133A1653001218E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CFE0DC0133A1653001218E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE0DBF133A1653001218E3 /* SegmentedMultiViewExercise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CFE0DC2133A1653001218E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE0DC3133A1653001218E3 /* UIKit.framework */,
+				2CFE0DC5133A1653001218E3 /* Foundation.framework */,
+				2CFE0DC7133A1653001218E3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CFE0DC9133A1653001218E3 /* SegmentedMultiViewExercise */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE0DD2133A1653001218E3 /* SegmentedMultiViewExerciseAppDelegate.h */,
+				2CFE0DD3133A1653001218E3 /* SegmentedMultiViewExerciseAppDelegate.m */,
+				2CFE0DD5133A1653001218E3 /* MainWindow.xib */,
+				2CFE0DD8133A1653001218E3 /* SegmentedMultiViewExerciseViewController.h */,
+				2CFE0DD9133A1653001218E3 /* SegmentedMultiViewExerciseViewController.m */,
+				2CFE0DDB133A1653001218E3 /* SegmentedMultiViewExerciseViewController.xib */,
+				2CFE0DCA133A1653001218E3 /* Supporting Files */,
+			);
+			path = SegmentedMultiViewExercise;
+			sourceTree = "<group>";
+		};
+		2CFE0DCA133A1653001218E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE0DCB133A1653001218E3 /* SegmentedMultiViewExercise-Info.plist */,
+				2CFE0DCC133A1653001218E3 /* InfoPlist.strings */,
+				2CFE0DCF133A1653001218E3 /* SegmentedMultiViewExercise-Prefix.pch */,
+				2CFE0DD0133A1653001218E3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CFE0DBE133A1653001218E3 /* SegmentedMultiViewExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CFE0DE0133A1653001218E3 /* Build configuration list for PBXNativeTarget "SegmentedMultiViewExercise" */;
+			buildPhases = (
+				2CFE0DBB133A1653001218E3 /* Sources */,
+				2CFE0DBC133A1653001218E3 /* Frameworks */,
+				2CFE0DBD133A1653001218E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SegmentedMultiViewExercise;
+			productName = SegmentedMultiViewExercise;
+			productReference = 2CFE0DBF133A1653001218E3 /* SegmentedMultiViewExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CFE0DB6133A1653001218E3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2CFE0DB9133A1653001218E3 /* Build configuration list for PBXProject "SegmentedMultiViewExercise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2CFE0DB4133A1653001218E3;
+			productRefGroup = 2CFE0DC0133A1653001218E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CFE0DBE133A1653001218E3 /* SegmentedMultiViewExercise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CFE0DBD133A1653001218E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFE0DCE133A1653001218E3 /* InfoPlist.strings in Resources */,
+				2CFE0DD7133A1653001218E3 /* MainWindow.xib in Resources */,
+				2CFE0DDD133A1653001218E3 /* SegmentedMultiViewExerciseViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CFE0DBB133A1653001218E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CFE0DD1133A1653001218E3 /* main.m in Sources */,
+				2CFE0DD4133A1653001218E3 /* SegmentedMultiViewExerciseAppDelegate.m in Sources */,
+				2CFE0DDA133A1653001218E3 /* SegmentedMultiViewExerciseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CFE0DCC133A1653001218E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CFE0DCD133A1653001218E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2CFE0DD5133A1653001218E3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CFE0DD6133A1653001218E3 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		2CFE0DDB133A1653001218E3 /* SegmentedMultiViewExerciseViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CFE0DDC133A1653001218E3 /* en */,
+			);
+			name = SegmentedMultiViewExerciseViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CFE0DDE133A1653001218E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2CFE0DDF133A1653001218E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		2CFE0DE1133A1653001218E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SegmentedMultiViewExercise/SegmentedMultiViewExercise-Prefix.pch";
+				INFOPLIST_FILE = "SegmentedMultiViewExercise/SegmentedMultiViewExercise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2CFE0DE2133A1653001218E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SegmentedMultiViewExercise/SegmentedMultiViewExercise-Prefix.pch";
+				INFOPLIST_FILE = "SegmentedMultiViewExercise/SegmentedMultiViewExercise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CFE0DB9133A1653001218E3 /* Build configuration list for PBXProject "SegmentedMultiViewExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CFE0DDE133A1653001218E3 /* Debug */,
+				2CFE0DDF133A1653001218E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CFE0DE0133A1653001218E3 /* Build configuration list for PBXNativeTarget "SegmentedMultiViewExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CFE0DE1133A1653001218E3 /* Debug */,
+				2CFE0DE2133A1653001218E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CFE0DB6133A1653001218E3 /* Project object */;
+}
