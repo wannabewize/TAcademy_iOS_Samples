@@ -9,9 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ThreeViewsViewController : UIViewController {
-    IBOutlet UIView *red, *blue, *green;
 }
-
-
 
 @end

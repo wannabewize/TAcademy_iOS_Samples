@@ -23,14 +23,14 @@
 		F77945E01330F393009D4515 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F77945E21330F393009D4515 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F77945E41330F393009D4515 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F77945E81330F393009D4515 /* ThreeViews-Info.plist */ = {isa = PBXFileReference; path = "ThreeViews-Info.plist"; sourceTree = "<group>"; };
+		F77945E81330F393009D4515 /* ThreeViews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThreeViews-Info.plist"; sourceTree = "<group>"; };
 		F77945EA1330F393009D4515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F77945EC1330F393009D4515 /* ThreeViews-Prefix.pch */ = {isa = PBXFileReference; path = "ThreeViews-Prefix.pch"; sourceTree = "<group>"; };
+		F77945EC1330F393009D4515 /* ThreeViews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThreeViews-Prefix.pch"; sourceTree = "<group>"; };
 		F77945ED1330F393009D4515 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F77945EF1330F393009D4515 /* ThreeViewsAppDelegate.h */ = {isa = PBXFileReference; path = ThreeViewsAppDelegate.h; sourceTree = "<group>"; };
+		F77945EF1330F393009D4515 /* ThreeViewsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewsAppDelegate.h; sourceTree = "<group>"; };
 		F77945F01330F393009D4515 /* ThreeViewsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewsAppDelegate.m; sourceTree = "<group>"; };
 		F77945F31330F393009D4515 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		F77945F51330F393009D4515 /* ThreeViewsViewController.h */ = {isa = PBXFileReference; path = ThreeViewsViewController.h; sourceTree = "<group>"; };
+		F77945F51330F393009D4515 /* ThreeViewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewsViewController.h; sourceTree = "<group>"; };
 		F77945F61330F393009D4515 /* ThreeViewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewsViewController.m; sourceTree = "<group>"; };
 		F77945F91330F393009D4515 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ThreeViewsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */

@@ -31,7 +31,7 @@
 		F77945F01330F393009D4515 /* ThreeViewsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewsAppDelegate.m; sourceTree = "<group>"; };
 		F77945F31330F393009D4515 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		F77945F51330F393009D4515 /* ThreeViewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewsViewController.h; sourceTree = "<group>"; };
-		F77945F61330F393009D4515 /* ThreeViewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewsViewController.m; sourceTree = "<group>"; };
+		F77945F61330F393009D4515 /* ThreeViewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewsViewController.m; sourceTree = "<group>"; };
 		F77945F91330F393009D4515 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ThreeViewsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +276,7 @@
 				F77945FF1330F393009D4515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
