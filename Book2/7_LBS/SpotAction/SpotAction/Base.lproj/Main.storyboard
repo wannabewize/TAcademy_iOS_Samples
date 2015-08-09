@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SpotAction" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1fh-p0-XRy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="i5g-lM-Pvx"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1fh-p0-XRy" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="042-Da-Vwo"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1fh-p0-XRy" secondAttribute="bottom" id="Q5c-MY-U2f"/>
+                            <constraint firstItem="1fh-p0-XRy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="gZD-gI-lev"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1fh-p0-XRy" secondAttribute="trailing" constant="-16" id="klL-1f-J0g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="1fh-p0-XRy" id="2ZU-jr-Yny"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="421"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="ae2-9g-a2c">
+            <objects>
+                <viewController storyboardIdentifier="DETAIL_VC" id="ZJe-7g-AJx" customClass="DetailViewController" customModule="SpotAction" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UDN-vl-z3y"/>
+                        <viewControllerLayoutGuide type="bottom" id="l2S-Zv-eqJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WaL-Ff-jOM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ODb-By-Kjw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOD-32-9fF">
+                                <rect key="frame" x="542" y="28" width="30" height="30"/>
+                                <state key="normal" title="닫기">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissModal:" destination="ZJe-7g-AJx" eventType="touchUpInside" id="wjm-Rb-d8K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="rOD-32-9fF" secondAttribute="trailing" constant="12" id="DT2-2i-0r8"/>
+                            <constraint firstItem="rOD-32-9fF" firstAttribute="top" secondItem="UDN-vl-z3y" secondAttribute="bottom" constant="8" id="IHd-0M-OUr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="ODb-By-Kjw" id="CcA-FV-18a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TX4-S1-2Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="492"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14F25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ViewAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pt-AP-t7O">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="이동" id="BhI-pm-cd4">
+                                        <connections>
+                                            <action selector="moveBlock:" destination="vXZ-lx-hvc" id="0hH-86-eC7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fhz-ol-552"/>
+                                    <barButtonItem title="확대/축소" id="CxU-At-M9v">
+                                        <connections>
+                                            <action selector="scaleBlock:" destination="vXZ-lx-hvc" id="VUa-hE-xWy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="C0R-yt-XhM"/>
+                                    <barButtonItem title="연속" id="kSt-Rj-8Tk">
+                                        <connections>
+                                            <action selector="animateMulti:" destination="vXZ-lx-hvc" id="sIA-ed-tRB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-dt-F1X">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="157" width="200" height="200"/>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5pt-AP-t7O" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="EMV-XR-Adj"/>
+                            <constraint firstAttribute="trailing" secondItem="5pt-AP-t7O" secondAttribute="trailing" id="G2p-PN-vK5"/>
+                            <constraint firstItem="5pt-AP-t7O" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Zr0-Xn-eZm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5pt-AP-t7O"/>
+                                <exclude reference="2Nx-dt-F1X"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="G2p-PN-vK5"/>
+                                <exclude reference="Zr0-Xn-eZm"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5pt-AP-t7O"/>
+                                <include reference="2Nx-dt-F1X"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="G2p-PN-vK5"/>
+                                <include reference="Zr0-Xn-eZm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="0LX-Qh-nYb"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="block" destination="2Nx-dt-F1X" id="KTy-Tc-YtP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535.5" y="427"/>
+        </scene>
+    </scenes>
+</document>

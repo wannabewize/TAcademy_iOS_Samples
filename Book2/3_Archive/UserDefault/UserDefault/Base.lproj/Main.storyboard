@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="UserDefault" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="aGF-Ay-r5Z">
+                                <rect key="frame" x="0.0" y="120" width="600" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="449040833.08902299">
+                                    <!--2015-03-26 05:33:53 +0000-->
+                                </date>
+                            </datePicker>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3rs-UG-3ds">
+                                <rect key="frame" x="275.5" y="314" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IO9-xp-5P3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="저장">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveSetting:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tMk-7H-PXa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rm-Q3-zsP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="복원">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restoreSetting:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WKB-1K-9p1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IO9-xp-5P3" firstAttribute="baseline" secondItem="3Rm-Q3-zsP" secondAttribute="baseline" id="E9o-G1-QwZ"/>
+                            <constraint firstItem="aGF-Ay-r5Z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="EYN-xP-YLV"/>
+                            <constraint firstAttribute="centerX" secondItem="3rs-UG-3ds" secondAttribute="centerX" id="XpD-LD-9C2"/>
+                            <constraint firstItem="3Rm-Q3-zsP" firstAttribute="leading" secondItem="IO9-xp-5P3" secondAttribute="trailing" constant="75" id="c7w-AN-p0l"/>
+                            <constraint firstItem="3rs-UG-3ds" firstAttribute="top" secondItem="aGF-Ay-r5Z" secondAttribute="bottom" constant="32" id="hbF-6D-kxW"/>
+                            <constraint firstItem="aGF-Ay-r5Z" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="pIF-Rk-t64"/>
+                            <constraint firstItem="IO9-xp-5P3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="133" id="sQW-P9-5Lo"/>
+                            <constraint firstAttribute="trailing" secondItem="aGF-Ay-r5Z" secondAttribute="trailing" id="v2d-tU-kWR"/>
+                            <constraint firstItem="aGF-Ay-r5Z" firstAttribute="top" secondItem="IO9-xp-5P3" secondAttribute="bottom" constant="29" id="wSc-vv-if9"/>
+                        </constraints>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="aGF-Ay-r5Z"/>
+                                <include reference="3rs-UG-3ds"/>
+                                <include reference="IO9-xp-5P3"/>
+                                <include reference="3Rm-Q3-zsP"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="EYN-xP-YLV"/>
+                                <include reference="pIF-Rk-t64"/>
+                                <include reference="v2d-tU-kWR"/>
+                                <include reference="wSc-vv-if9"/>
+                                <include reference="E9o-G1-QwZ"/>
+                                <include reference="sQW-P9-5Lo"/>
+                                <include reference="c7w-AN-p0l"/>
+                                <include reference="XpD-LD-9C2"/>
+                                <include reference="hbF-6D-kxW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="birthdayPicker" destination="aGF-Ay-r5Z" id="dvd-IL-2PK"/>
+                        <outlet property="notiSwitch" destination="3rs-UG-3ds" id="TBj-K3-YiS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="461"/>
+        </scene>
+    </scenes>
+</document>

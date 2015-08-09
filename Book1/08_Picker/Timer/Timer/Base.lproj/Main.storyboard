@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="BGB-rN-GCt">
+                                <rect key="frame" x="-160" y="-81" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="448377962.69957203">
+                                    <!--2015-03-18 13:26:02 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCi-jm-Byb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopTimer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zE3-eH-HXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiX-eJ-Sbj">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTimer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Etz-Ot-hPe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fCi-jm-Byb" secondAttribute="trailing" constant="9" id="4gm-C8-Vf3"/>
+                            <constraint firstItem="BGB-rN-GCt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="5NQ-rQ-r16"/>
+                            <constraint firstItem="xiX-eJ-Sbj" firstAttribute="top" secondItem="BGB-rN-GCt" secondAttribute="bottom" constant="25" id="D4X-kp-TWV">
+                                <variation key="widthClass=compact" constant="29"/>
+                            </constraint>
+                            <constraint firstItem="BGB-rN-GCt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="Q9x-Nb-qgr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BGB-rN-GCt" secondAttribute="trailing" constant="-16" id="Tri-vw-2sN"/>
+                            <constraint firstItem="xiX-eJ-Sbj" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="VUS-ue-QcP">
+                                <variation key="widthClass=compact" constant="-71"/>
+                            </constraint>
+                            <constraint firstItem="fCi-jm-Byb" firstAttribute="top" secondItem="BGB-rN-GCt" secondAttribute="bottom" constant="29" id="eFE-Ur-bY1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="BGB-rN-GCt"/>
+                                <exclude reference="fCi-jm-Byb"/>
+                                <exclude reference="xiX-eJ-Sbj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5NQ-rQ-r16"/>
+                                <exclude reference="Q9x-Nb-qgr"/>
+                                <exclude reference="Tri-vw-2sN"/>
+                                <exclude reference="D4X-kp-TWV"/>
+                                <exclude reference="VUS-ue-QcP"/>
+                                <exclude reference="4gm-C8-Vf3"/>
+                                <exclude reference="eFE-Ur-bY1"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="BGB-rN-GCt"/>
+                                <include reference="fCi-jm-Byb"/>
+                                <include reference="xiX-eJ-Sbj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5NQ-rQ-r16"/>
+                                <include reference="Q9x-Nb-qgr"/>
+                                <include reference="Tri-vw-2sN"/>
+                                <include reference="D4X-kp-TWV"/>
+                                <include reference="VUS-ue-QcP"/>
+                                <include reference="4gm-C8-Vf3"/>
+                                <include reference="eFE-Ur-bY1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="BGB-rN-GCt" id="i4z-5I-F26"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

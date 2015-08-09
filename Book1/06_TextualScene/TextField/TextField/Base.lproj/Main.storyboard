@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8o-lg-eby">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Yi-Uf-MSV">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDidEndOnExit:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="hUi-KZ-d6h"/>
+                                    <action selector="textFieldEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="eDb-Fo-fJt"/>
+                                    <action selector="textFieldEditingDidBegin:" destination="vXZ-lx-hvc" eventType="editingDidBegin" id="08V-jA-1XW"/>
+                                    <action selector="textFieldEditingEnd:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="i0z-6z-W4h"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Yi-Uf-MSV" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Cpa-4v-HZK"/>
+                            <constraint firstItem="l8o-lg-eby" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="JrW-RG-lTU"/>
+                            <constraint firstItem="8Yi-Uf-MSV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="LwX-Jh-PCF"/>
+                            <constraint firstItem="l8o-lg-eby" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="21" id="S1Q-Qu-5E1"/>
+                            <constraint firstAttribute="centerX" secondItem="l8o-lg-eby" secondAttribute="centerX" id="Vua-in-zAs"/>
+                            <constraint firstItem="l8o-lg-eby" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="ZhN-g2-nzD"/>
+                            <constraint firstItem="8Yi-Uf-MSV" firstAttribute="top" secondItem="l8o-lg-eby" secondAttribute="bottom" constant="24" id="zpj-Ew-QKC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="l8o-lg-eby"/>
+                                <exclude reference="8Yi-Uf-MSV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Cpa-4v-HZK"/>
+                                <exclude reference="LwX-Jh-PCF"/>
+                                <exclude reference="zpj-Ew-QKC"/>
+                                <exclude reference="JrW-RG-lTU"/>
+                                <exclude reference="S1Q-Qu-5E1"/>
+                                <exclude reference="Vua-in-zAs"/>
+                                <exclude reference="ZhN-g2-nzD"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="l8o-lg-eby"/>
+                                <include reference="8Yi-Uf-MSV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Cpa-4v-HZK"/>
+                                <include reference="LwX-Jh-PCF"/>
+                                <include reference="zpj-Ew-QKC"/>
+                                <include reference="JrW-RG-lTU"/>
+                                <include reference="S1Q-Qu-5E1"/>
+                                <include reference="Vua-in-zAs"/>
+                                <include reference="ZhN-g2-nzD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="l8o-lg-eby" id="bPa-TA-qj3"/>
+                        <outlet property="textField" destination="8Yi-Uf-MSV" id="MEe-U0-Jun"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="415"/>
+        </scene>
+    </scenes>
+</document>

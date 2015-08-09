@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eyQ-iu-l60">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--A-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TabBasedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Wz-f5-gZN">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textfieldDidEndOnExit:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="Jqs-Ry-r6p"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Wz-f5-gZN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="150" id="Duo-u1-xyh"/>
+                            <constraint firstItem="0Wz-f5-gZN" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="HgZ-UE-JhO"/>
+                            <constraint firstItem="0Wz-f5-gZN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="fWK-qS-OUa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0Wz-f5-gZN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Duo-u1-xyh"/>
+                                <exclude reference="HgZ-UE-JhO"/>
+                                <exclude reference="fWK-qS-OUa"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="0Wz-f5-gZN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Duo-u1-xyh"/>
+                                <include reference="HgZ-UE-JhO"/>
+                                <include reference="fWK-qS-OUa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="A" image="1.png" id="xbJ-NV-5hC"/>
+                    <connections>
+                        <outlet property="textField" destination="0Wz-f5-gZN" id="TLC-ah-Vad"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="330"/>
+        </scene>
+        <!--B-->
+        <scene sceneID="wXk-kB-G12">
+            <objects>
+                <viewController id="nNV-mB-B1Y" customClass="ViewController" customModule="TabBasedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xiH-hA-6ap"/>
+                        <viewControllerLayoutGuide type="bottom" id="NID-KB-cYF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nI5-Lu-tRR">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ld-3T-tzR">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textfieldDidEndOnExit:" destination="nNV-mB-B1Y" eventType="editingDidEndOnExit" id="Tgk-lt-DSr"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Ld-3T-tzR" firstAttribute="leading" secondItem="nI5-Lu-tRR" secondAttribute="leadingMargin" id="51p-ks-jUw"/>
+                            <constraint firstItem="2Ld-3T-tzR" firstAttribute="top" secondItem="xiH-hA-6ap" secondAttribute="bottom" constant="150" id="c2b-KJ-JHt"/>
+                            <constraint firstItem="2Ld-3T-tzR" firstAttribute="trailing" secondItem="nI5-Lu-tRR" secondAttribute="trailingMargin" id="mrj-GH-Lai"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2Ld-3T-tzR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="51p-ks-jUw"/>
+                                <exclude reference="c2b-KJ-JHt"/>
+                                <exclude reference="mrj-GH-Lai"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2Ld-3T-tzR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="51p-ks-jUw"/>
+                                <include reference="c2b-KJ-JHt"/>
+                                <include reference="mrj-GH-Lai"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="B" image="2.png" id="5Ec-ae-noz"/>
+                    <connections>
+                        <outlet property="textField" destination="2Ld-3T-tzR" id="yvG-Oi-ozh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0iO-lI-Tpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="962"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fx4-PG-Igd">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eyQ-iu-l60" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1Gd-SW-nqr">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="RZo-p0-W0c"/>
+                        <segue destination="nNV-mB-B1Y" kind="relationship" relationship="viewControllers" id="zQY-do-S7g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXe-8r-gqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="40" height="50"/>
+        <image name="2.png" width="40" height="50"/>
+    </resources>
+</document>

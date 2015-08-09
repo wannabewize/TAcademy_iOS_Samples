@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AlertViewAndActionSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRu-cE-toa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jz5-GT-rmY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzU-iB-n9b">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Input Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTextInputAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8XC-RH-VIs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zG6-T2-7oz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="ActionSheet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showActionSheet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qcT-VR-YmX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zG6-T2-7oz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="200" id="59E-0d-3PG"/>
+                            <constraint firstAttribute="centerX" secondItem="mzU-iB-n9b" secondAttribute="centerX" constant="-0.5" id="79L-ha-KxL"/>
+                            <constraint firstItem="mzU-iB-n9b" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="122" id="b1f-Ty-Lgb"/>
+                            <constraint firstAttribute="centerX" secondItem="zG6-T2-7oz" secondAttribute="centerX" constant="-7" id="fWS-gL-tGA"/>
+                            <constraint firstAttribute="centerX" secondItem="XRu-cE-toa" secondAttribute="centerX" id="kG5-vr-In8"/>
+                            <constraint firstItem="XRu-cE-toa" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="62" id="rKV-BO-oPV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XRu-cE-toa"/>
+                                <exclude reference="mzU-iB-n9b"/>
+                                <exclude reference="zG6-T2-7oz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="kG5-vr-In8"/>
+                                <exclude reference="rKV-BO-oPV"/>
+                                <exclude reference="79L-ha-KxL"/>
+                                <exclude reference="b1f-Ty-Lgb"/>
+                                <exclude reference="59E-0d-3PG"/>
+                                <exclude reference="fWS-gL-tGA"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="XRu-cE-toa"/>
+                                <include reference="mzU-iB-n9b"/>
+                                <include reference="zG6-T2-7oz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="kG5-vr-In8"/>
+                                <include reference="rKV-BO-oPV"/>
+                                <include reference="79L-ha-KxL"/>
+                                <include reference="b1f-Ty-Lgb"/>
+                                <include reference="59E-0d-3PG"/>
+                                <include reference="fWS-gL-tGA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TextFieldAndKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="키보드에 가려지는 텍스트필드" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jco-gk-GKp">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="키보드에 가려지지 않는 텍스트필드" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IiK-9a-Zpc">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IiK-9a-Zpc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="5Lk-Un-iJw"/>
+                            <constraint firstItem="Jco-gk-GKp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="AGg-nv-Rxq"/>
+                            <constraint firstItem="Jco-gk-GKp" firstAttribute="trailing" secondItem="IiK-9a-Zpc" secondAttribute="trailing" id="WIR-9L-YPx"/>
+                            <constraint firstItem="IiK-9a-Zpc" firstAttribute="leading" secondItem="Jco-gk-GKp" secondAttribute="leading" id="dze-Mf-fua"/>
+                            <constraint firstItem="Jco-gk-GKp" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="l8f-RI-INH"/>
+                            <constraint firstAttribute="bottom" secondItem="Jco-gk-GKp" secondAttribute="bottom" constant="20" symbolic="YES" id="ob3-gi-Zjr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Jco-gk-GKp"/>
+                                <exclude reference="IiK-9a-Zpc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5Lk-Un-iJw"/>
+                                <exclude reference="dze-Mf-fua"/>
+                                <exclude reference="AGg-nv-Rxq"/>
+                                <exclude reference="WIR-9L-YPx"/>
+                                <exclude reference="l8f-RI-INH"/>
+                                <exclude reference="ob3-gi-Zjr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Jco-gk-GKp"/>
+                                <include reference="IiK-9a-Zpc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5Lk-Un-iJw"/>
+                                <include reference="dze-Mf-fua"/>
+                                <include reference="AGg-nv-Rxq"/>
+                                <include reference="WIR-9L-YPx"/>
+                                <include reference="l8f-RI-INH"/>
+                                <include reference="ob3-gi-Zjr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

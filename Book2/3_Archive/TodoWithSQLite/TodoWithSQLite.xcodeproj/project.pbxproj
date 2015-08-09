@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C094EC21AC3E67C007A27DD /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C094EC11AC3E67C007A27DD /* TodoManager.swift */; };
+		2C22613A1A24C1BE002D0ABF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2261391A24C1BE002D0ABF /* AppDelegate.swift */; };
+		2C22613C1A24C1BE002D0ABF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C22613B1A24C1BE002D0ABF /* ViewController.swift */; };
+		2C22613F1A24C1BE002D0ABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C22613D1A24C1BE002D0ABF /* Main.storyboard */; };
+		2C2261411A24C1BE002D0ABF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2261401A24C1BE002D0ABF /* Images.xcassets */; };
+		2C2261441A24C1BE002D0ABF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2261421A24C1BE002D0ABF /* LaunchScreen.xib */; };
+		2C2261501A24C1BE002D0ABF /* TodoWithSQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C22614F1A24C1BE002D0ABF /* TodoWithSQLiteTests.swift */; };
+		2C22615A1A24C1D9002D0ABF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2261591A24C1D9002D0ABF /* libsqlite3.dylib */; };
+		2C24FBDD1A25C57000EDE610 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24FBDC1A25C57000EDE610 /* ComposeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C22614A1A24C1BE002D0ABF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C22612C1A24C1BE002D0ABF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C2261331A24C1BE002D0ABF;
+			remoteInfo = TodoWithSQLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C094EC11AC3E67C007A27DD /* TodoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
+		2C2261341A24C1BE002D0ABF /* TodoWithSQLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoWithSQLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2261381A24C1BE002D0ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2261391A24C1BE002D0ABF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C22613B1A24C1BE002D0ABF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C22613E1A24C1BE002D0ABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C2261401A24C1BE002D0ABF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2C2261431A24C1BE002D0ABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2C2261491A24C1BE002D0ABF /* TodoWithSQLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoWithSQLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C22614E1A24C1BE002D0ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C22614F1A24C1BE002D0ABF /* TodoWithSQLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoWithSQLiteTests.swift; sourceTree = "<group>"; };
+		2C2261591A24C1D9002D0ABF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2C22615B1A24C4CC002D0ABF /* Sqlite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sqlite-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C24FBDC1A25C57000EDE610 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C2261311A24C1BE002D0ABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C22615A1A24C1D9002D0ABF /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2261461A24C1BE002D0ABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C22612B1A24C1BE002D0ABF = {
+			isa = PBXGroup;
+			children = (
+				2C2261591A24C1D9002D0ABF /* libsqlite3.dylib */,
+				2C2261361A24C1BE002D0ABF /* TodoWithSQLite */,
+				2C22614C1A24C1BE002D0ABF /* TodoWithSQLiteTests */,
+				2C2261351A24C1BE002D0ABF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C2261351A24C1BE002D0ABF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C2261341A24C1BE002D0ABF /* TodoWithSQLite.app */,
+				2C2261491A24C1BE002D0ABF /* TodoWithSQLiteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C2261361A24C1BE002D0ABF /* TodoWithSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				2C2261391A24C1BE002D0ABF /* AppDelegate.swift */,
+				2C22613B1A24C1BE002D0ABF /* ViewController.swift */,
+				2C24FBDC1A25C57000EDE610 /* ComposeViewController.swift */,
+				2C22613D1A24C1BE002D0ABF /* Main.storyboard */,
+				2C2261401A24C1BE002D0ABF /* Images.xcassets */,
+				2C2261421A24C1BE002D0ABF /* LaunchScreen.xib */,
+				2C2261371A24C1BE002D0ABF /* Supporting Files */,
+				2C22615B1A24C4CC002D0ABF /* Sqlite-Bridging-Header.h */,
+				2C094EC11AC3E67C007A27DD /* TodoManager.swift */,
+			);
+			path = TodoWithSQLite;
+			sourceTree = "<group>";
+		};
+		2C2261371A24C1BE002D0ABF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C2261381A24C1BE002D0ABF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C22614C1A24C1BE002D0ABF /* TodoWithSQLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C22614F1A24C1BE002D0ABF /* TodoWithSQLiteTests.swift */,
+				2C22614D1A24C1BE002D0ABF /* Supporting Files */,
+			);
+			path = TodoWithSQLiteTests;
+			sourceTree = "<group>";
+		};
+		2C22614D1A24C1BE002D0ABF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C22614E1A24C1BE002D0ABF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C2261331A24C1BE002D0ABF /* TodoWithSQLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2261531A24C1BE002D0ABF /* Build configuration list for PBXNativeTarget "TodoWithSQLite" */;
+			buildPhases = (
+				2C2261301A24C1BE002D0ABF /* Sources */,
+				2C2261311A24C1BE002D0ABF /* Frameworks */,
+				2C2261321A24C1BE002D0ABF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodoWithSQLite;
+			productName = TodoWithSQLite;
+			productReference = 2C2261341A24C1BE002D0ABF /* TodoWithSQLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C2261481A24C1BE002D0ABF /* TodoWithSQLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2261561A24C1BE002D0ABF /* Build configuration list for PBXNativeTarget "TodoWithSQLiteTests" */;
+			buildPhases = (
+				2C2261451A24C1BE002D0ABF /* Sources */,
+				2C2261461A24C1BE002D0ABF /* Frameworks */,
+				2C2261471A24C1BE002D0ABF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C22614B1A24C1BE002D0ABF /* PBXTargetDependency */,
+			);
+			name = TodoWithSQLiteTests;
+			productName = TodoWithSQLiteTests;
+			productReference = 2C2261491A24C1BE002D0ABF /* TodoWithSQLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C22612C1A24C1BE002D0ABF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = VanillaStep;
+				TargetAttributes = {
+					2C2261331A24C1BE002D0ABF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2C2261481A24C1BE002D0ABF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 2C2261331A24C1BE002D0ABF;
+					};
+				};
+			};
+			buildConfigurationList = 2C22612F1A24C1BE002D0ABF /* Build configuration list for PBXProject "TodoWithSQLite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C22612B1A24C1BE002D0ABF;
+			productRefGroup = 2C2261351A24C1BE002D0ABF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C2261331A24C1BE002D0ABF /* TodoWithSQLite */,
+				2C2261481A24C1BE002D0ABF /* TodoWithSQLiteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C2261321A24C1BE002D0ABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C22613F1A24C1BE002D0ABF /* Main.storyboard in Resources */,
+				2C2261441A24C1BE002D0ABF /* LaunchScreen.xib in Resources */,
+				2C2261411A24C1BE002D0ABF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2261471A24C1BE002D0ABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C2261301A24C1BE002D0ABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C22613C1A24C1BE002D0ABF /* ViewController.swift in Sources */,
+				2C094EC21AC3E67C007A27DD /* TodoManager.swift in Sources */,
+				2C24FBDD1A25C57000EDE610 /* ComposeViewController.swift in Sources */,
+				2C22613A1A24C1BE002D0ABF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2261451A24C1BE002D0ABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2261501A24C1BE002D0ABF /* TodoWithSQLiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C22614B1A24C1BE002D0ABF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C2261331A24C1BE002D0ABF /* TodoWithSQLite */;
+			targetProxy = 2C22614A1A24C1BE002D0ABF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C22613D1A24C1BE002D0ABF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C22613E1A24C1BE002D0ABF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C2261421A24C1BE002D0ABF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C2261431A24C1BE002D0ABF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C2261511A24C1BE002D0ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C2261521A24C1BE002D0ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C2261541A24C1BE002D0ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TodoWithSQLite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoWithSQLite/Sqlite-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		2C2261551A24C1BE002D0ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TodoWithSQLite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoWithSQLite/Sqlite-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		2C2261571A24C1BE002D0ABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TodoWithSQLiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoWithSQLite.app/TodoWithSQLite";
+			};
+			name = Debug;
+		};
+		2C2261581A24C1BE002D0ABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TodoWithSQLiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoWithSQLite.app/TodoWithSQLite";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C22612F1A24C1BE002D0ABF /* Build configuration list for PBXProject "TodoWithSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2261511A24C1BE002D0ABF /* Debug */,
+				2C2261521A24C1BE002D0ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C2261531A24C1BE002D0ABF /* Build configuration list for PBXNativeTarget "TodoWithSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2261541A24C1BE002D0ABF /* Debug */,
+				2C2261551A24C1BE002D0ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C2261561A24C1BE002D0ABF /* Build configuration list for PBXNativeTarget "TodoWithSQLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2261571A24C1BE002D0ABF /* Debug */,
+				2C2261581A24C1BE002D0ABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C22612C1A24C1BE002D0ABF /* Project object */;
+}

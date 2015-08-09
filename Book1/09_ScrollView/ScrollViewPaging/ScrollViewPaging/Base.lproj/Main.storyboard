@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ScrollViewPaging" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MGJ-um-MhI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="mpu-a1-hq7"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="cKD-ms-ezh">
+                                <rect key="frame" x="-19" y="-18" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MGJ-um-MhI" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="42j-oX-BNb"/>
+                            <constraint firstAttribute="centerX" secondItem="cKD-ms-ezh" secondAttribute="centerX" constant="0.5" id="6lr-af-afu"/>
+                            <constraint firstAttribute="trailing" secondItem="MGJ-um-MhI" secondAttribute="trailing" id="9Bi-lJ-ofI"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cKD-ms-ezh" secondAttribute="bottom" constant="50" id="FcY-Cs-e3F"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MGJ-um-MhI" secondAttribute="bottom" id="Hqc-wc-yfb"/>
+                            <constraint firstItem="MGJ-um-MhI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="btH-6q-Pmz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="cKD-ms-ezh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FcY-Cs-e3F"/>
+                                <exclude reference="6lr-af-afu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="cKD-ms-ezh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="FcY-Cs-e3F"/>
+                                <include reference="6lr-af-afu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="cKD-ms-ezh" id="iUd-I8-WNa"/>
+                        <outlet property="scrollView" destination="MGJ-um-MhI" id="p2P-WI-tLk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.5" y="529"/>
+        </scene>
+    </scenes>
+</document>
