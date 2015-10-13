@@ -10,8 +10,9 @@
 		2C426EE519A0AC620090076B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C426EE419A0AC620090076B /* AppDelegate.swift */; };
 		2C426EE719A0AC620090076B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C426EE619A0AC620090076B /* ViewController.swift */; };
 		2C426EEA19A0AC620090076B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C426EE819A0AC620090076B /* Main.storyboard */; };
-		2C426EEC19A0AC620090076B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C426EEB19A0AC620090076B /* Images.xcassets */; };
 		2C426EF819A0AC620090076B /* ThreeViewsByCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C426EF719A0AC620090076B /* ThreeViewsByCodeTests.swift */; };
+		2CF6249E1BCD1F450043E27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF6249D1BCD1F450043E27B /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		2CF624A01BCD1F580043E27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF6249F1BCD1F580043E27B /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,10 +31,11 @@
 		2C426EE419A0AC620090076B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C426EE619A0AC620090076B /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		2C426EE919A0AC620090076B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2C426EEB19A0AC620090076B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C426EF119A0AC620090076B /* ThreeViewsByCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeViewsByCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C426EF619A0AC620090076B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C426EF719A0AC620090076B /* ThreeViewsByCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewsByCodeTests.swift; sourceTree = "<group>"; };
+		2CF6249D1BCD1F450043E27B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CF6249F1BCD1F580043E27B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 				2C426EE419A0AC620090076B /* AppDelegate.swift */,
 				2C426EE619A0AC620090076B /* ViewController.swift */,
 				2C426EE819A0AC620090076B /* Main.storyboard */,
-				2C426EEB19A0AC620090076B /* Images.xcassets */,
+				2CF6249D1BCD1F450043E27B /* LaunchScreen.storyboard */,
+				2CF6249F1BCD1F580043E27B /* Assets.xcassets */,
 				2C426EE219A0AC620090076B /* Supporting Files */,
 			);
 			path = ThreeViewsByCode;
@@ -153,7 +156,8 @@
 		2C426ED719A0AC620090076B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = VanillaStep;
 				TargetAttributes = {
 					2C426EDE19A0AC620090076B = {
@@ -189,8 +193,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF6249E1BCD1F450043E27B /* LaunchScreen.storyboard in Resources */,
+				2CF624A01BCD1F580043E27B /* Assets.xcassets in Resources */,
 				2C426EEA19A0AC620090076B /* Main.storyboard in Resources */,
-				2C426EEC19A0AC620090076B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +268,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -324,10 +330,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ThreeViewsByCode/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -336,10 +342,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ThreeViewsByCode/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -358,6 +364,7 @@
 				);
 				INFOPLIST_FILE = ThreeViewsByCodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeViewsByCode.app/ThreeViewsByCode";
 			};
@@ -373,6 +380,7 @@
 				);
 				INFOPLIST_FILE = ThreeViewsByCodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeViewsByCode.app/ThreeViewsByCode";
 			};
