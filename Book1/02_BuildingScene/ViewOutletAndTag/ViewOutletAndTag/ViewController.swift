@@ -32,7 +32,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // 파란색 뷰 추가
-    blueView = UIView(frame: CGRectMake(60, 200, 200, 200))
+    blueView = UIView(frame: CGRectMake(140, 80, 160, 200))
     blueView.backgroundColor = UIColor.blueColor()
     self.view.addSubview(blueView)
   }

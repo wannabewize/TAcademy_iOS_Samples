@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5D4812B8-9EF6-46F6-8ADD-59604F391071</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ViewOutletAndTag</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CAA838E0E7E705C3E08DFA9985E10362E7FFD87B</key>
+		<string>https://github.com/wannabewize/TAcademy_iOS_Samples.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Book1/02_BuildingScene/ViewOutletAndTag/ViewOutletAndTag.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CAA838E0E7E705C3E08DFA9985E10362E7FFD87B</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wannabewize/TAcademy_iOS_Samples.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CAA838E0E7E705C3E08DFA9985E10362E7FFD87B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CAA838E0E7E705C3E08DFA9985E10362E7FFD87B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TAcademy_iOS_Samples</string>
+		</dict>
+	</array>
+</dict>
+</plist>

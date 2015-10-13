@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CF6249C1BCD1DF50043E27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF6249B1BCD1DF50043E27B /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		2CF79EFF19B328E6001D319F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF79EFE19B328E6001D319F /* AppDelegate.swift */; };
 		2CF79F0119B328E6001D319F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF79F0019B328E6001D319F /* ViewController.swift */; };
 		2CF79F0419B328E6001D319F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF79F0219B328E6001D319F /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CF6249B1BCD1DF50043E27B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CF79EF919B328E6001D319F /* ViewOutletAndTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewOutletAndTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF79EFD19B328E6001D319F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CF79EFE19B328E6001D319F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				2CF79F0019B328E6001D319F /* ViewController.swift */,
 				2CF79F0219B328E6001D319F /* Main.storyboard */,
 				2CF79F0519B328E6001D319F /* Images.xcassets */,
+				2CF6249B1BCD1DF50043E27B /* LaunchScreen.storyboard */,
 				2CF79EFC19B328E6001D319F /* Supporting Files */,
 			);
 			path = ViewOutletAndTag;
@@ -153,6 +156,7 @@
 		2CF79EF119B328E6001D319F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = VanillaStep;
 				TargetAttributes = {
@@ -189,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF6249C1BCD1DF50043E27B /* LaunchScreen.storyboard in Resources */,
 				2CF79F0419B328E6001D319F /* Main.storyboard in Resources */,
 				2CF79F0619B328E6001D319F /* Images.xcassets in Resources */,
 			);
@@ -325,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ViewOutletAndTag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ViewOutletAndTag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +402,7 @@
 				2CF79F1719B328E6001D319F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CF79F1819B328E6001D319F /* Build configuration list for PBXNativeTarget "ViewOutletAndTagTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +411,7 @@
 				2CF79F1A19B328E6001D319F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
