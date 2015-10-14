@@ -162,6 +162,7 @@
 		2C5544AB1A75408400E383AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = VanillaStep;
 				TargetAttributes = {
@@ -413,6 +414,7 @@
 				2C5544D41A75408500E383AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C5544D51A75408500E383AD /* Build configuration list for PBXNativeTarget "ImageViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +423,7 @@
 				2C5544D71A75408500E383AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
