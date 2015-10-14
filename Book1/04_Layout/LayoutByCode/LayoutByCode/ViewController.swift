@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     label.backgroundColor = UIColor.lightGrayColor()
     self.view.addSubview(label)
     
-    label.setTranslatesAutoresizingMaskIntoConstraints(false)
+    label.translatesAutoresizingMaskIntoConstraints = false
 
     // 왼쪽으로 20 포인트 여백
     let leftConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: label.superview, attribute: NSLayoutAttribute.LeftMargin, multiplier: 1.0, constant: 20)
@@ -43,8 +43,8 @@ class ViewController: UIViewController {
     label2.font = UIFont.systemFontOfSize(20)
     self.view.addSubview(label2)
     
-    label1.setTranslatesAutoresizingMaskIntoConstraints(false)
-    label2.setTranslatesAutoresizingMaskIntoConstraints(false)
+    label1.translatesAutoresizingMaskIntoConstraints = false
+    label2.translatesAutoresizingMaskIntoConstraints = false
     
     // 비주얼 포맷 언어에서 사용하는 뷰
     let views = ["label1":label1, "label2":label2]
