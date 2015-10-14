@@ -31,20 +31,20 @@ class ViewController: UIViewController, UIAlertViewDelegate, UIActionSheetDelega
   // Swift 버전에서 버튼 인덱스가 동작하지 않는다.
   // 사용자가 얼럿뷰에서 선택을 하면, 델리게이트인 ViewController의 메소드가 동작
   func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
-    println("alertView \(buttonIndex) - tag : \(alertView.tag)- firstOtherButtonIndex index : \(alertView.firstOtherButtonIndex)")
+    print("alertView \(buttonIndex) - tag : \(alertView.tag)- firstOtherButtonIndex index : \(alertView.firstOtherButtonIndex)")
     
     if ( 1 == alertView.tag ) {
       if buttonIndex == alertView.cancelButtonIndex {
-        println("취소 선택")
+        print("취소 선택")
       }
       else if buttonIndex == alertView.firstOtherButtonIndex {
-        println("첫 번째 선택")
+        print("첫 번째 선택")
       }
       else if buttonIndex == alertView.firstOtherButtonIndex + 1 {
-        println("두 번재 선택")
+        print("두 번재 선택")
       }
       else {
-        println("나머지")
+        print("나머지")
       }
     }
     else {
@@ -52,7 +52,7 @@ class ViewController: UIViewController, UIAlertViewDelegate, UIActionSheetDelega
 //       LoginAndPasswordInput는 2개의 텍스트 필드
         let idTextField = alertView.textFieldAtIndex(0)
         let pwTextField = alertView.textFieldAtIndex(1)
-        println("id : \(idTextField?.text) , pw : \(pwTextField?.text)")
+        print("id : \(idTextField?.text) , pw : \(pwTextField?.text)")
       }
     }
   }
