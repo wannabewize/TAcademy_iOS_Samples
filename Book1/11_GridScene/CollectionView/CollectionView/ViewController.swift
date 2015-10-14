@@ -14,7 +14,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
   // Selection : label.highlightedTextColor
   func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    println("Select Item : " + (nations[indexPath.row]["NAME"] as! String));
+    print("Select Item : " + (nations[indexPath.row]["NAME"] as! String));
   }
 
   
