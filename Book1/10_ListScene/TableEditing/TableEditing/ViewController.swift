@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID") as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID")!
     cell.textLabel?.text = data[indexPath.row]
     return cell
   }

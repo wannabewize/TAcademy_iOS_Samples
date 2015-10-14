@@ -15,11 +15,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   
   // 선택된 셀 데이터
   @IBAction func showSelectedCell(sender: AnyObject) {
-    if let indexPathList = tableView.indexPathsForSelectedRows() {
-      println("선택된 힝목")
-      for item in indexPathList {
-        let indexPath = item as! NSIndexPath
-        println("\(data[indexPath.row])")
+    if let indexPathList = tableView.indexPathsForSelectedRows {
+      print("선택된 힝목")
+      for indexPath in indexPathList {
+        print("\(data[indexPath.row])")
       }
     }
   }
@@ -33,9 +32,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   
   // 선택된 셀 초기화
   @IBAction func clearSelection(sender: AnyObject) {
-    if let indexPathList = tableView.indexPathsForSelectedRows() {
-      for item in indexPathList {
-        let indexPath = item as! NSIndexPath
+    if let indexPathList = tableView.indexPathsForSelectedRows {
+      for indexPath in indexPathList {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
       }
     }
@@ -46,7 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID") as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID")!
     let itemName = data[indexPath.row]
     cell.textLabel?.text = itemName
     let image = UIImage(named: "\(itemName).png")

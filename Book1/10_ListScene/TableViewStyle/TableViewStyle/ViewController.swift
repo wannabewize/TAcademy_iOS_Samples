@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     return "Header \(section)"
   }
   
-  func sectionIndexTitlesForTableView(tableView: UITableView) -> [AnyObject]! {
+  func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
     return ["1", "2", "3", "4"]
   }
   
@@ -36,10 +36,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cellId : String = "CELL\(indexPath.section)"
-    let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) 
     cell.textLabel?.text = "Item \(indexPath.row)"
     
-    println("cell.backgroundView : \(cell.backgroundView), cell.backgroundColor : \(cell.backgroundColor)")
+    print("cell.backgroundView : \(cell.backgroundView), cell.backgroundColor : \(cell.backgroundColor)")
     cell.backgroundColor = UIColor.redColor()
     return cell
     

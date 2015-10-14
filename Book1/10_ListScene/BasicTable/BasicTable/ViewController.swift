@@ -16,8 +16,11 @@ class ViewController: UIViewController, UITableViewDataSource {
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID") as! UITableViewCell
-    let itemName = data[indexPath.row]
+    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID")!
+   // tableView.dequeueReusableCellWithIdentifier("CELL_ID", forIndexPath: indexPath)
+   
+
+   let itemName = data[indexPath.row]
     cell.textLabel?.text = itemName
     let image = UIImage(named: "\(itemName).png")
     cell.imageView?.image = image
