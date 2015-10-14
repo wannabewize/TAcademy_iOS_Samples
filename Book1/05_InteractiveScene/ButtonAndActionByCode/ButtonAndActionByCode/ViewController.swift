@@ -22,11 +22,11 @@ class ViewController: UIViewController {
     
 //    colorView.frame = CGRectMake(20, 80, self.view.frame.size.width - 40, self.view.frame.size.height - 100)
 
-    colorView.setTranslatesAutoresizingMaskIntoConstraints(false)
+    colorView.translatesAutoresizingMaskIntoConstraints = false
     // 가로 제약조건
-    let constraint1 = NSLayoutConstraint.constraintsWithVisualFormat("|-20-[colorView]-20-|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["colorView":colorView])
+    let constraint1 = NSLayoutConstraint.constraintsWithVisualFormat("|-20-[colorView]-20-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["colorView":colorView])
     // 세로 제약조건
-    let constraint2 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-80-[colorView]-20-|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["colorView":colorView])
+    let constraint2 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-80-[colorView]-20-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["colorView":colorView])
     self.view.addConstraints(constraint1)
     self.view.addConstraints(constraint2)
 
@@ -51,9 +51,9 @@ class ViewController: UIViewController {
 //    button3.frame = CGRectMake(self.view.frame.size.width - 80, 40, 60, 40)
     
     // 버튼 1,2,3의 제약조건
-    button1.setTranslatesAutoresizingMaskIntoConstraints(false)
-    button2.setTranslatesAutoresizingMaskIntoConstraints(false)
-    button3.setTranslatesAutoresizingMaskIntoConstraints(false)
+    button1.translatesAutoresizingMaskIntoConstraints = false
+    button2.translatesAutoresizingMaskIntoConstraints = false
+    button3.translatesAutoresizingMaskIntoConstraints = false
     
     let constraintViews = ["button1":button1, "button2":button2, "button3":button3]
 
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     // 버튼1,2,3의 거리
     let constraint4 = NSLayoutConstraint.constraintsWithVisualFormat("[button1]-60-[button2]-50-[button3]", options: NSLayoutFormatOptions.AlignAllBaseline, metrics: nil, views: constraintViews)
     // 버튼2의 세로
-    let constraint5 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-40-[button2]", options: NSLayoutFormatOptions(0), metrics: nil, views: constraintViews)
+    let constraint5 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-40-[button2]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: constraintViews)
 
     self.view.addConstraint(constraint3)
     self.view.addConstraints(constraint4)
