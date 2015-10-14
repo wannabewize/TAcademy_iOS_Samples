@@ -40,43 +40,43 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   }
   
   func scrollViewDidZoom(scrollView: UIScrollView) {
-    println("scrollViewDidZoom : \(scrollView.zoomScale)")
+    print("scrollViewDidZoom : \(scrollView.zoomScale)")
   }
   
-  func scrollViewWillBeginZooming(scrollView: UIScrollView, withView view: UIView!) {
-    println("scrollViewWillBeginZooming")
+  func scrollViewWillBeginZooming(scrollView: UIScrollView, withView view: UIView?) {
+    print("scrollViewWillBeginZooming")
   }
   
-  func scrollViewDidEndZooming(scrollView: UIScrollView, withView view: UIView!, atScale scale: CGFloat) {
-    println("scrollViewDidEndZooming")
+  func scrollViewDidEndZooming(scrollView: UIScrollView, withView view: UIView?, atScale scale: CGFloat) {
+    print("scrollViewDidEndZooming")
   }
   
   func scrollViewWillBeginDragging(scrollView: UIScrollView) {
-    println("scrollViewWillBeginDragging")
+    print("scrollViewWillBeginDragging")
   }
   
   func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-    println("scrollViewWillEndDragging")
+    print("scrollViewWillEndDragging")
   }
 
   func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-    println("scrollViewDidEndDragging")
+    print("scrollViewDidEndDragging")
   }
 
   func scrollViewWillBeginDecelerating(scrollView: UIScrollView) {
-    println("scrollViewWillBeginDecelerating")
+    print("scrollViewWillBeginDecelerating")
   }
 
   func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-    println("scrollViewDidEndDecelerating")
+    print("scrollViewDidEndDecelerating")
   }
   
   func scrollViewDidScroll(scrollView: UIScrollView) {
-    println("scrollViewDidScroll")
+    print("scrollViewDidScroll")
   }
   
   func scrollViewDidScrollToTop(scrollView: UIScrollView) {
-    println("scrollViewDidScrollToTop")
+    print("scrollViewDidScrollToTop")
   }
   
   

@@ -159,6 +159,8 @@
 		2CEEA5D31ABE95C900B15DF3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = wannabewize;
 				TargetAttributes = {
@@ -409,6 +411,7 @@
 				2CEEA5FC1ABE95C900B15DF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CEEA5FD1ABE95C900B15DF3 /* Build configuration list for PBXNativeTarget "ScrollViewAndSubVCPagingTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +420,7 @@
 				2CEEA5FF1ABE95C900B15DF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,7 +11,7 @@ import UIKit
 class ContentViewController: UIViewController {
   
   override func viewWillAppear(animated: Bool) {
-    println("viewWillAppear")
+    print("viewWillAppear")
   }
 
     override func viewDidLoad() {

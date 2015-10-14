@@ -55,7 +55,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
     let pageIndex = Int( floor(scrollView.contentOffset.x / scrollView.frame.size.width) )
     pageControl.currentPage = pageIndex
-    println("pageIndex : \(pageIndex)")
+    print("pageIndex : \(pageIndex)")
     
     // 전-후까지 3 페이지 준비
     loadContentPage(pageIndex-1)
@@ -65,7 +65,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   
   func loadContentPage(pageIndex : Int) {
     if pageIndex < pageCount && pageIndex > lastLoadingPage {
-      println("loading : \(pageIndex)")
+      print("loading : \(pageIndex)")
       // 해당 페이지의 이미지 얻기
       let fileName = "image\(pageIndex).jpg"
       let image = UIImage(named:fileName)

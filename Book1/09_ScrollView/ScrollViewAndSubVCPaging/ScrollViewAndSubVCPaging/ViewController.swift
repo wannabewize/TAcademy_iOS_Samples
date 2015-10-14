@@ -23,21 +23,21 @@ class ViewController: UIViewController {
     
 //    containerView.setNeedsLayout()
 //    scrollView.contentSize = containerView.frame.size
-    println("== viewDidLayoutSubviews ==")
-    println("scrollView size : \(scrollView.frame.size)")
+    print("== viewDidLayoutSubviews ==")
+    print("scrollView size : \(scrollView.frame.size)")
 //    containerView.setNeedsLayout()
 //    println("containerView : \(containerView.frame.size)")
     
-    let vc1 = storyboard?.instantiateViewControllerWithIdentifier("ContentVC") as! UIViewController
+    let vc1 = storyboard!.instantiateViewControllerWithIdentifier("ContentVC")
     vc1.title = "VC1"
     vc1.view.backgroundColor = UIColor.redColor()
-    let vc2 = storyboard?.instantiateViewControllerWithIdentifier("ContentVC")as! UIViewController
+    let vc2 = storyboard!.instantiateViewControllerWithIdentifier("ContentVC")
     vc2.title = "VC2"
     vc2.view.backgroundColor = UIColor.greenColor()
-    let vc3 = storyboard?.instantiateViewControllerWithIdentifier("ContentVC")as! UIViewController
+    let vc3 = storyboard!.instantiateViewControllerWithIdentifier("ContentVC")
     vc3.title = "VC3"
     vc3.view.backgroundColor = UIColor.blueColor()
-    let vc4 = storyboard?.instantiateViewControllerWithIdentifier("ContentVC")as! UIViewController
+    let vc4 = storyboard!.instantiateViewControllerWithIdentifier("ContentVC")
     vc4.title = "VC4"
     vc4.view.backgroundColor = UIColor.grayColor()
     
@@ -54,9 +54,9 @@ class ViewController: UIViewController {
   }
   
   override func viewDidAppear(animated: Bool) {
-    println("== viewDidAppear ==")
+    print("== viewDidAppear ==")
 //    println("containerView : \(containerView.frame.size)")
-    println("scrollView' contentSize : \(scrollView.contentSize)")
+    print("scrollView' contentSize : \(scrollView.contentSize)")
   }
 
   override func didReceiveMemoryWarning() {

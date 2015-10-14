@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     if let rectObj = noti.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue {
       // 키보드 크기
       let keyboardRect = rectObj.CGRectValue()
-      println("keyboard : \(keyboardRect)")
+      print("keyboard : \(keyboardRect)")
       
       // 스크롤 뷰의 콘텐츠 표시 영역을 키보드의 높이만큼 제하기
       let inset = UIEdgeInsetsMake(0, 0, keyboardRect.height, 0)
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
         // 키보드에 텍스트필드가 가리는지 체크
         if CGRectContainsPoint(keyboardRect, textFieldPoint) {
-          println("키보드에 가림")
+          print("키보드에 가림")
           // 텍스트 필드를 키보드 밖으로 보이도록 스크롤 할 거리
           let dy = textFieldPoint.y - keyboardRect.origin.y + textField.frame.size.height
 
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
           scrollView.setContentOffset(newContentOffset, animated: true)
         }
         else {
-          println("키보드에 가리지 않음")
+          print("키보드에 가리지 않음")
         }
       }
     }
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
   func findFirstResponder() -> UIResponder? {
     for v in scrollView.subviews {
       if v.isFirstResponder() {
-        return (v as! UIResponder)
+        return (v as UIResponder)
       }
     }
     // 없으면 nil 반환
