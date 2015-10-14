@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification
       , object: nil)
     NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardWillChangeFrameNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (noti) -> Void in
-      println("UIKeyboardWillChangeFrameNotification")
-      println(noti.userInfo)
+      print("UIKeyboardWillChangeFrameNotification")
+      print(noti.userInfo)
     }
   }
   
@@ -28,25 +28,25 @@ class ViewController: UIViewController {
   
   // 키보드 알림 처리
   func keyboardWillShow(noti : NSNotification) {
-    println("키보드가 나타났다.")
+    print("키보드가 나타났다.")
     
     if let rectObj = noti.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue {
       let keyboardRect = rectObj.CGRectValue()
       
-      println("userinfo : \(noti.userInfo)")
-      println("keyboard Rect : \(keyboardRect)")
+      print("userinfo : \(noti.userInfo)")
+      print("keyboard Rect : \(keyboardRect)")
       
       // 최초 응답 객체 찾기
       let textField = findFirstResponder() as! UITextField
-      println("TextField rect : \(textField.frame)")
+      print("TextField rect : \(textField.frame)")
       // 키보드에 가리는지 체크
       if CGRectContainsPoint(keyboardRect, textField.frame.origin) {
-        println("키보드에 가림")
+        print("키보드에 가림")
         let dy = keyboardRect.origin.y - textField.frame.origin.y - textField.frame.size.height - 10
         self.view.transform = CGAffineTransformMakeTranslation(0, dy)
       }
       else {
-        println("키보드에 가리지 않음")
+        print("키보드에 가리지 않음")
       }
     }
   }
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
   func findFirstResponder() -> UIResponder? {
     for v in self.view.subviews {
       if v.isFirstResponder() {
-        return (v as! UIResponder)
+        return (v as UIResponder)
       }
     }
     return nil
