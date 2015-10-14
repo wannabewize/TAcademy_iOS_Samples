@@ -12,6 +12,7 @@
 		2C325DFF19A74355007757D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C325DFD19A74355007757D8 /* Main.storyboard */; };
 		2C325E0119A74355007757D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C325E0019A74355007757D8 /* Images.xcassets */; };
 		2C325E0D19A74355007757D8 /* NumberUpAndDownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C325E0C19A74355007757D8 /* NumberUpAndDownTests.swift */; };
+		2C8C5D141BCE974100921191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C5D131BCE974100921191 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		2C325E0619A74355007757D8 /* NumberUpAndDownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumberUpAndDownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C325E0B19A74355007757D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C325E0C19A74355007757D8 /* NumberUpAndDownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberUpAndDownTests.swift; sourceTree = "<group>"; };
+		2C8C5D131BCE974100921191 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				2C325DF919A74355007757D8 /* AppDelegate.swift */,
 				2C325DFB19A74355007757D8 /* ViewController.swift */,
 				2C325DFD19A74355007757D8 /* Main.storyboard */,
+				2C8C5D131BCE974100921191 /* LaunchScreen.storyboard */,
 				2C325E0019A74355007757D8 /* Images.xcassets */,
 				2C325DF719A74355007757D8 /* Supporting Files */,
 			);
@@ -190,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8C5D141BCE974100921191 /* LaunchScreen.storyboard in Resources */,
 				2C325DFF19A74355007757D8 /* Main.storyboard in Resources */,
 				2C325E0119A74355007757D8 /* Images.xcassets in Resources */,
 			);
@@ -326,7 +330,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = NumberUpAndDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
@@ -338,7 +341,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = NumberUpAndDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
