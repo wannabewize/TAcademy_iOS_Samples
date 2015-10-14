@@ -27,11 +27,11 @@ class ViewController: UIViewController {
     let control = sender as! UISegmentedControl
     switch control.selectedSegmentIndex {
     case 0:
-      println("소나기")
+      print("소나기")
     case 1:
-      println("천둥,번개")
+      print("천둥,번개")
     default:
-      println("맑음")
+      print("맑음")
     }
   }
 }
