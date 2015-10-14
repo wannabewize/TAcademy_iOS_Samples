@@ -16,14 +16,14 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     // AnyObject를 반환
-    let infoButton = UIButton.buttonWithType(UIButtonType.InfoLight) as! UIButton
+    let infoButton = UIButton(type: UIButtonType.InfoLight)
     // 버튼의 크기는 미리 정해져있다.
     infoButton.center = CGPointMake(50, 150)
     self.view.addSubview(infoButton)
     
     // 커스텀 버튼
     textButton = UIButton(frame: CGRectMake(50, 50, 100, 50))
-    println("button type : \(textButton.buttonType.rawValue)")
+    print("button type : \(textButton.buttonType.rawValue)")
     // 보통 상태의 글자와 글자색
     textButton.setTitle("글자 버튼", forState: UIControlState.Normal)
     textButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     self.view.addSubview(textButton)
     
     // 버튼 타입 지정하며 생성
-    imageButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+    imageButton = UIButton(type: UIButtonType.Custom)
     imageButton.frame = CGRectMake(50, 200, 100, 50)
     
     // 보통 상태의 이미지
