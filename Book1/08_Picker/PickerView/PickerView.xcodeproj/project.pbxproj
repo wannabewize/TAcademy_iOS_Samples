@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0191001BCEA8BA00473F8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0190FF1BCEA8BA00473F8D /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		2CB8EB6719A33B5C0005FCBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8EB6619A33B5C0005FCBB /* AppDelegate.swift */; };
 		2CB8EB6919A33B5C0005FCBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8EB6819A33B5C0005FCBB /* ViewController.swift */; };
 		2CB8EB6C19A33B5C0005FCBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8EB6A19A33B5C0005FCBB /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C0190FF1BCEA8BA00473F8D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		2CB8EB6119A33B5C0005FCBB /* PickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB8EB6519A33B5C0005FCBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB8EB6619A33B5C0005FCBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				2CB8EB6619A33B5C0005FCBB /* AppDelegate.swift */,
 				2CB8EB6819A33B5C0005FCBB /* ViewController.swift */,
 				2CB8EB6A19A33B5C0005FCBB /* Main.storyboard */,
+				2C0190FF1BCEA8BA00473F8D /* LaunchScreen.xib */,
 				2CB8EB6D19A33B5C0005FCBB /* Images.xcassets */,
 				2CB8EB6419A33B5C0005FCBB /* Supporting Files */,
 			);
@@ -153,7 +156,8 @@
 		2CB8EB5919A33B5C0005FCBB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = VanillaStep;
 				TargetAttributes = {
 					2CB8EB6019A33B5C0005FCBB = {
@@ -190,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB8EB6C19A33B5C0005FCBB /* Main.storyboard in Resources */,
+				2C0191001BCEA8BA00473F8D /* LaunchScreen.xib in Resources */,
 				2CB8EB6E19A33B5C0005FCBB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +268,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -324,9 +330,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PickerView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -335,9 +341,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PickerView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -356,6 +362,7 @@
 				);
 				INFOPLIST_FILE = PickerViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickerView.app/PickerView";
 			};
@@ -371,6 +378,7 @@
 				);
 				INFOPLIST_FILE = PickerViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickerView.app/PickerView";
 			};
@@ -395,6 +403,7 @@
 				2CB8EB7F19A33B5C0005FCBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CB8EB8019A33B5C0005FCBB /* Build configuration list for PBXNativeTarget "PickerViewTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +412,7 @@
 				2CB8EB8219A33B5C0005FCBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

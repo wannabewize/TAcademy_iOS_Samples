@@ -30,7 +30,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
   }
   
   func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    println("Select : " + data[row])
+    print("Select : " + data[row])
   }
 
   override func didReceiveMemoryWarning() {
