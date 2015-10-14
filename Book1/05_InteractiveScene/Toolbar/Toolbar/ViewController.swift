@@ -37,16 +37,16 @@ class ViewController: UIViewController {
   }
   
   func handleImageButton(sender : AnyObject) {
-    println("이미지 버튼 누름")
+    print("이미지 버튼 누름")
   }
   
   func handleTextButton(sender : AnyObject) {
-    println("글자 버튼 누름")
+    print("글자 버튼 누름")
   }
   
   // 셀렉터는 파라미터의 타입과 상관없다.
   func handleDone(sender : UIBarButtonItem) {
-    println("완료 버튼 누름")
+    print("완료 버튼 누름")
   }
 }
 
