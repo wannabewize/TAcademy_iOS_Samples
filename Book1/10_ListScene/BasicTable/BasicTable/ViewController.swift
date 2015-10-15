@@ -16,10 +16,11 @@ class ViewController: UIViewController, UITableViewDataSource {
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID")!
-   // tableView.dequeueReusableCellWithIdentifier("CELL_ID", forIndexPath: indexPath)
+    // 반환값이 옵셔널이 아니다.
+    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID", forIndexPath: indexPath)
+    // 옵셔널 반환이므로 강제 언래핑
+//    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID")!
    
-
    let itemName = data[indexPath.row]
     cell.textLabel?.text = itemName
     let image = UIImage(named: "\(itemName).png")
