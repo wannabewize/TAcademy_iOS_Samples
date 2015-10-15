@@ -15,9 +15,11 @@ class ViewController: UIViewController {
   var holdingImage : Bool = false
   
   // 터치 시작
-  override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-    let touch = touches.first as! UITouch
+  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    let touch = touches.first!
     let point = touch.locationInView(touch.view)
+    
+    print("touch at \(point)");
     
     if CGRectContainsPoint(imageView.frame, point) {
       holdingImage = true
@@ -28,9 +30,9 @@ class ViewController: UIViewController {
   }
   
   // 터치 이동
-  override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+  override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
     if holdingImage {
-      let touch = touches.first as! UITouch
+      let touch = touches.first!
       let point = touch.locationInView(touch.view)
       
       imageView.center = point
@@ -38,7 +40,7 @@ class ViewController: UIViewController {
   }
   
   // 터치 끝
-  override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+  override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
   }
 }
 

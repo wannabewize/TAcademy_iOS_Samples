@@ -38,11 +38,11 @@ class ViewController: UIViewController {
   
   func handleTap(gesture : UITapGestureRecognizer) {
     let point = gesture.locationInView(gesture.view)
-    println("탭 좌표 : \(point)")
+    print("탭 좌표 : \(point)")
   }
   
   func handleRotate(gesture : UIRotationGestureRecognizer) {
-    println("회전")
+    print("회전")
     let rotation = gesture.rotation
     let transform = CGAffineTransformRotate(imageView.transform, rotation)
     imageView.layer.setAffineTransform(transform)
