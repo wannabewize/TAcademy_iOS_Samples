@@ -9,14 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
-   var nations : [NSDictionary]!
-
+  
+  var nations : [NSDictionary]!
+  
   // Selection : label.highlightedTextColor
   func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     print("Select Item : " + (nations[indexPath.row]["NAME"] as! String));
   }
-
+  
   
   func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return nations.count
@@ -42,19 +42,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     super.viewDidLoad()
     
     nations = [
-        [ "NAME":"Korea", "IMAGE":"Korea.png" ],
-        [ "NAME":"Japan", "IMAGE":"Japan.png" ],
-        [ "NAME":"Philippines", "IMAGE":"Philippines.png" ],
-        [ "NAME":"Thailand", "IMAGE":"Thailand.png" ],
-        [ "NAME":"Vietnam", "IMAGE":"Vietnam.png" ],
-        [ "NAME":"Denmark", "IMAGE":"Denmark.png" ],
-        [ "NAME":"Germany", "IMAGE":"Germany.png" ],
-        [ "NAME":"Greece", "IMAGE":"Greece.png" ],
-        [ "NAME":"Italy", "IMAGE":"Italy.png" ],
-        [ "NAME":"Norway", "IMAGE":"Norway.png" ],
-        [ "NAME":"Spain", "IMAGE":"Spain.png" ],
-        [ "NAME":"Turkey", "IMAGE":"Turkey.png" ],
-        [ "NAME":"United Kingdom", "IMAGE":"United_Kingdom.png" ]
+      [ "NAME":"Korea", "IMAGE":"Korea.png" ],
+      [ "NAME":"Japan", "IMAGE":"Japan.png" ],
+      [ "NAME":"Philippines", "IMAGE":"Philippines.png" ],
+      [ "NAME":"Thailand", "IMAGE":"Thailand.png" ],
+      [ "NAME":"Vietnam", "IMAGE":"Vietnam.png" ],
+      [ "NAME":"Denmark", "IMAGE":"Denmark.png" ],
+      [ "NAME":"Germany", "IMAGE":"Germany.png" ],
+      [ "NAME":"Greece", "IMAGE":"Greece.png" ],
+      [ "NAME":"Italy", "IMAGE":"Italy.png" ],
+      [ "NAME":"Norway", "IMAGE":"Norway.png" ],
+      [ "NAME":"Spain", "IMAGE":"Spain.png" ],
+      [ "NAME":"Turkey", "IMAGE":"Turkey.png" ],
+      [ "NAME":"United Kingdom", "IMAGE":"United_Kingdom.png" ]
     ];
   }
 }
