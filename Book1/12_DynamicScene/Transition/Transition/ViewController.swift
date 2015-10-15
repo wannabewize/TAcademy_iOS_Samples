@@ -15,22 +15,35 @@ class ViewController: UIViewController {
   @IBOutlet weak var currentView: UIView!
   
   @IBAction func startTransition(sender: AnyObject) {
+    // 새로 전환할 뷰 생성
     let newView = UIView()
     newView.frame = currentView.frame
-    newView.backgroundColor = UIColor.blueColor()
     
+    let r = randomColorCode()
+    let g = randomColorCode()
+    let b = randomColorCode()
+    
+    newView.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1.0)
+    
+    // 뷰 전환
     UIView.transitionWithView(containerView, duration: 1.0, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
       
         self.currentView.removeFromSuperview()
         self.containerView.addSubview(newView)
+        self.currentView = newView
       
       }) { (finished : Bool) -> Void in
+
         print("Transition Done");
     }
     
 //    UIView.transitionFromView(currentView, toView: newView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft) { (finished) -> Void in
 //      println("transition done")
 //    }
+  }
+  
+  func randomColorCode() -> CGFloat {
+    return CGFloat(arc4random_uniform(255)) / 255
   }
   
   override func viewDidLoad() {
