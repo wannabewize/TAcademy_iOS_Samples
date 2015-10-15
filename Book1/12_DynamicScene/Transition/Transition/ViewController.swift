@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         self.containerView.addSubview(newView)
       
       }) { (finished : Bool) -> Void in
-        println("Transition Done");
+        print("Transition Done");
     }
     
 //    UIView.transitionFromView(currentView, toView: newView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft) { (finished) -> Void in
