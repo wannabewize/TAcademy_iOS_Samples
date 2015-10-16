@@ -43,8 +43,7 @@ class ViewController: UIViewController {
     }
     dialog.addAction(cancelAction)
     
-    
-    dialog.addTextFieldWithConfigurationHandler { (textField : UITextField!) -> Void in
+    dialog.addTextFieldWithConfigurationHandler { (textField : UITextField) -> Void in
       //textField.keyboardType = UIKeyboardType.NumberPad
 //      textField.secureTextEntry = true
     }
