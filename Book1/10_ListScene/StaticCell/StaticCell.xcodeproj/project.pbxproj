@@ -14,7 +14,7 @@
 		2C1188EA1ABA102B006E49F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1188E81ABA102B006E49F8 /* LaunchScreen.xib */; };
 		2C1188F61ABA102B006E49F8 /* StaticCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1188F51ABA102B006E49F8 /* StaticCellTests.swift */; };
 		2C1189001ABA1048006E49F8 /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1188FF1ABA1048006E49F8 /* StaticTableViewController.swift */; };
-		2C1189021ABA10AD006E49F8 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1189011ABA10AD006E49F8 /* CustomTableViewController.swift */; };
+		2C7B424D1BD3BBDA00028607 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7B424C1BD3BBDA00028607 /* CustomTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		2C1188F41ABA102B006E49F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1188F51ABA102B006E49F8 /* StaticCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCellTests.swift; sourceTree = "<group>"; };
 		2C1188FF1ABA1048006E49F8 /* StaticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticTableViewController.swift; sourceTree = "<group>"; };
-		2C1189011ABA10AD006E49F8 /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		2C7B424C1BD3BBDA00028607 /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 				2C1188E81ABA102B006E49F8 /* LaunchScreen.xib */,
 				2C1188DD1ABA102B006E49F8 /* Supporting Files */,
 				2C1188FF1ABA1048006E49F8 /* StaticTableViewController.swift */,
-				2C1189011ABA10AD006E49F8 /* CustomTableViewController.swift */,
+				2C7B424C1BD3BBDA00028607 /* CustomTableViewController.swift */,
 			);
 			path = StaticCell;
 			sourceTree = "<group>";
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C1189021ABA10AD006E49F8 /* CustomTableViewController.swift in Sources */,
+				2C7B424D1BD3BBDA00028607 /* CustomTableViewController.swift in Sources */,
 				2C1188E21ABA102B006E49F8 /* ViewController.swift in Sources */,
 				2C1189001ABA1048006E49F8 /* StaticTableViewController.swift in Sources */,
 				2C1188E01ABA102B006E49F8 /* AppDelegate.swift in Sources */,
