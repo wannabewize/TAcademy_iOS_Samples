@@ -140,10 +140,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnO-4F-9xZ">
-                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                    <state key="normal" title="Custom Style Cell"/>
-                                                </button>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vwx-aU-Goy">
                                                     <rect key="frame" x="-60" y="-14" width="121" height="29"/>
                                                     <segments>
@@ -151,33 +147,39 @@
                                                         <segment title="Second"/>
                                                     </segments>
                                                 </segmentedControl>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Style Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofo-r1-QvL">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xnO-4F-9xZ" firstAttribute="leading" secondItem="s7i-yl-DSQ" secondAttribute="leadingMargin" constant="7" id="O40-er-5ds"/>
-                                                <constraint firstItem="xnO-4F-9xZ" firstAttribute="centerY" secondItem="s7i-yl-DSQ" secondAttribute="centerY" id="dlw-ay-Dce"/>
+                                                <constraint firstItem="Ofo-r1-QvL" firstAttribute="centerY" secondItem="s7i-yl-DSQ" secondAttribute="centerY" id="8Sh-c4-dy2"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Vwx-aU-Goy" secondAttribute="trailing" constant="6" id="kJZ-ZX-NMC"/>
+                                                <constraint firstItem="Ofo-r1-QvL" firstAttribute="leading" secondItem="s7i-yl-DSQ" secondAttribute="leadingMargin" constant="6" id="ryi-OS-hXC"/>
                                                 <constraint firstItem="Vwx-aU-Goy" firstAttribute="centerY" secondItem="s7i-yl-DSQ" secondAttribute="centerY" id="vYT-WH-pU5"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="xnO-4F-9xZ"/>
                                                     <exclude reference="Vwx-aU-Goy"/>
+                                                    <exclude reference="Ofo-r1-QvL"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="O40-er-5ds"/>
-                                                    <exclude reference="dlw-ay-Dce"/>
+                                                    <exclude reference="8Sh-c4-dy2"/>
+                                                    <exclude reference="ryi-OS-hXC"/>
                                                     <exclude reference="kJZ-ZX-NMC"/>
                                                     <exclude reference="vYT-WH-pU5"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
-                                                    <include reference="xnO-4F-9xZ"/>
                                                     <include reference="Vwx-aU-Goy"/>
+                                                    <include reference="Ofo-r1-QvL"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="O40-er-5ds"/>
-                                                    <include reference="dlw-ay-Dce"/>
+                                                    <include reference="8Sh-c4-dy2"/>
+                                                    <include reference="ryi-OS-hXC"/>
                                                     <include reference="kJZ-ZX-NMC"/>
                                                     <include reference="vYT-WH-pU5"/>
                                                 </mask>
@@ -193,6 +195,9 @@
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yCt-PG-w9g">
                                                     <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                                    <connections>
+                                                        <action selector="cellSlider:" destination="Hp6-PA-UDW" eventType="valueChanged" id="Gnm-oe-6cR"/>
+                                                    </connections>
                                                 </slider>
                                             </subviews>
                                             <constraints>
@@ -230,6 +235,9 @@
                             <outlet property="delegate" destination="Hp6-PA-UDW" id="rcA-Ct-n0T"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="cellLabel" destination="Ofo-r1-QvL" id="BTh-yf-10r"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QcR-Gw-LU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
