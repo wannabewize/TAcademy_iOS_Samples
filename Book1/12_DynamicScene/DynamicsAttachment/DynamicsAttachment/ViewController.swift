@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     block1 = UIView(frame: CGRectMake(20, 20, 100, 100))
     block1.backgroundColor = UIColor.redColor()
     self.view.addSubview(block1)
-    
+   
     block2 = UIView(frame: CGRectMake(100, 100, 100, 100))
     block2.backgroundColor = UIColor.blueColor()
     self.view.addSubview(block2)
