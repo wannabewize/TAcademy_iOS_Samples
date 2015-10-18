@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
   @IBOutlet weak var tableView: UITableView!
   
-  var data : [String]!
+  var data = ["1","2","3","4","5"]
   
   @IBAction func editList(sender: AnyObject) {
     tableView.editing = !tableView.editing
@@ -45,15 +45,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID")!
+    let cell = tableView.dequeueReusableCellWithIdentifier("CELL_ID", forIndexPath: indexPath)
     cell.textLabel?.text = data[indexPath.row]
     return cell
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    data = ["1","2","3","4","5"]
   }
 }
 

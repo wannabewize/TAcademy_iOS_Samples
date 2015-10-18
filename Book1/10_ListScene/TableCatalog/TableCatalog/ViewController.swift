@@ -25,8 +25,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("PRODUCT_CELL") as! ProductCell
-    
+   let cell : ProductCell = tableView.dequeueReusableCellWithIdentifier("PRODUCT_CELL", forIndexPath: indexPath) as! ProductCell
+//   cell = tableView.dequeueReusableCellWithIdentifier("PRODUCT_CELL") as! ProductCell
+   
     let product = productList[indexPath.row]
     cell.productName.text = product.name
     cell.productPrice.text = product.price
