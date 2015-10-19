@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1017" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,39 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scene A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4q-XL-61P">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="155" y="167" width="91.5" height="30"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5o-uw-oGA">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Show Scene B">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="150" y="236" width="101" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="changeScene:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wHp-pb-KtD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scene A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4q-XL-61P">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d5o-uw-oGA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="200" id="7jg-n0-XBG"/>
+                            <constraint firstItem="d5o-uw-oGA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="NjW-zy-A9p"/>
+                            <constraint firstItem="l4q-XL-61P" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="PoO-d2-fgq"/>
+                            <constraint firstItem="l4q-XL-61P" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="sRu-WQ-eZX"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="l4q-XL-61P"/>
                                 <exclude reference="d5o-uw-oGA"/>
+                                <exclude reference="l4q-XL-61P"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="PoO-d2-fgq"/>
+                                <exclude reference="sRu-WQ-eZX"/>
+                                <exclude reference="7jg-n0-XBG"/>
+                                <exclude reference="NjW-zy-A9p"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="l4q-XL-61P"/>
                                 <include reference="d5o-uw-oGA"/>
+                                <include reference="l4q-XL-61P"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="PoO-d2-fgq"/>
+                                <include reference="sRu-WQ-eZX"/>
+                                <include reference="7jg-n0-XBG"/>
+                                <include reference="NjW-zy-A9p"/>
                             </mask>
                         </variation>
                     </view>
@@ -74,20 +87,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="155" y="167" width="93" height="30"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qsb-PU-ULD" firstAttribute="top" secondItem="tTg-Hp-X3R" secondAttribute="bottom" constant="100" id="s0S-rI-M76"/>
+                            <constraint firstItem="Qsb-PU-ULD" firstAttribute="centerX" secondItem="iPf-9F-YRz" secondAttribute="centerX" id="yGr-4b-vH1"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Qsb-PU-ULD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="s0S-rI-M76"/>
+                                <exclude reference="yGr-4b-vH1"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Qsb-PU-ULD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="s0S-rI-M76"/>
+                                <include reference="yGr-4b-vH1"/>
                             </mask>
                         </variation>
                     </view>

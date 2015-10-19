@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
   
   @IBAction func changeScene(sender : AnyObject) {
-    let vc = self.storyboard?.instantiateViewControllerWithIdentifier("SCENE_B") as AnotherViewController
-    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    let vc = self.storyboard?.instantiateViewControllerWithIdentifier("SCENE_B") as! AnotherViewController
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     let window = appDelegate.window!
     window.rootViewController = vc
   }
