@@ -12,17 +12,14 @@ let ModelChangeNotification = "ModelChangeNotification"
 
 class TodoManager {
   // 싱글턴 계산 프로퍼티
-  class var sharedManager : TodoManager {
-    struct Instance {
-      static var instance : TodoManager!
+  static private var instance : TodoManager!
+  static var sharedManager : TodoManager {
+    if nil == instance {
+      instance = TodoManager()
     }
-    
-    if Instance.instance == nil {
-      Instance.instance = TodoManager()
-    }
-    
-    return Instance.instance
+    return instance
   }
+  
   
   init() {
   }

@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   // 새 할일 추가 버튼의 액션 메소드
   @IBAction func addNewTodo(sender: AnyObject) {
     // 모델에 할일 추가
-    let todo = textField.text
+    let todo = textField.text!
     manager.addTodo(todo)
     
     // 키보드
@@ -51,7 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   }
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    println("number of todo \(manager.count)")
+    print("number of todo \(manager.count)")
     return manager.count
   }
   
