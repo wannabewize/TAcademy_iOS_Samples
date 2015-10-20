@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("URL_CELL", forIndexPath: indexPath) as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("URL_CELL", forIndexPath: indexPath)
     
     cell.textLabel?.text = data[indexPath.row]
 
@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let indexPath = tableView.indexPathForCell(cell)!
     let selected  = data[indexPath.row]
     
-    println("사용자가 선택한 데이터 : \(selected)")
+    print("사용자가 선택한 데이터 : \(selected)")
     
     let detailVC = segue.destinationViewController as! DetailViewController
     detailVC.urlStr = selected    

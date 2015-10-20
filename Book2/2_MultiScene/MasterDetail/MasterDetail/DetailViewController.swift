@@ -20,7 +20,7 @@ class DetailViewController: UIViewController {
       self.webView.loadRequest(request)
     }
     else {
-      println("URL 에러")
+      print("URL 에러")
     }
   }
 }

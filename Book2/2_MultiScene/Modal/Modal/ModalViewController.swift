@@ -32,8 +32,8 @@ class ModalViewController: UIViewController {
     delegate.completeWithModalAction(data)
     self.dismissViewControllerAnimated(true, completion: nil)
     
-    println("presentedVC : \(self.presentedViewController)")
-    println("presentingVC : \(self.presentingViewController)")
+    print("presentedVC : \(self.presentedViewController)")
+    print("presentingVC : \(self.presentingViewController)")
   }
   
   // 키보드 감추기 - Did End On Exit 이벤트 연결

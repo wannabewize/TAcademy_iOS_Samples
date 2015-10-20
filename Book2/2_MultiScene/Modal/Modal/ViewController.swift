@@ -12,7 +12,7 @@ class ViewController: UIViewController, ModalActionDelegate {
   
   // 모달 동작의 델리게이트 메소드 구현
   func completeWithModalAction(data: String!) {
-    println("모달 동작 완료 : \(data)")
+    print("모달 동작 완료 : \(data)")
     self.textField.text = data
   }
 
@@ -31,7 +31,7 @@ class ViewController: UIViewController, ModalActionDelegate {
       vc.data = textField.text
     }
     else {
-      println("Other Segue")
+      print("Other Segue")
     }
   }
 
