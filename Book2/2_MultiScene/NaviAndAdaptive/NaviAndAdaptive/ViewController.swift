@@ -21,14 +21,14 @@ class ViewController: UIViewController {
   }
 
   @IBAction func showSecond(sender: AnyObject) {
-    let vc = self.storyboard?.instantiateViewControllerWithIdentifier("SecondVC") as! UIViewController
+    let vc = self.storyboard!.instantiateViewControllerWithIdentifier("SecondVC")
     self.showViewController(vc, sender: sender)
     self.tabBarController
     
   }
 
   @IBAction func pushSecond(sender: AnyObject) {
-    let vc = self.storyboard?.instantiateViewControllerWithIdentifier("SecondVC") as! UIViewController
+    let vc = self.storyboard!.instantiateViewControllerWithIdentifier("SecondVC")
     self.navigationController?.pushViewController(vc, animated: true)
     
   }
