@@ -16,8 +16,9 @@ class ViewController: UIViewController {
 
   @IBAction func showSecond2(sender: AnyObject) {
     let vc = self.storyboard!.instantiateViewControllerWithIdentifier("SECOND_VC")
-    self.navigationController?.pushViewController(vc, animated: true)
+    self.navigationController!.pushViewController(vc, animated: true)
     
+    // Adaptive
 //    self.showViewController(vc, sender: sender)
   }
 }

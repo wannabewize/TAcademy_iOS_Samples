@@ -27,18 +27,16 @@ class ViewController: UIViewController {
   }
   
   override func viewDidLoad() {
-    let tabBar = self.tabBarController?.tabBar
+    let tabBar = self.tabBarController!.tabBar
     
-    tabBar!.tintColor = UIColor.redColor()
-    tabBar?.barTintColor = UIColor.orangeColor()
-//    tabBar?.selectedImageTintColor = UIColor.blackColor() // deprecated
-    tabBar?.tintColor = UIColor.blackColor()
+    // 탭바 속성 변경하기
+    tabBar.tintColor = UIColor.redColor()
+    tabBar.barTintColor = UIColor.orangeColor()
+    tabBar.tintColor = UIColor.blackColor()
     
+    // 씬의 탭바 아이템 속성 설정
     self.tabBarItem.title = "제목"
     self.tabBarItem.badgeValue = "배지"
-    
-
-    
   }
 }
 
