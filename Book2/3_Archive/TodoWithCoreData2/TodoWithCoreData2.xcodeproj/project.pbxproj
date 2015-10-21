@@ -172,6 +172,7 @@
 		2C094DEC1AC294E1007A27DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = VanillaStep;
 				TargetAttributes = {
@@ -418,6 +419,7 @@
 				2C094E181AC294E2007A27DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C094E191AC294E2007A27DD /* Build configuration list for PBXNativeTarget "TodoWithCoreData2Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +428,7 @@
 				2C094E1B1AC294E2007A27DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
