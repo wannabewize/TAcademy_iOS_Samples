@@ -16,17 +16,14 @@ struct Todo {
 
 class TodoManager {
   // 싱글턴 메소드
-  class var sharedManager : TodoManager {
-    struct Instance {
-      static var instance : TodoManager!
+  static private var instance : TodoManager!
+  static var sharedManager : TodoManager {
+    if nil == instance {
+      instance = TodoManager()
     }
-    
-    if Instance.instance == nil {
-      Instance.instance = TodoManager()
-    }
-    
-    return Instance.instance
+    return instance
   }
+  
   
   init() {
     formatter = NSDateFormatter()
@@ -65,55 +62,55 @@ class TodoManager {
   
   // 할일 삭제
   func removeTodo(rowId : Int) {
-    let sql = String(format: "DELETE FROM todo WHERE rowid=%d", rowId)
-    var error : UnsafeMutablePointer<Int8> = nil
-    let ret = sqlite3_exec(db, sql, nil, nil, &error)
-    assert(SQLITE_OK == ret, "삭제 실패")
-    
-    resolveAllTodo()
+      let sql = String(format: "DELETE FROM todo WHERE rowid=%d", rowId)
+      var error : UnsafeMutablePointer<Int8> = nil
+      let ret = sqlite3_exec(db, sql, nil, nil, &error)
+      assert(SQLITE_OK == ret, "삭제 실패")
+      
+      resolveAllTodo()
   }
   
   // 모든 할일 객체 얻어오기
   func resolveAllTodo() {
-    
-    todoList.removeAll(keepCapacity: false)
-    
-    let sql = "SELECT rowid, title, duedate FROM todo ORDER BY duedate"
-    var stmt : COpaquePointer = nil
-    
-    let ret = sqlite3_prepare_v2(db, sql, -1, &stmt, nil)
-
-    assert(SQLITE_OK == ret, "Stmt preparing 실패")
-    
-    while SQLITE_ROW == sqlite3_step(stmt) {
-      let rowId = Int(sqlite3_column_int(stmt, 0))
-      let buf = UnsafePointer<CChar>(sqlite3_column_text(stmt, 1))
-      let title = String.fromCString(buf)!
-      
-      let buf2 = UnsafePointer<Int8>(sqlite3_column_text(stmt, 2))
-
-      let dateStr = String.fromCString(buf2)!
-      let dueDate = formatter.dateFromString(dateStr)
-      
-      let todo = Todo(rowId: rowId, title: title, dueDate: dueDate)
-      todoList.append(todo)
-    }
+        
+        todoList.removeAll(keepCapacity: false)
+        
+        let sql = "SELECT rowid, title, duedate FROM todo ORDER BY duedate"
+        var stmt : COpaquePointer = nil
+        
+        let ret = sqlite3_prepare_v2(db, sql, -1, &stmt, nil)
+        
+        assert(SQLITE_OK == ret, "Stmt preparing 실패")
+        
+        while SQLITE_ROW == sqlite3_step(stmt) {
+          let rowId = Int(sqlite3_column_int(stmt, 0))
+          let buf = UnsafePointer<CChar>(sqlite3_column_text(stmt, 1))
+          let title = String.fromCString(buf)!
+          
+          let buf2 = UnsafePointer<Int8>(sqlite3_column_text(stmt, 2))
+          
+          let dateStr = String.fromCString(buf2)!
+          let dueDate = formatter.dateFromString(dateStr)
+          
+          let todo = Todo(rowId: rowId, title: title, dueDate: dueDate)
+          todoList.append(todo)
+        }
   }
   
   func openDB() {
-    let docPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as! String
-    let filePath = docPath.stringByAppendingPathComponent("database.sqlite")
-    
-    // SQLiteManager에서 열기 쉽도록
-    println("docPath : \(docPath)")
-    
-    let retOpen = sqlite3_open(filePath, &db)
-    assert(SQLITE_OK == retOpen, "데이터베이스 오픈 실패")
-    
-    let sql = "CREATE TABLE IF NOT EXISTS TODO ( TITLE text, DUEDATE date )"
-    var error : UnsafeMutablePointer<Int8> = nil
-    let ret = sqlite3_exec(db, sql, nil, nil, &error)
-    
-    assert(SQLITE_OK == ret, "테이블 생성 실패")
+            let docPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as NSString
+            let filePath = docPath.stringByAppendingPathComponent("database.sqlite")
+            
+            // SQLiteManager에서 열기 쉽도록
+            print("docPath : \(docPath)")
+            
+            let retOpen = sqlite3_open(filePath, &db)
+            assert(SQLITE_OK == retOpen, "데이터베이스 오픈 실패")
+            
+            let sql = "CREATE TABLE IF NOT EXISTS TODO ( TITLE text, DUEDATE date )"
+            var error : UnsafeMutablePointer<Int8> = nil
+            let ret = sqlite3_exec(db, sql, nil, nil, &error)
+            
+            assert(SQLITE_OK == ret, "테이블 생성 실패")
   }
 }

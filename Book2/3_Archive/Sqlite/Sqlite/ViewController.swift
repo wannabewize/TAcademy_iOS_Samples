@@ -13,18 +13,18 @@ class ViewController: UIViewController {
   var db : COpaquePointer = nil
   
   func openDB() {
-    let docPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as! String
+    let docPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as NSString
     let filePath = docPath.stringByAppendingPathComponent("database.sqlite")
-    println("docPath : \(docPath)")
+    print("docPath : \(docPath)")
     let ret = sqlite3_open(filePath, &db)
     if SQLITE_OK == ret {
       // 데이터베이스 오픈 성공
-      println("오픈 성공")
+      print("오픈 성공")
     }
     else {
       // 데이터베이스 오픈 실패
       let errorMsg = String.fromCString(sqlite3_errmsg(db))      
-      println("Error : \(errorMsg)")
+      print("Error : \(errorMsg)")
     }
   }
   
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
   }
   
   override func viewWillAppear(animated: Bool) {
-//    openDB()
+    openDB()
     createTable()
   }
   

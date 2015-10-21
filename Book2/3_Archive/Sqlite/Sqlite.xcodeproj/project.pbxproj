@@ -13,7 +13,7 @@
 		2C094F091AC408A4007A27DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C094F081AC408A4007A27DD /* Images.xcassets */; };
 		2C094F0C1AC408A4007A27DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C094F0A1AC408A4007A27DD /* LaunchScreen.xib */; };
 		2C094F181AC408A4007A27DD /* SqliteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C094F171AC408A4007A27DD /* SqliteTests.swift */; };
-		2C094F231AC4091E007A27DD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C094F221AC4091E007A27DD /* libsqlite3.dylib */; };
+		2C3B947B1BD7BDE1006839AD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3B947A1BD7BDE1006839AD /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,8 @@
 		2C094F111AC408A4007A27DD /* SqliteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqliteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C094F161AC408A4007A27DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C094F171AC408A4007A27DD /* SqliteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteTests.swift; sourceTree = "<group>"; };
-		2C094F221AC4091E007A27DD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		2C094F241AC40C49007A27DD /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		2C3B947A1BD7BDE1006839AD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C094F231AC4091E007A27DD /* libsqlite3.dylib in Frameworks */,
+				2C3B947B1BD7BDE1006839AD /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 		2C094EF31AC408A4007A27DD = {
 			isa = PBXGroup;
 			children = (
-				2C094F221AC4091E007A27DD /* libsqlite3.dylib */,
+				2C3B947A1BD7BDE1006839AD /* libsqlite3.tbd */,
 				2C094EFE1AC408A4007A27DD /* Sqlite */,
 				2C094F141AC408A4007A27DD /* SqliteTests */,
 				2C094EFD1AC408A4007A27DD /* Products */,
@@ -162,7 +162,8 @@
 		2C094EF41AC408A4007A27DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = VanillaStep;
 				TargetAttributes = {
 					2C094EFB1AC408A4007A27DD = {
@@ -281,6 +282,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -344,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sqlite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Sqlite/BridgingHeader.h;
 			};
@@ -355,6 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sqlite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Sqlite/BridgingHeader.h;
 			};
@@ -374,6 +378,7 @@
 				);
 				INFOPLIST_FILE = SqliteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sqlite.app/Sqlite";
 			};
@@ -389,6 +394,7 @@
 				);
 				INFOPLIST_FILE = SqliteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sqlite.app/Sqlite";
 			};
@@ -413,6 +419,7 @@
 				2C094F1D1AC408A4007A27DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C094F1E1AC408A4007A27DD /* Build configuration list for PBXNativeTarget "SqliteTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +428,7 @@
 				2C094F201AC408A4007A27DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

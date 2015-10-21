@@ -14,8 +14,8 @@
 		2C2261411A24C1BE002D0ABF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2261401A24C1BE002D0ABF /* Images.xcassets */; };
 		2C2261441A24C1BE002D0ABF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2261421A24C1BE002D0ABF /* LaunchScreen.xib */; };
 		2C2261501A24C1BE002D0ABF /* TodoWithSQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C22614F1A24C1BE002D0ABF /* TodoWithSQLiteTests.swift */; };
-		2C22615A1A24C1D9002D0ABF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2261591A24C1D9002D0ABF /* libsqlite3.dylib */; };
 		2C24FBDD1A25C57000EDE610 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24FBDC1A25C57000EDE610 /* ComposeViewController.swift */; };
+		2C3B947D1BD7BE77006839AD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3B947C1BD7BE77006839AD /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +40,9 @@
 		2C2261491A24C1BE002D0ABF /* TodoWithSQLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoWithSQLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C22614E1A24C1BE002D0ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C22614F1A24C1BE002D0ABF /* TodoWithSQLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoWithSQLiteTests.swift; sourceTree = "<group>"; };
-		2C2261591A24C1D9002D0ABF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		2C22615B1A24C4CC002D0ABF /* Sqlite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sqlite-Bridging-Header.h"; sourceTree = "<group>"; };
 		2C24FBDC1A25C57000EDE610 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		2C3B947C1BD7BE77006839AD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2C3B94861BD7C0EF006839AD /* TodoWithSQLite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodoWithSQLite-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C22615A1A24C1D9002D0ABF /* libsqlite3.dylib in Frameworks */,
+				2C3B947D1BD7BE77006839AD /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,10 +67,11 @@
 		2C22612B1A24C1BE002D0ABF = {
 			isa = PBXGroup;
 			children = (
-				2C2261591A24C1D9002D0ABF /* libsqlite3.dylib */,
+				2C3B947C1BD7BE77006839AD /* libsqlite3.tbd */,
 				2C2261361A24C1BE002D0ABF /* TodoWithSQLite */,
 				2C22614C1A24C1BE002D0ABF /* TodoWithSQLiteTests */,
 				2C2261351A24C1BE002D0ABF /* Products */,
+				2C3B94861BD7C0EF006839AD /* TodoWithSQLite-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,7 +94,6 @@
 				2C2261401A24C1BE002D0ABF /* Images.xcassets */,
 				2C2261421A24C1BE002D0ABF /* LaunchScreen.xib */,
 				2C2261371A24C1BE002D0ABF /* Supporting Files */,
-				2C22615B1A24C4CC002D0ABF /* Sqlite-Bridging-Header.h */,
 				2C094EC11AC3E67C007A27DD /* TodoManager.swift */,
 			);
 			path = TodoWithSQLite;
@@ -168,7 +168,8 @@
 		2C22612C1A24C1BE002D0ABF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = VanillaStep;
 				TargetAttributes = {
 					2C2261331A24C1BE002D0ABF = {
@@ -289,6 +290,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -350,11 +352,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TodoWithSQLite/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TodoWithSQLite/Sqlite-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoWithSQLite-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -362,11 +367,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TodoWithSQLite/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TodoWithSQLite/Sqlite-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoWithSQLite-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -384,7 +391,9 @@
 				);
 				INFOPLIST_FILE = TodoWithSQLiteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoWithSQLite-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoWithSQLite.app/TodoWithSQLite";
 			};
 			name = Debug;
@@ -399,7 +408,9 @@
 				);
 				INFOPLIST_FILE = TodoWithSQLiteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoWithSQLite-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoWithSQLite.app/TodoWithSQLite";
 			};
 			name = Release;

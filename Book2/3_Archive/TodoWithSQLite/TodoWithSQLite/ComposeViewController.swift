@@ -20,8 +20,8 @@ class ComposeViewController: UIViewController {
   
   // 완료 - 델리게이트에게 완료, 모달 닫기
   @IBAction func handleDone(sender: AnyObject) {
-    // 모델을 이용해서 할일 저
-    let todoTitle = textField.text
+    // 모델을 이용해서 할일 저장
+    let todoTitle = textField.text!
     let dueDate = datePicker.date
     TodoManager.sharedManager.addTodo(todoTitle, dueDate : dueDate)
     
