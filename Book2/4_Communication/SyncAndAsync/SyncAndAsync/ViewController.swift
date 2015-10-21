@@ -22,10 +22,20 @@ class ViewController: UIViewController {
       indicator.startAnimating()
       
       let url = NSURL(string: urlStr)!
+
+      // NSData에서 바로 로딩
+//      let data = NSData(contentsOfURL: url)!
       
-      let data = NSData(contentsOfURL: url)!
-      let image = UIImage(data: data)
-      imageView.image = image
+      let request = NSURLRequest(URL: url)
+      var response : NSURLResponse?
+      do {
+         let data = try NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
+         let image = UIImage(data: data)
+         imageView.image = image
+      }
+      catch {
+         print("이미지 로딩 에러")
+      }
       
       indicator.stopAnimating()
    }

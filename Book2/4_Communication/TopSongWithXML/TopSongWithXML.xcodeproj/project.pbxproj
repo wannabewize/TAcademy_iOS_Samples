@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C14EA7D1BD809F900372786 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C14EA7C1BD809F900372786 /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		2C1FF83919AEFF7D00C1ECC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FF83819AEFF7D00C1ECC0 /* AppDelegate.swift */; };
 		2C1FF83B19AEFF7D00C1ECC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FF83A19AEFF7D00C1ECC0 /* ViewController.swift */; };
 		2C1FF83E19AEFF7D00C1ECC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1FF83C19AEFF7D00C1ECC0 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C14EA7C1BD809F900372786 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		2C1FF83319AEFF7D00C1ECC0 /* TopSongWithXML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopSongWithXML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1FF83719AEFF7D00C1ECC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1FF83819AEFF7D00C1ECC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				2C1FF83819AEFF7D00C1ECC0 /* AppDelegate.swift */,
 				2C1FF83A19AEFF7D00C1ECC0 /* ViewController.swift */,
 				2C1FF83C19AEFF7D00C1ECC0 /* Main.storyboard */,
+				2C14EA7C1BD809F900372786 /* LaunchScreen.xib */,
 				2C1FF83F19AEFF7D00C1ECC0 /* Images.xcassets */,
 				2C1FF83619AEFF7D00C1ECC0 /* Supporting Files */,
 				2C5C93C21AC317D90077D1C1 /* BridgingHeader.h */,
@@ -263,7 +266,8 @@
 		2C1FF82B19AEFF7D00C1ECC0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = VanillaStep;
 				TargetAttributes = {
 					2C1FF83219AEFF7D00C1ECC0 = {
@@ -299,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C14EA7D1BD809F900372786 /* LaunchScreen.xib in Resources */,
 				2C5C93C41AC31A230077D1C1 /* placeholder.png in Resources */,
 				2C1FF83E19AEFF7D00C1ECC0 /* Main.storyboard in Resources */,
 				2C1FF84019AEFF7E00C1ECC0 /* Images.xcassets in Resources */,
@@ -391,6 +396,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -452,9 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TopSongWithXML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TopSongWithXML/BridgingHeader.h;
 			};
@@ -464,9 +470,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TopSongWithXML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TopSongWithXML/BridgingHeader.h;
 			};
@@ -486,6 +492,7 @@
 				);
 				INFOPLIST_FILE = TopSongWithXMLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopSongWithXML.app/TopSongWithXML";
 			};
@@ -501,6 +508,7 @@
 				);
 				INFOPLIST_FILE = TopSongWithXMLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopSongWithXML.app/TopSongWithXML";
 			};
