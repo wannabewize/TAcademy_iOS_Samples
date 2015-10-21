@@ -14,24 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C094D881AC15D87007A27DD"
-               BuildableName = "TodoWithCoreData.app"
-               BlueprintName = "TodoWithCoreData"
-               ReferencedContainer = "container:TodoWithCoreData.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C094DA01AC15D87007A27DD"
-               BuildableName = "TodoWithCoreDataTests.xctest"
-               BlueprintName = "TodoWithCoreDataTests"
-               ReferencedContainer = "container:TodoWithCoreData.xcodeproj">
+               BlueprintIdentifier = "2C3B94921BD7C267006839AD"
+               BuildableName = "TodoWithFMDB.app"
+               BlueprintName = "TodoWithFMDB"
+               ReferencedContainer = "container:TodoWithFMDB.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C094DA01AC15D87007A27DD"
-               BuildableName = "TodoWithCoreDataTests.xctest"
-               BlueprintName = "TodoWithCoreDataTests"
-               ReferencedContainer = "container:TodoWithCoreData.xcodeproj">
+               BlueprintIdentifier = "2C3B94A61BD7C267006839AD"
+               BuildableName = "TodoWithFMDBTests.xctest"
+               BlueprintName = "TodoWithFMDBTests"
+               ReferencedContainer = "container:TodoWithFMDB.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2C3B94B11BD7C267006839AD"
+               BuildableName = "TodoWithFMDBUITests.xctest"
+               BlueprintName = "TodoWithFMDBUITests"
+               ReferencedContainer = "container:TodoWithFMDB.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C094D881AC15D87007A27DD"
-            BuildableName = "TodoWithCoreData.app"
-            BlueprintName = "TodoWithCoreData"
-            ReferencedContainer = "container:TodoWithCoreData.xcodeproj">
+            BlueprintIdentifier = "2C3B94921BD7C267006839AD"
+            BuildableName = "TodoWithFMDB.app"
+            BlueprintName = "TodoWithFMDB"
+            ReferencedContainer = "container:TodoWithFMDB.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -79,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C094D881AC15D87007A27DD"
-            BuildableName = "TodoWithCoreData.app"
-            BlueprintName = "TodoWithCoreData"
-            ReferencedContainer = "container:TodoWithCoreData.xcodeproj">
+            BlueprintIdentifier = "2C3B94921BD7C267006839AD"
+            BuildableName = "TodoWithFMDB.app"
+            BlueprintName = "TodoWithFMDB"
+            ReferencedContainer = "container:TodoWithFMDB.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -98,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C094D881AC15D87007A27DD"
-            BuildableName = "TodoWithCoreData.app"
-            BlueprintName = "TodoWithCoreData"
-            ReferencedContainer = "container:TodoWithCoreData.xcodeproj">
+            BlueprintIdentifier = "2C3B94921BD7C267006839AD"
+            BuildableName = "TodoWithFMDB.app"
+            BlueprintName = "TodoWithFMDB"
+            ReferencedContainer = "container:TodoWithFMDB.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

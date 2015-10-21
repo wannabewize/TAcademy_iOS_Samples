@@ -47,10 +47,11 @@ class TodoManager {
     newTodo.dueDate = dueDate
     
     // 저장소에 저장
-    var error : NSError?
-    
-    if false == context.save(&error) {
-      println("에러 \(error?.localizedDescription)")
+    do {
+      try context.save()
+    }
+    catch let err {
+      print("에러 \(err)")
     }
   }
   
@@ -69,14 +70,15 @@ class TodoManager {
 
 
     // 요청 실행
-    if let ret = context.executeFetchRequest(requeset, error: &error) {
+    do {
+      let ret = try context.executeFetchRequest(requeset)
       // 요청 성공
       todoList = ret as! [Todo]
-      println("resolve \(todoList.count) todos.")
-    }
-    else {
+      print("resolve \(todoList.count) todos.")
+    } catch let error1 as NSError {
+      error = error1
       // 요청 실패
-      println("Error : \(error?.localizedDescription)")
+      print("Error : \(error?.localizedDescription)")
     }
   }
 }

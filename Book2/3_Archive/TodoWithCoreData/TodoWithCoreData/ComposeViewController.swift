@@ -16,7 +16,7 @@ class ComposeViewController: UIViewController {
   @IBAction func handleDone(sender: AnyObject) {
     self.dismissViewControllerAnimated(true, completion: nil)
     let manager = TodoManager.sharedManager
-    manager.addTodo(textField.text, dueDate: datePicker.date)
+    manager.addTodo(textField.text!, dueDate: datePicker.date)
     // 저장된 내용을 다시 읽어오기
     manager.resolveAllTodo()
   }
