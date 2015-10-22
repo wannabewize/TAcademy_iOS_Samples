@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MediaPlayer.xcscheme</key>
+		<key>MyMediaPlayer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2C5C946F1AC333820077D1C1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2C5C94841AC333820077D1C1</key>
+		<key>2C1320881BD8661500B8DA1A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

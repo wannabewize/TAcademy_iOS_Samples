@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  MediaPlayer
+//  MyMediaPlayer
 //
-//  Created by wannabewize on 2015. 3. 26..
-//  Copyright (c) 2015년 wannabewize. All rights reserved.
+//  Created by wannabewize on 10/22/15.
+//  Copyright © 2015 VanillaStep. All rights reserved.
 //
 
 import UIKit

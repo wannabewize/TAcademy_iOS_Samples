@@ -23,14 +23,15 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate, UITable
     let keyword = searchBar.text
     searchBar.resignFirstResponder()
     
+
     // 미디어 쿼리
     let query = MPMediaQuery()
-    // 검색어 - 제목에 포함
+    // 검색 조건
     let predicate = MPMediaPropertyPredicate(value: keyword, forProperty: MPMediaItemPropertyTitle, comparisonType: MPMediaPredicateComparison.Contains)
     query.addFilterPredicate(predicate)
     
     // 결과
-    mediaList = query.items as! [MPMediaItem]
+    mediaList = query.items!
     self.tableView.reloadData()
     
     // 플레이어 큐에 쿼리 결과
@@ -46,9 +47,9 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate, UITable
     self.showViewController(picker, sender: sender)
   }
   
-  func mediaPicker(mediaPicker: MPMediaPickerController!, didPickMediaItems mediaItemCollection: MPMediaItemCollection!) {
+  func mediaPicker(mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
     // 사용자가 선택한 미디어
-    self.mediaList = mediaItemCollection.items as! [MPMediaItem]
+    self.mediaList = mediaItemCollection.items
     mediaPicker.dismissViewControllerAnimated(true, completion: nil)
     
     tableView.reloadData()
@@ -59,7 +60,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate, UITable
   }
   
   // 취소 혹은 선택하지 않고 완료
-  func mediaPickerDidCancel(mediaPicker: MPMediaPickerController!) {
+  func mediaPickerDidCancel(mediaPicker: MPMediaPickerController) {
     mediaPicker.dismissViewControllerAnimated(true, completion: nil)
   }
   
@@ -72,7 +73,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate, UITable
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("MEDIA_CELL", forIndexPath: indexPath) as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("MEDIA_CELL", forIndexPath: indexPath)
     
     let media = mediaList[indexPath.row]
 
@@ -107,7 +108,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate, UITable
   var timer : NSTimer?
   func handlePlaybackChange(noti : NSNotification) {
     let info = noti.userInfo!
-      println("info \(info)")
+      print("info \(info)")
     let v = info["MPMusicPlayerControllerPlaybackStateKey"] as! Int
     let state = MPMusicPlaybackState(rawValue: v)!
     switch state {
@@ -115,9 +116,9 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate, UITable
       timer?.invalidate()
     case .Playing:
       timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "handleTimer:", userInfo: nil, repeats: true)
-      println("Playing")
+      print("Playing")
     default:
-      println("Other")
+      print("Other")
     }
   }
   
@@ -127,7 +128,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate, UITable
       let playbackTime = player.currentPlaybackTime
       
       // 재생 중인 노래의 전체 길이
-      let item : MPMediaItem = player.nowPlayingItem
+      let item : MPMediaItem = player.nowPlayingItem!
       let duration = item.valueForProperty(MPMediaItemPropertyPlaybackDuration) as! Int
       
       // 진행도 설정

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,91 +14,70 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C5C946F1AC333820077D1C1"
-               BuildableName = "MediaPlayer.app"
-               BlueprintName = "MediaPlayer"
-               ReferencedContainer = "container:MediaPlayer.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C5C94841AC333820077D1C1"
-               BuildableName = "MediaPlayerTests.xctest"
-               BlueprintName = "MediaPlayerTests"
-               ReferencedContainer = "container:MediaPlayer.xcodeproj">
+               BlueprintIdentifier = "2C1320881BD8661500B8DA1A"
+               BuildableName = "MyMediaPlayer.app"
+               BlueprintName = "MyMediaPlayer"
+               ReferencedContainer = "container:MyMediaPlayer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C5C94841AC333820077D1C1"
-               BuildableName = "MediaPlayerTests.xctest"
-               BlueprintName = "MediaPlayerTests"
-               ReferencedContainer = "container:MediaPlayer.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C5C946F1AC333820077D1C1"
-            BuildableName = "MediaPlayer.app"
-            BlueprintName = "MediaPlayer"
-            ReferencedContainer = "container:MediaPlayer.xcodeproj">
+            BlueprintIdentifier = "2C1320881BD8661500B8DA1A"
+            BuildableName = "MyMediaPlayer.app"
+            BlueprintName = "MyMediaPlayer"
+            ReferencedContainer = "container:MyMediaPlayer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C5C946F1AC333820077D1C1"
-            BuildableName = "MediaPlayer.app"
-            BlueprintName = "MediaPlayer"
-            ReferencedContainer = "container:MediaPlayer.xcodeproj">
+            BlueprintIdentifier = "2C1320881BD8661500B8DA1A"
+            BuildableName = "MyMediaPlayer.app"
+            BlueprintName = "MyMediaPlayer"
+            ReferencedContainer = "container:MyMediaPlayer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C5C946F1AC333820077D1C1"
-            BuildableName = "MediaPlayer.app"
-            BlueprintName = "MediaPlayer"
-            ReferencedContainer = "container:MediaPlayer.xcodeproj">
+            BlueprintIdentifier = "2C1320881BD8661500B8DA1A"
+            BuildableName = "MyMediaPlayer.app"
+            BlueprintName = "MyMediaPlayer"
+            ReferencedContainer = "container:MyMediaPlayer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
