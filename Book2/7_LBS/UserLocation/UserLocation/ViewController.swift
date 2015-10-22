@@ -20,18 +20,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     textView.text = ""
     previousLocation = nil
     
-    println("표준 위치 측정 서비스 가능 \(CLLocationManager.locationServicesEnabled())")
+    print("표준 위치 측정 서비스 가능 \(CLLocationManager.locationServicesEnabled())")
 
     switch CLLocationManager.authorizationStatus() {
     case .AuthorizedAlways, .AuthorizedWhenInUse:
       if mornitoringLocation {
-        println("표준 위치 서비스 중지")
+        print("표준 위치 서비스 중지")
         textView.text = "표준 위치 서비스 중지\n"
         manager.stopUpdatingLocation()
         mornitoringLocation = false
       }
       else {
-        println("표준 위치 서비스 시작")
+        print("표준 위치 서비스 시작")
         textView.text = "표준 위치 서비스 시작\n"
         // 100미터 단위 정확도
         manager.desiredAccuracy = kCLLocationAccuracyBest
@@ -43,13 +43,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         manager.startUpdatingLocation()
         mornitoringLocation = true
       }
-      println("distance filter : \(manager.distanceFilter)")
-      println("accuracy : \(manager.desiredAccuracy)")
+      print("distance filter : \(manager.distanceFilter)")
+      print("accuracy : \(manager.desiredAccuracy)")
     case .NotDetermined:
       manager.requestWhenInUseAuthorization()
 //      manager.requestAlwaysAuthorization()
     default:
-      println("위치 정보 접근 권한이 없음 : \(CLLocationManager.authorizationStatus())")
+      print("위치 정보 접근 권한이 없음 : \(CLLocationManager.authorizationStatus())")
     }
   }
   
@@ -57,18 +57,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     manager.startUpdatingHeading()
   }
   
-  func locationManager(manager: CLLocationManager!, didUpdateHeading newHeading: CLHeading!) {
-    println("trueHeading \(newHeading.trueHeading)")
-    println("magHeading \(newHeading.magneticHeading)")
-    println("values \(newHeading.x), \(newHeading.y), \(newHeading.z)")
+  func locationManager(manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+    print("trueHeading \(newHeading.trueHeading)")
+    print("magHeading \(newHeading.magneticHeading)")
+    print("values \(newHeading.x), \(newHeading.y), \(newHeading.z)")
   }
   
   @IBAction func mornitorState(sender: AnyObject) {
 //    manager.sta
   }
   
-  func locationManager(manager: CLLocationManager!, didDetermineState state: CLRegionState, forRegion region: CLRegion!) {
-    println("didDetermineState")
+  func locationManager(manager: CLLocationManager, didDetermineState state: CLRegionState, forRegion region: CLRegion) {
+    print("didDetermineState")
   }
   
   var mornitoringSignificantChange = false
@@ -76,7 +76,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     textView.text = ""
     previousLocation = nil
     
-    println("주요 거리 변화 감지 서비스 가능 \(CLLocationManager.significantLocationChangeMonitoringAvailable())")
+    print("주요 거리 변화 감지 서비스 가능 \(CLLocationManager.significantLocationChangeMonitoringAvailable())")
     
     switch CLLocationManager.authorizationStatus() {
     case .AuthorizedAlways, .AuthorizedWhenInUse:
@@ -93,7 +93,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     case .NotDetermined:
       manager.requestAlwaysAuthorization()
     default:
-      println("위치 정보 접근 권한이 없음 : \(CLLocationManager.authorizationStatus())")
+      print("위치 정보 접근 권한이 없음 : \(CLLocationManager.authorizationStatus())")
     }
   }
   
@@ -110,8 +110,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     timeFormatter.timeStyle = NSDateFormatterStyle.MediumStyle
   }
   
-  func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-    let location = locations.last as! CLLocation
+  func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    let location = locations.last!
     
     var str = "============================\n"
     str += "측정 시각\t: \(timeFormatter.stringFromDate(location.timestamp))\n"
@@ -132,33 +132,33 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     // 텍스트 뷰에 반영
     textView.text = str + textView.text
-    println(str)
+    print(str)
   }
   
   @IBAction func mornitoringVisit(sender: AnyObject) {
     manager.startMonitoringVisits()
   }
   
-  func locationManager(manager: CLLocationManager!, didVisit visit: CLVisit!) {
+  func locationManager(manager: CLLocationManager, didVisit visit: CLVisit) {
     var str = "============================\n"
     str += "방문 지역!\n"
     str += "departure date\t: \(visit.departureDate)\n"
     str += "arrival date\t:\(visit.arrivalDate)\n"
     
     textView.text = str + textView.text
-    println(str)
+    print(str)
   }
   
-  func locationManagerDidPauseLocationUpdates(manager: CLLocationManager!) {
-    println("locationManagerDidPauseLocationUpdates")
+  func locationManagerDidPauseLocationUpdates(manager: CLLocationManager) {
+    print("locationManagerDidPauseLocationUpdates")
   }
   
-  func locationManagerDidResumeLocationUpdates(manager: CLLocationManager!) {
-    println("locationManagerDidResumeLocationUpdates")
+  func locationManagerDidResumeLocationUpdates(manager: CLLocationManager) {
+    print("locationManagerDidResumeLocationUpdates")
   }
     
-  func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
-    println("Error : \(error.localizedDescription)")
+  func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    print("Error : \(error.localizedDescription)")
     textView.text = "위치 측정 에러 \(error.localizedDescription)"
   }
 }

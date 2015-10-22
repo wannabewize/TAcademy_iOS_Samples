@@ -14,7 +14,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
   @IBOutlet weak var mapView: MKMapView!
   
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-    let keyword = searchBar.text
+    let keyword = searchBar.text!
     search(keyword)
     
     searchBar.resignFirstResponder()
@@ -25,15 +25,14 @@ class ViewController: UIViewController, UISearchBarDelegate {
     request.naturalLanguageQuery = keyword
     
     let search = MKLocalSearch(request: request)
-    search.startWithCompletionHandler { (response : MKLocalSearchResponse!, error : NSError!) -> Void in
-      let items = response.mapItems as! [MKMapItem]
+    search.startWithCompletionHandler { (response : MKLocalSearchResponse?, error : NSError?) -> Void in
+      let items = response!.mapItems
       for item in items {
-        println("name : \(item.placemark.name)")
-        let place = item.placemark
+        print("name : \(item.placemark.name)")
         
         let annotation = MKPointAnnotation()
         annotation.title = item.name
-        annotation.coordinate = item.placemark.location.coordinate
+        annotation.coordinate = item.placemark.location!.coordinate
         
         self.mapView.addAnnotation(annotation)
       }

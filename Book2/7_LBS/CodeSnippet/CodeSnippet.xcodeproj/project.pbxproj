@@ -168,6 +168,7 @@
 		2CB9AB941AC4AA52004520CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = wannabewize;
 				TargetAttributes = {
@@ -417,6 +418,7 @@
 				2CB9ABBD1AC4AA52004520CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CB9ABBE1AC4AA52004520CC /* Build configuration list for PBXNativeTarget "CodeSnippetTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +427,7 @@
 				2CB9ABC01AC4AA52004520CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

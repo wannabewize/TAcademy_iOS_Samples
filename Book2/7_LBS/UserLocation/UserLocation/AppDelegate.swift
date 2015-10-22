@@ -16,13 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
-    let notiType = UIUserNotificationType.Badge | UIUserNotificationType.Alert | UIUserNotificationType.Sound
+    let notiType = UIUserNotificationType.Badge
     let notiSetting = UIUserNotificationSettings(forTypes: notiType, categories: nil)
     UIApplication.sharedApplication().registerUserNotificationSettings(notiSetting)
     
     if let options = launchOptions {
       if options[UIApplicationLaunchOptionsLocationKey] != nil {
-        println("Significant Change Location Service로 앱 런칭됨")
+        print("Significant Change Location Service로 앱 런칭됨")
 
         let noti = UILocalNotification()
         
