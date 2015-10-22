@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AVFoundation.xcscheme</key>
+		<key>MyAVFoundationPlayer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2CC18AEB1AC4900800FBFE1B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2CC18B001AC4900900FBFE1B</key>
+		<key>2C1320AC1BD86A2A00B8DA1A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

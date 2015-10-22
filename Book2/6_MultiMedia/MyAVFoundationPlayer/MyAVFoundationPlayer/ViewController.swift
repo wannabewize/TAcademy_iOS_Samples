@@ -28,7 +28,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITableViewDataSo
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("MUSIC_CELL", forIndexPath: indexPath) as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("MUSIC_CELL", forIndexPath: indexPath)
     cell.textLabel?.text = "Music \(indexPath.row)"
     return cell
   }
@@ -63,14 +63,20 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITableViewDataSo
     else {
       // 현재 선택된 셀을 재생
       var selected : Int = 0
-      if let index = tableView.indexPathForSelectedRow() {
+      if let index = tableView.indexPathForSelectedRow {
         selected = index.row
       }
       
       // 선택된 음악의 재생기 생성
       let url = musicList[selected]
-      var error : NSError?
-      player = AVAudioPlayer(contentsOfURL: url, error: &error)
+      do {
+        try player = AVAudioPlayer(contentsOfURL: url)
+      }
+      catch {
+        print("AVAudioPlayer 생성 에러")
+        return;
+      }
+      
       player.delegate = self
       
       // 음악 재생과 타이머 실행
@@ -96,24 +102,24 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITableViewDataSo
   
   // 음악 정보 출력
   func showMusicInfo(url : NSURL) {
-    let asset = AVAsset.assetWithURL(url) as! AVAsset
+    let asset = AVAsset(URL: url)
     let metadata = asset.commonMetadata
     
     let titles = AVMetadataItem.metadataItemsFromArray(metadata, withKey: AVMetadataCommonKeyTitle, keySpace: AVMetadataKeySpaceCommon)
-    if titles != nil && titles.count > 0 {
-      let item = titles[0] as! AVMetadataItem
+    if titles.count > 0 {
+      let item = titles[0]
       titleLabel.text = item.stringValue
     }
     
     let artists = AVMetadataItem.metadataItemsFromArray(metadata, withKey: AVMetadataCommonKeyArtist, keySpace: AVMetadataKeySpaceCommon)
-    if artists != nil && artists.count > 0 {
-      let item = artists[0] as! AVMetadataItem
+    if artists.count > 0 {
+      let item = artists[0]
       artistLabel.text = item.stringValue
     }
     
     let artworks = AVMetadataItem.metadataItemsFromArray(metadata, withKey: AVMetadataCommonKeyArtwork, keySpace: AVMetadataKeySpaceCommon)
-    if artworks != nil && artworks.count > 0 {
-      let item = artworks[0] as! AVMetadataItem
+    if artworks.count > 0 {
+      let item = artworks[0]
       let data = item.value as! NSData
       let image = UIImage(data: data)
       artworkImageView.image = image
@@ -144,27 +150,5 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, UITableViewDataSo
     }
   }
   
-  // Test Method
-  func playMusic() {
-    let url = NSBundle.mainBundle().URLForResource("music1", withExtension: "mp3")
-    var error : NSError?
-    player = AVAudioPlayer(contentsOfURL: url, error: &error)
-    player.delegate = self
-    if player.prepareToPlay() {
-      player.play()
-    }
-    
-    // AVAsset 객체 생성
-    let asset = AVAsset.assetWithURL(url) as! AVAsset
-    
-    // 공통 메타 데이터
-    let metadata = asset.commonMetadata
-    // 제목 얻기
-    let titles = AVMetadataItem.metadataItemsFromArray(metadata, withKey: AVMetadataCommonKeyTitle, keySpace: AVMetadataKeySpaceCommon)
-    let item = titles[0] as! AVMetadataItem
-    let title = item.stringValue
-    
-    println("제목 : \(title)")
-  }
 }
 
