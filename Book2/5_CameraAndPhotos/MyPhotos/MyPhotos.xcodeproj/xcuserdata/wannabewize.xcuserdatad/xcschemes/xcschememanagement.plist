@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Photos.xcscheme</key>
+		<key>MyPhotos.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2CC18A891AC46B8F00FBFE1B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2CC18A9E1AC46B8F00FBFE1B</key>
+		<key>2C1320641BD8629900B8DA1A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

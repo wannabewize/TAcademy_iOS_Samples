@@ -59,7 +59,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     let asset = result.firstObject as! PHAsset
     let formatter = NSDateFormatter()
     formatter.dateStyle = NSDateFormatterStyle.ShortStyle
-    let createDate = formatter.stringFromDate(asset.creationDate )
+    let createDate = formatter.stringFromDate(asset.creationDate! )
     print("First : \(createDate)")
     
     // 이미지 순회
@@ -71,8 +71,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
       let size = CGSizeMake(100, 100)
       
       // 이미지 매니저에서 이미지 요청
-      manager.requestImageForAsset(asset, targetSize: size, contentMode: PHImageContentMode.AspectFill, options: nil, resultHandler: { (image : UIImage!, info : [NSObject : AnyObject]!) -> Void in
-        self.images.append(image)
+      manager.requestImageForAsset(asset, targetSize: size, contentMode: PHImageContentMode.AspectFill, options: nil, resultHandler: { (image : UIImage?, info : [NSObject : AnyObject]?) -> Void in
+        self.images.append(image!)
         
         // 콜렉션 뷰에 반영
         if result.count == self.images.count {
@@ -81,7 +81,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
       })
     }
-    
   }
   
   // 콜렉션 뷰 - 이미지 개수
