@@ -21,7 +21,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, UITableViewData
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("RecordingCell", forIndexPath: indexPath) as! UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("RecordingCell", forIndexPath: indexPath)
     cell.textLabel?.text = recordFiles[indexPath.row]
     return cell
   }
@@ -29,39 +29,48 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, UITableViewData
   func refreshRecordingList() {
     recordFiles.removeAll(keepCapacity: false)
     
-    let docPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as! String
+    let docPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0]
     
     let fs = NSFileManager.defaultManager()
-    var error : NSError?
-    let files = fs.contentsOfDirectoryAtPath(docPath, error: &error) as! [String]
-    
-    for file in files {
-      // 확장자
-      if file.hasSuffix(".caf") {
-        recordFiles.append(file)
+    let files : [NSString]
+    do {
+      try files = fs.contentsOfDirectoryAtPath(docPath)
+      
+      for file in files {
+        // 확장자
+        if file.hasSuffix(".caf") {
+          recordFiles.append(file as String)
+        }
       }
+    }
+    catch {
+      print("디렉토리 읽기 에러")
     }
     tableView.reloadData()
   }
   
   @IBAction func startRecord() {
-    let docPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as! String
+    let docPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as NSString
     
     // 파일 이름이 겹치지 않도록 시간 정보로 파일 이름 생성
     let formatter = NSDateFormatter()
-    formatter.dateFormat = "YYYY.MM.dd.hh.mm.DD"
+    formatter.dateFormat = "YYYY.MM.dd.hh.mm.ss"
     let fileName = String(format: "%@.caf", formatter.stringFromDate(NSDate()))
     let filePath = docPath.stringByAppendingPathComponent(fileName)
-    println("filePath : \(filePath)")
+    print("filePath : \(filePath)")
     
     let url = NSURL(fileURLWithPath: filePath)
     let setting = [AVSampleRateKey:44100, AVLinearPCMBitDepthKey:16]
     
-    var error : NSError?
-    recorder = AVAudioRecorder(URL: url, settings: setting, error: &error)
-    recorder.delegate = self
-    if recorder.prepareToRecord() {
-      recorder.record()
+    do {
+      try recorder = AVAudioRecorder(URL: url, settings: setting)
+      recorder.delegate = self
+      if recorder.prepareToRecord() {
+        recorder.record()
+      }
+    }
+    catch {
+      print("녹음기 객체 생성 실패")
     }
   }
   
@@ -74,15 +83,19 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, UITableViewData
   
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     // 녹음 파일 경로 구하기
-    let docPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as! String
+    let docPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as NSString
     let fileName = recordFiles[indexPath.row]
     let filePath = docPath.stringByAppendingPathComponent(fileName)
     
     // 재생기
     let url = NSURL.fileURLWithPath(filePath)
-    var error : NSError?
-    player = AVAudioPlayer(contentsOfURL: url, error: &error)
-    player.play()
+    do {
+      try player = AVAudioPlayer(contentsOfURL: url)
+      player.play()
+    }
+    catch {
+      print("재생 실패")
+    }
   }
   
   @IBAction func stopPlay(sender: AnyObject) {
@@ -91,24 +104,28 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, UITableViewData
     }
   }
   
-  func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
-    println("audioRecorderDidFinishRecording success flag : \(flag)")
+  func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
+    print("audioRecorderDidFinishRecording success flag : \(flag)")
+  }
+  
+  func audioRecorderEncodeErrorDidOccur(recorder: AVAudioRecorder, error: NSError?) {
+    print("녹음 에러 \(error)")
   }
   
   override func viewDidAppear(animated: Bool) {
     refreshRecordingList()
   }
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
-
+  
+  
 }
 

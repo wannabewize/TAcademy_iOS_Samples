@@ -160,6 +160,7 @@
 		2CC10FCF1ACC6D070036B44A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = wannabewize;
 				TargetAttributes = {
@@ -409,6 +410,7 @@
 				2CC10FF81ACC6D080036B44A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CC10FF91ACC6D080036B44A /* Build configuration list for PBXNativeTarget "AVRecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +419,7 @@
 				2CC10FFB1ACC6D080036B44A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
