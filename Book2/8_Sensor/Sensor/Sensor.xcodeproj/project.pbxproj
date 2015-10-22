@@ -160,6 +160,7 @@
 		2C08745B1ACD9AA1003A89CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = wannabewize;
 				TargetAttributes = {
@@ -409,6 +410,7 @@
 				2C0874841ACD9AA1003A89CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C0874851ACD9AA1003A89CB /* Build configuration list for PBXNativeTarget "SensorTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +419,7 @@
 				2C0874871ACD9AA1003A89CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

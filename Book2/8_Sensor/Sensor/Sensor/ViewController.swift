@@ -17,19 +17,23 @@ class ViewController: UIViewController {
     if manager == nil {
       manager = CMMotionManager()
     }
-    manager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: { (data : CMAccelerometerData!, error : NSError!) -> Void in
-      let x = data.acceleration.x
-      let y = data.acceleration.y
-      let z = data.acceleration.z
-      
-      println("x : \(x) y : \(y) z : \(z)")
-    })
     
-    manager.startGyroUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: { (data : CMGyroData!, error : NSError!) -> Void in
-      let x = data.rotationRate.x
-      let y = data.rotationRate.y
-      let z = data.rotationRate.z
-    })
+    manager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()) { (data : CMAccelerometerData?, error : NSError?) -> Void in
+
+      let x = data!.acceleration.x
+      let y = data!.acceleration.y
+      let z = data!.acceleration.z
+      
+      print("x : \(x) y : \(y) z : \(z)")
+    }
+    
+    manager.startGyroUpdatesToQueue(NSOperationQueue.mainQueue()) { (data : CMGyroData?, error : NSError?) -> Void in
+      let x = data!.rotationRate.x
+      let y = data!.rotationRate.y
+      let z = data!.rotationRate.z
+      
+      print("x : \(x) y : \(y) z : \(z)")
+    }
   }
 
   override func viewDidLoad() {
