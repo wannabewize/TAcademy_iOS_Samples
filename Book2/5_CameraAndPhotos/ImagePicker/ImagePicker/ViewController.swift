@@ -41,6 +41,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     // 원본 이미지와 편집 이미지 모두
     let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+    // 편집 이미지는 nil일 수도 있으므로 as?
     let editedImage = info[UIImagePickerControllerEditedImage] as? UIImage
         
     // 최종 사용할 이미지

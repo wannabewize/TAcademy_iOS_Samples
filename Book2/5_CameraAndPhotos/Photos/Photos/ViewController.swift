@@ -22,9 +22,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     // 권한 체크
     switch PHPhotoLibrary.authorizationStatus() {
     case PHAuthorizationStatus.NotDetermined:
-      println("NotDetermined - 권한 요청")
+      print("NotDetermined - 권한 요청")
       PHPhotoLibrary.requestAuthorization({ (status : PHAuthorizationStatus) -> Void in
-        println("사용자가 접근 권한 결정함 : \(status)")
+        print("사용자가 접근 권한 결정함 : \(status)")
         if status == .Authorized {
           self.listAllImages()
         }
@@ -60,7 +60,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     let formatter = NSDateFormatter()
     formatter.dateStyle = NSDateFormatterStyle.ShortStyle
     let createDate = formatter.stringFromDate(asset.creationDate )
-    println("First : \(createDate)")
+    print("First : \(createDate)")
     
     // 이미지 순회
     result.enumerateObjectsUsingBlock { (obj : AnyObject!, idx : Int, stop : UnsafeMutablePointer<ObjCBool>) -> Void in
@@ -76,7 +76,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         // 콜렉션 뷰에 반영
         if result.count == self.images.count {
-          println("added all image.");
+          print("added all image.");
           self.collectionView.reloadData()
         }
       })
