@@ -80,14 +80,16 @@ class ViewController: UIViewController, MKMapViewDelegate {
   }
   
   // 맵뷰에 어노테이션 뷰 제공
-  func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+  func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
     if annotation is MuseumInfo {
       // 박물관 정보에 해당하는 어노테이션 뷰 제공
       var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier("MUSEUM")
       if annotationView == nil {
         annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "MUSEUM")
-        annotationView.image = UIImage(named: "museum.png")
-        annotationView.canShowCallout = true
+        annotationView!.image = UIImage(named: "museum.png")
+        annotationView!.canShowCallout = true
+      } else {
+        annotationView!.annotation = annotation
       }
       return annotationView
     }
@@ -96,8 +98,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
       var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier("THEATER")
       if annotationView == nil {
         annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "THEATER")
-        annotationView.image = UIImage(named: "film")
-        annotationView.canShowCallout = true
+        annotationView!.image = UIImage(named: "film")
+        annotationView!.canShowCallout = true
+      } else {
+        annotationView!.annotation = annotation
       }
       return annotationView
     }
@@ -106,7 +110,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
       var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier("DEFAULT")
       if annotationView == nil {
         annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "DEFAULT")
-        annotationView.canShowCallout = true
+        annotationView!.canShowCallout = true
+      } else {
+        annotationView!.annotation = annotation
       }
       return annotationView
     }
