@@ -36,8 +36,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
   }
   
   func showCafe() {
-//    mapView.addOverlay(<#overlay: MKOverlay!#>)
-    mapView.removeOverlay(nil)
     // 카페용 어노테이션 객체 생성
     let cafe = CafeInfo()
     cafe.title = "스타벅스"
@@ -68,17 +66,17 @@ class ViewController: UIViewController, MKMapViewDelegate {
   let MUSEUM_ANNOTATIONVIEW = "MUSEUM_ANNOTATIONVIEW"
   let CAFE_ANNOTATIONVIEW = "CAFE_ANNOTATIONVIEW"
   
-  func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+  func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
     if annotation is MuseumInfo {
       var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(MUSEUM_ANNOTATIONVIEW)
       if nil == annotationView {
         annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: MUSEUM_ANNOTATIONVIEW)
       }
-      annotationView.image = UIImage(named: "museum.jpg")
-      annotationView.canShowCallout = true
+      annotationView!.image = UIImage(named: "museum")
+      annotationView!.canShowCallout = true
       
-      let infoButton = UIButton.buttonWithType(UIButtonType.InfoLight) as! UIButton
-      annotationView.rightCalloutAccessoryView = infoButton
+      let infoButton = UIButton(type: UIButtonType.InfoLight)
+      annotationView!.rightCalloutAccessoryView = infoButton
       
       return annotationView
     }
@@ -87,15 +85,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
       if nil == annotationView {
         annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: CAFE_ANNOTATIONVIEW)
         // 어노테이션 뷰 설정
-        annotationView.image = UIImage(named: "coffee.jpg")
-        annotationView.canShowCallout = true
+        annotationView!.image = UIImage(named: "coffee")
+        annotationView!.canShowCallout = true
       }
       return annotationView
     }
   }
   
   // 콜아웃 버튼 동작
-  func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, calloutAccessoryControlTapped control: UIControl!) {
+  func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
     if let museum = view.annotation as? MuseumInfo {
       let urlStr = museum.urlStr
       

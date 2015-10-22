@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1320D11BD88C0400B8DA1A /* museum@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C1320D01BD88C0400B8DA1A /* museum@2x.png */; settings = {ASSET_TAGS = (); }; };
+		2C1320D31BD88C4800B8DA1A /* coffee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C1320D21BD88C4800B8DA1A /* coffee@2x.png */; settings = {ASSET_TAGS = (); }; };
 		2CB9AC021AC4B897004520CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9AC011AC4B897004520CC /* AppDelegate.swift */; };
 		2CB9AC041AC4B897004520CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9AC031AC4B897004520CC /* ViewController.swift */; };
 		2CB9AC071AC4B897004520CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9AC051AC4B897004520CC /* Main.storyboard */; };
@@ -15,8 +17,6 @@
 		2CB9AC181AC4B897004520CC /* SpotActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9AC171AC4B897004520CC /* SpotActionTests.swift */; };
 		2CB9AC221AC4B8A4004520CC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB9AC211AC4B8A4004520CC /* MapKit.framework */; };
 		2CB9AC241AC4BDFF004520CC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9AC231AC4BDFF004520CC /* DetailViewController.swift */; };
-		2CB9AC271AC4BEB2004520CC /* museum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9AC251AC4BEB2004520CC /* museum.jpg */; };
-		2CB9AC281AC4BEB2004520CC /* cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9AC261AC4BEB2004520CC /* cafe.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C1320D01BD88C0400B8DA1A /* museum@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "museum@2x.png"; sourceTree = "<group>"; };
+		2C1320D21BD88C4800B8DA1A /* coffee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee@2x.png"; sourceTree = "<group>"; };
 		2CB9ABFC1AC4B897004520CC /* SpotAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB9AC001AC4B897004520CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB9AC011AC4B897004520CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,8 +44,6 @@
 		2CB9AC171AC4B897004520CC /* SpotActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotActionTests.swift; sourceTree = "<group>"; };
 		2CB9AC211AC4B8A4004520CC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2CB9AC231AC4BDFF004520CC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		2CB9AC251AC4BEB2004520CC /* museum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museum.jpg; sourceTree = "<group>"; };
-		2CB9AC261AC4BEB2004520CC /* cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafe.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +87,8 @@
 		2CB9ABFE1AC4B897004520CC /* SpotAction */ = {
 			isa = PBXGroup;
 			children = (
-				2CB9AC251AC4BEB2004520CC /* museum.jpg */,
-				2CB9AC261AC4BEB2004520CC /* cafe.jpg */,
+				2C1320D01BD88C0400B8DA1A /* museum@2x.png */,
+				2C1320D21BD88C4800B8DA1A /* coffee@2x.png */,
 				2CB9AC011AC4B897004520CC /* AppDelegate.swift */,
 				2CB9AC031AC4B897004520CC /* ViewController.swift */,
 				2CB9AC051AC4B897004520CC /* Main.storyboard */,
@@ -169,6 +169,7 @@
 		2CB9ABF41AC4B897004520CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = wannabewize;
 				TargetAttributes = {
@@ -205,8 +206,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB9AC281AC4BEB2004520CC /* cafe.jpg in Resources */,
-				2CB9AC271AC4BEB2004520CC /* museum.jpg in Resources */,
+				2C1320D11BD88C0400B8DA1A /* museum@2x.png in Resources */,
+				2C1320D31BD88C4800B8DA1A /* coffee@2x.png in Resources */,
 				2CB9AC071AC4B897004520CC /* Main.storyboard in Resources */,
 				2CB9AC0C1AC4B897004520CC /* LaunchScreen.xib in Resources */,
 				2CB9AC091AC4B897004520CC /* Images.xcassets in Resources */,
@@ -421,6 +422,7 @@
 				2CB9AC1D1AC4B897004520CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CB9AC1E1AC4B897004520CC /* Build configuration list for PBXNativeTarget "SpotActionTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +431,7 @@
 				2CB9AC201AC4B897004520CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
