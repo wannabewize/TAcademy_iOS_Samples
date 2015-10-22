@@ -30,19 +30,11 @@ class ViewController: UIViewController {
   }
   
   @IBAction func showInfo(sender: AnyObject) {
-    /*
-    NSLog(@"===== Movie Info ===========");
-    NSLog(@"naturalSize : %@", NSStringFromCGSize(self.player.naturalSize));
-    NSLog(@"duration : %f", self.player.duration);
-    NSLog(@"playableDuration : %f", self.player.playableDuration);
-    NSLog(@"movieMediaTypes : %d", (int)self.player.movieMediaTypes);
-    NSLog(@"movieSourceType : %d", (int)self.player.movieSourceType);
-    */
-    println("natural size : \(moviePlayer.naturalSize)")
-    println("duration : \(moviePlayer.duration)")
-    println("playable Duration : \(moviePlayer.playableDuration)")
-    println("movieMediaTypes : \(moviePlayer.movieMediaTypes)")
-    println("movieSourceType : \(moviePlayer.movieSourceType.rawValue)")
+    print("natural size : \(moviePlayer.naturalSize)")
+    print("duration : \(moviePlayer.duration)")
+    print("playable Duration : \(moviePlayer.playableDuration)")
+    print("movieMediaTypes : \(moviePlayer.movieMediaTypes)")
+    print("movieSourceType : \(moviePlayer.movieSourceType.rawValue)")
   }
   
   @IBAction func playStream(sender: AnyObject) {
@@ -52,15 +44,18 @@ class ViewController: UIViewController {
     }
     moviePlayer = nil
     
-    // 스트리밍 동영상 주소를 이용해서 재생기 생성
+    let urlStr = "https://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8"
+    let url = NSURL(string: urlStr)
     
+    // 스트리밍 동영상 주소를 이용해서 재생기 생성
+    moviePlayer = MPMoviePlayerController(contentURL: url)
+    
+    moviePlayer.view.frame = containerView.frame
+    containerView.addSubview(moviePlayer.view)
+    
+    moviePlayer.play()
+    print("동영상 재생 길이 : \(moviePlayer.duration)")
   }
-//  func play2() {
-//    let url = NSBundle.mainBundle().URLForResource("movie", withExtension: "mp4")
-//    let vc = MPMoviePlayerViewController(contentURL: url)
-//    self.presentMoviePlayerViewControllerAnimated(vc)
-//    
-//  }
   
   override func viewWillAppear(animated: Bool) {
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleMovieDurationNoti:", name: MPMovieDurationAvailableNotification, object: nil)
@@ -68,6 +63,7 @@ class ViewController: UIViewController {
   
   func handleMovieDurationNoti(noti : NSNotification) {
     let player = noti.object as! MPMoviePlayerController
+    print("동영상 재생 길이 알림, 재생 길이 : \(player.duration)")
   }
 }
 
