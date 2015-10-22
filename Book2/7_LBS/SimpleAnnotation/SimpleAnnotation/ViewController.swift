@@ -29,9 +29,7 @@ class ViewController: UIViewController {
   
   // 어노테이션 삭제
   @IBAction func removeAnnotation(sender: AnyObject) {
-    if let annotations = mapView.annotations {
-      mapView.removeAnnotations(annotations)
-    }
+    mapView.removeAnnotations(mapView.annotations)
   }
   
   override func viewDidAppear(animated: Bool) {
