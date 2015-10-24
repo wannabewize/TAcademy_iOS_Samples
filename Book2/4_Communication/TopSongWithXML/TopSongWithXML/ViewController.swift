@@ -92,7 +92,7 @@ class ViewController: UIViewController, NSXMLParserDelegate, UITableViewDataSour
    var operationQueue = NSOperationQueue()
    
    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-      var cell = tableView.dequeueReusableCellWithIdentifier("SongCell", forIndexPath: indexPath) as! UITableViewCell
+      let cell = tableView.dequeueReusableCellWithIdentifier("SongCell", forIndexPath: indexPath)
       let one = songList[indexPath.row]
       cell.textLabel!.text = one.title
       print("\(indexPath.row) image \(one.image)")
