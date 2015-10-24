@@ -11,8 +11,8 @@
 		2C1320701BD8629900B8DA1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C13206F1BD8629900B8DA1A /* Assets.xcassets */; };
 		2C1320731BD8629900B8DA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1320711BD8629900B8DA1A /* LaunchScreen.storyboard */; };
 		2C13207B1BD862A200B8DA1A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C13207A1BD862A200B8DA1A /* Photos.framework */; };
-		2C13207D1BD862C000B8DA1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13207C1BD862C000B8DA1A /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2C13207F1BD862C700B8DA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C13207E1BD862C700B8DA1A /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		2C13207D1BD862C000B8DA1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13207C1BD862C000B8DA1A /* ViewController.swift */; };
+		2C13207F1BD862C700B8DA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C13207E1BD862C700B8DA1A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					2C1320641BD8629900B8DA1A = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = U83637X5J4;
 					};
 				};
 			};
@@ -242,6 +243,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MyPhotos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vanillastep.example.ios.MyPhotos;
@@ -253,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MyPhotos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vanillastep.example.ios.MyPhotos;
@@ -279,6 +282,7 @@
 				2C1320791BD8629900B8DA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
