@@ -1,5 +1,0 @@
-{
-  "device":[
-            "iPhone5s", "iPhone5c", "iPad Air"
-            ]
-}

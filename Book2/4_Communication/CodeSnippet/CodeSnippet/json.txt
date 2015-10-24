@@ -1,5 +1,0 @@
-{
-  "os": "iOS",
-  "version": 7,
-  "good": true
-}
