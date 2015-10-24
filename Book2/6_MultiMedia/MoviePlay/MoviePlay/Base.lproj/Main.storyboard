@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1017" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1017" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -49,10 +49,10 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="XLM-mF-q4U" secondAttribute="trailing" constant="-16" id="CN0-bB-zMQ"/>
                             <constraint firstItem="XLM-mF-q4U" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="JWc-7V-JPL"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="V6e-Gd-2zT" secondAttribute="bottom" id="Y1S-f9-mod"/>
                             <constraint firstItem="V6e-Gd-2zT" firstAttribute="top" secondItem="XLM-mF-q4U" secondAttribute="bottom" id="bEI-f7-Agl"/>
                             <constraint firstItem="XLM-mF-q4U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="iFN-gv-rlz"/>
                             <constraint firstItem="V6e-Gd-2zT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="iu3-h3-dnb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="V6e-Gd-2zT" secondAttribute="bottom" id="lFs-kA-r9U"/>
                             <constraint firstAttribute="trailingMargin" secondItem="V6e-Gd-2zT" secondAttribute="trailing" constant="-16" id="uq7-A3-jHx"/>
                         </constraints>
                     </view>
