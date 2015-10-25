@@ -29,7 +29,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
   @IBAction func showHaewondae(sender: AnyObject) {
     
     // 카메라
-    let camera = mapView.camera.copy() as! MKMapCamera
+    let camera = mapView.camera
     
     camera.centerCoordinate = CLLocationCoordinate2DMake(35.16,129.16)
     // 고도
