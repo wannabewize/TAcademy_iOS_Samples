@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C41EA591C96952200502C5F /* opaque@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C41EA571C96952200502C5F /* opaque@2x.png */; };
+		2C41EA5A1C96952200502C5F /* transparent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C41EA581C96952200502C5F /* transparent@2x.png */; };
 		2CEEA5B11ABD9C6900B15DF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEA5B01ABD9C6900B15DF3 /* AppDelegate.swift */; };
 		2CEEA5B31ABD9C6900B15DF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEA5B21ABD9C6900B15DF3 /* ViewController.swift */; };
 		2CEEA5B61ABD9C6900B15DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CEEA5B41ABD9C6900B15DF3 /* Main.storyboard */; };
 		2CEEA5B81ABD9C6900B15DF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEEA5B71ABD9C6900B15DF3 /* Images.xcassets */; };
 		2CEEA5BB1ABD9C6A00B15DF3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CEEA5B91ABD9C6A00B15DF3 /* LaunchScreen.xib */; };
 		2CEEA5C71ABD9C6A00B15DF3 /* ImageRenderingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEA5C61ABD9C6A00B15DF3 /* ImageRenderingTests.swift */; };
-		2CEEA5D11ABD9CB600B15DF3 /* CircleCat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CEEA5D01ABD9CB600B15DF3 /* CircleCat@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C41EA571C96952200502C5F /* opaque@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opaque@2x.png"; sourceTree = "<group>"; };
+		2C41EA581C96952200502C5F /* transparent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent@2x.png"; sourceTree = "<group>"; };
 		2CEEA5AB1ABD9C6900B15DF3 /* ImageRendering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageRendering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CEEA5AF1ABD9C6900B15DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CEEA5B01ABD9C6900B15DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +40,6 @@
 		2CEEA5C01ABD9C6A00B15DF3 /* ImageRenderingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageRenderingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CEEA5C51ABD9C6A00B15DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CEEA5C61ABD9C6A00B15DF3 /* ImageRenderingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRenderingTests.swift; sourceTree = "<group>"; };
-		2CEEA5D01ABD9CB600B15DF3 /* CircleCat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CircleCat@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,8 @@
 		2CEEA5AD1ABD9C6900B15DF3 /* ImageRendering */ = {
 			isa = PBXGroup;
 			children = (
-				2CEEA5D01ABD9CB600B15DF3 /* CircleCat@2x.png */,
+				2C41EA571C96952200502C5F /* opaque@2x.png */,
+				2C41EA581C96952200502C5F /* transparent@2x.png */,
 				2CEEA5B01ABD9C6900B15DF3 /* AppDelegate.swift */,
 				2CEEA5B21ABD9C6900B15DF3 /* ViewController.swift */,
 				2CEEA5B41ABD9C6900B15DF3 /* Main.storyboard */,
@@ -196,10 +199,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C41EA591C96952200502C5F /* opaque@2x.png in Resources */,
 				2CEEA5B61ABD9C6900B15DF3 /* Main.storyboard in Resources */,
-				2CEEA5D11ABD9CB600B15DF3 /* CircleCat@2x.png in Resources */,
 				2CEEA5BB1ABD9C6A00B15DF3 /* LaunchScreen.xib in Resources */,
 				2CEEA5B81ABD9C6900B15DF3 /* Images.xcassets in Resources */,
+				2C41EA5A1C96952200502C5F /* transparent@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
