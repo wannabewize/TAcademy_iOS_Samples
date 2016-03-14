@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1017" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,72 +20,22 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="d6s-ql-vot">
                                 <rect key="frame" x="200" y="28" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="P9L-uE-L53"/>
-                                    <constraint firstAttribute="width" constant="200" id="uL4-vf-Uxo"/>
-                                    <constraint firstAttribute="width" constant="200" id="uTO-pT-cFV"/>
-                                    <constraint firstAttribute="height" constant="200" id="x3a-6i-fLM"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="P9L-uE-L53"/>
-                                        <exclude reference="uL4-vf-Uxo"/>
-                                        <exclude reference="uTO-pT-cFV"/>
-                                        <exclude reference="x3a-6i-fLM"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="P9L-uE-L53"/>
-                                        <include reference="uL4-vf-Uxo"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="uTO-pT-cFV"/>
-                                        <include reference="x3a-6i-fLM"/>
-                                    </mask>
-                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="iqS-yY-Z3S">
                                 <rect key="frame" x="200" y="380" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="CmJ-Sa-usj"/>
-                                    <constraint firstAttribute="height" constant="200" id="hY3-LE-p2N"/>
-                                    <constraint firstAttribute="width" constant="200" id="koD-FO-UN0"/>
-                                    <constraint firstAttribute="height" constant="200" id="q6c-MF-CXB"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="CmJ-Sa-usj"/>
-                                        <exclude reference="hY3-LE-p2N"/>
-                                        <exclude reference="koD-FO-UN0"/>
-                                        <exclude reference="q6c-MF-CXB"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="CmJ-Sa-usj"/>
-                                        <include reference="hY3-LE-p2N"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="koD-FO-UN0"/>
-                                        <include reference="q6c-MF-CXB"/>
-                                    </mask>
-                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="iqS-yY-Z3S" secondAttribute="centerX" id="CSS-QZ-orM"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iqS-yY-Z3S" secondAttribute="bottom" constant="50" id="NsN-hw-UT0"/>
-                            <constraint firstItem="iqS-yY-Z3S" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="VBf-lM-Gpg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iqS-yY-Z3S" secondAttribute="trailing" constant="20" id="VBf-lM-Gpg"/>
                             <constraint firstAttribute="centerY" secondItem="d6s-ql-vot" secondAttribute="centerY" id="epu-8F-RDb"/>
                             <constraint firstItem="d6s-ql-vot" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="lgA-On-o2M"/>
                             <constraint firstAttribute="centerY" secondItem="iqS-yY-Z3S" secondAttribute="centerY" id="sWu-KL-O9N"/>
-                            <constraint firstItem="d6s-ql-vot" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="unw-nJ-n5W"/>
+                            <constraint firstItem="d6s-ql-vot" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="unw-nJ-n5W">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="d6s-ql-vot" secondAttribute="centerX" id="z7C-KW-e6e"/>
                         </constraints>
                         <variation key="default">
@@ -120,11 +70,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="423"/>
+            <point key="canvasLocation" x="96" y="402.75"/>
         </scene>
     </scenes>
     <resources>
-        <image name="1.png" width="300" height="300"/>
-        <image name="2.png" width="300" height="300"/>
+        <image name="1.png" width="200" height="200"/>
+        <image name="2.png" width="200" height="200"/>
     </resources>
 </document>
