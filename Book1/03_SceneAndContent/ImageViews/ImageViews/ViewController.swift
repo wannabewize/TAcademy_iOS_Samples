@@ -29,7 +29,8 @@ class ViewController: UIViewController {
       imageView2.image = image2
       
       // 인터넷에서 이미지 다운로드. nil체크 필요
-      if let imageUrl = NSURL(string: "http://lorempixel.com/600/300/cats/"),
+      let urlStr = "http://lorempixel.com/600/300/cats/"
+      if let imageUrl = NSURL(string: urlStr),
          let imageData = NSData(contentsOfURL: imageUrl){
          let image3 = UIImage(data: imageData)
          // 이미지 뷰를 코드로 생성
