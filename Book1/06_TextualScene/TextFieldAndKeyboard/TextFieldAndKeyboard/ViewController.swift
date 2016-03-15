@@ -15,10 +15,6 @@ class ViewController: UIViewController {
     NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardDidShowNotification, object: nil)
     NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification
       , object: nil)
-    NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardWillChangeFrameNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (noti) -> Void in
-      print("UIKeyboardWillChangeFrameNotification")
-      print(noti.userInfo)
-    }
   }
   
   override func viewDidDisappear(animated: Bool) {
