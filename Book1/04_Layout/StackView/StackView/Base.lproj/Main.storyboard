@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1017" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hDO-eS-T2J">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hDO-eS-T2J">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -76,7 +77,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qT8-gc-Gu0">
-                                <rect key="frame" x="12" y="76" width="292" height="48"/>
+                                <rect key="frame" x="12" y="76" width="312" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVH-UA-822">
                                         <rect key="frame" x="0.0" y="9" width="73" height="30"/>
@@ -99,7 +100,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSI-ge-NsA">
-                                        <rect key="frame" x="216" y="9" width="76" height="30"/>
+                                        <rect key="frame" x="216" y="9" width="96" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -188,7 +189,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StackView - Distribution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCX-Ms-Kop">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ec3-rR-OY2">
@@ -200,7 +201,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                <variation key="widthClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
                                                 </variation>
                                             </label>
@@ -210,7 +211,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                <variation key="widthClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="297" y="0.0" width="31" height="30"/>
                                                 </variation>
                                             </label>
@@ -220,7 +221,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                <variation key="widthClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="330" y="0.0" width="31" height="30"/>
                                                 </variation>
                                             </label>
@@ -280,7 +281,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                <variation key="widthClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="117" height="30"/>
                                                 </variation>
                                             </label>
@@ -290,7 +291,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                <variation key="widthClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="119" y="0.0" width="60" height="30"/>
                                                 </variation>
                                             </label>
@@ -325,7 +326,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" ambiguous="YES">
+                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                                     <rect key="frame" x="150" y="0.0" width="60" height="30"/>
                                                 </variation>
                                             </label>
@@ -335,7 +336,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" ambiguous="YES">
+                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                                     <rect key="frame" x="212" y="0.0" width="148" height="30"/>
                                                 </variation>
                                             </label>
@@ -368,21 +369,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xoc-Od-eUn">
-                                <rect key="frame" x="20" y="28" width="110" height="200"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xoc-Od-eUn">
+                                <rect key="frame" x="20" y="28" width="30" height="21"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hPZ-70-75S">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="110"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hPZ-70-75S">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="21"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZz-XO-j9H">
-                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZz-XO-j9H">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="jcg-H9-rum">
                                                         <variation key="widthClass=compact" constant="60"/>
                                                     </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -421,7 +422,7 @@
                                                     <constraint firstAttribute="width" constant="60" id="E05-7j-XUw"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -457,11 +458,11 @@
                                                 <exclude reference="FLG-FF-kOD"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <exclude reference="V0B-hu-HmF"/>
                                                 <exclude reference="JHm-7g-mmQ"/>
                                                 <exclude reference="OoI-qN-gvw"/>
                                                 <exclude reference="S64-rz-7te"/>
                                                 <exclude reference="jS7-l2-gSz"/>
+                                                <exclude reference="V0B-hu-HmF"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
@@ -470,11 +471,11 @@
                                                 <include reference="FLG-FF-kOD"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <include reference="V0B-hu-HmF"/>
                                                 <include reference="JHm-7g-mmQ"/>
                                                 <exclude reference="OoI-qN-gvw"/>
                                                 <exclude reference="S64-rz-7te"/>
                                                 <include reference="jS7-l2-gSz"/>
+                                                <include reference="V0B-hu-HmF"/>
                                             </mask>
                                         </variation>
                                     </stackView>
