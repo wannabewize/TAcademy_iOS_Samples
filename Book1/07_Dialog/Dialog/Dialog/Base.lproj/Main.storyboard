@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbs-IO-o7E">
-                                <rect key="frame" x="72" y="87" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbs-IO-o7E">
+                                <rect key="frame" x="267" y="40" width="66" height="30"/>
                                 <state key="normal" title="AlertView">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -25,8 +26,8 @@
                                     <action selector="showAlertView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="djB-YA-43k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIp-ek-u5M">
-                                <rect key="frame" x="81" y="154" width="164" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIp-ek-u5M">
+                                <rect key="frame" x="217" y="100" width="167" height="30"/>
                                 <state key="normal" title="AlertView with TextInput">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,8 +35,8 @@
                                     <action selector="showAlertViewWithTextInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bbc-Ui-EBI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-0s-oJz">
-                                <rect key="frame" x="81" y="204" width="84" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-0s-oJz">
+                                <rect key="frame" x="258" y="280" width="84" height="30"/>
                                 <state key="normal" title="ActionSheet">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -43,13 +44,47 @@
                                     <action selector="showActionSheet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KHB-cF-2yQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입력내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBc-ot-qxJ">
+                                <rect key="frame" x="271" y="150" width="59" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezp-90-CFr">
+                                <rect key="frame" x="272" y="200" width="56" height="30"/>
+                                <state key="normal" title="자동 닫기"/>
+                                <connections>
+                                    <action selector="showAutocloseAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="59f-0T-3cE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WBc-ot-qxJ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0v4-zs-c3E"/>
+                            <constraint firstItem="Ezp-90-CFr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="180" id="CLL-Tx-Qqt"/>
+                            <constraint firstItem="WBc-ot-qxJ" firstAttribute="top" secondItem="JIp-ek-u5M" secondAttribute="bottom" constant="20" id="Ctd-xB-n81"/>
+                            <constraint firstItem="JIp-ek-u5M" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="H3p-zl-2zK"/>
+                            <constraint firstItem="Pbs-IO-o7E" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="HlL-lG-4kT"/>
+                            <constraint firstItem="bDa-0s-oJz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="260" id="Hp3-zB-V2Q"/>
+                            <constraint firstItem="WBc-ot-qxJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="132" id="Kvz-L9-PU3"/>
+                            <constraint firstItem="Pbs-IO-o7E" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="TwW-z4-RJu"/>
+                            <constraint firstItem="Ezp-90-CFr" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Www-t0-yMW"/>
+                            <constraint firstItem="JIp-ek-u5M" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cDZ-tE-jEu"/>
+                            <constraint firstItem="bDa-0s-oJz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="udr-Af-zZ1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kvz-L9-PU3"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="inputLabel" destination="WBc-ot-qxJ" id="CFn-Sh-XBv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="503" y="440"/>
+            <point key="canvasLocation" x="477" y="423"/>
         </scene>
     </scenes>
 </document>
