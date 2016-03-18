@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>마마무</key>
+	<array>
+		<string>솔라</string>
+		<string>문별</string>
+		<string>휘인</string>
+		<string>화사</string>
+	</array>
+	<key>EXID</key>
+	<array>
+		<string>솔지</string>
+		<string>LE</string>
+		<string>하니</string>
+		<string>혜린</string>
+		<string>정화</string>
+	</array>
+</dict>
+</plist>
