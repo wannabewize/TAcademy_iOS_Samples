@@ -1,5 +1,6 @@
 Draft
 Homework
+*.xcuserstate
 
 # Created by https://www.gitignore.io/api/swift
 
@@ -67,4 +68,3 @@ fastlane/report.xml
 fastlane/screenshots
 
 
-*.xcuserstate
