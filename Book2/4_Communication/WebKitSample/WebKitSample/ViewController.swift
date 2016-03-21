@@ -8,10 +8,19 @@
 
 import UIKit
 import WebKit
+import SafariServices
 
 class ViewController: UIViewController, WKNavigationDelegate {
    
    var webView : WKWebView!
+   
+   func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
+      print("didCommitNavigation")
+   }
+   
+   func webView(webView: WKWebView, didFailNavigation navigation: WKNavigation!, withError error: NSError) {
+      print("Fail : \(error)")
+   }
 
    override func viewDidLoad() {
       super.viewDidLoad()
@@ -24,8 +33,6 @@ class ViewController: UIViewController, WKNavigationDelegate {
       
       webView.navigationDelegate = self
       
-
-      
       // Layout
       toolbar.translatesAutoresizingMaskIntoConstraints = false
       webView.translatesAutoresizingMaskIntoConstraints = false
@@ -35,18 +42,11 @@ class ViewController: UIViewController, WKNavigationDelegate {
       view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|[webView]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["webView":webView]))
       
       
-      let appleItem = UIBarButtonItem(title: "Apple", style:UIBarButtonItemStyle.Plain, target: self, action: "showApple")
-      let googleItem = UIBarButtonItem(title: "Google", style:UIBarButtonItemStyle.Plain, target: self, action: "showGoogle")
+      let webItem = UIBarButtonItem(title: "Web", style:UIBarButtonItemStyle.Plain, target: self, action: "showWebPage")
       let fileItem = UIBarButtonItem(title: "File", style: UIBarButtonItemStyle.Plain, target: self, action: "showFileContent")
-      toolbar.setItems([appleItem, googleItem, fileItem], animated: false)
-   }
-   
-   func showApple() {
-      showWebPage("http://apple.com")
-   }
-   
-   func showGoogle() {
-      showWebPage("http://google.com")
+      let strItem = UIBarButtonItem(title: "Str", style: UIBarButtonItemStyle.Plain, target: self, action: "showStrContent")
+      let sfItem = UIBarButtonItem(title: "Safari", style: UIBarButtonItemStyle.Plain, target: self, action: "ShowSF")
+      toolbar.setItems([webItem, fileItem, strItem, sfItem], animated: false)
    }
    
    func showFileContent() {
@@ -55,24 +55,29 @@ class ViewController: UIViewController, WKNavigationDelegate {
       }
    }
    
-   func showWebPage(urlStr : String) {
-      print("loading : ", urlStr)
+   func showWebPage() {
+      let urlStr = "http://apple.com/"
       if let url = NSURL(string: urlStr) {
          let req = NSURLRequest(URL: url)
-         webView.loadRequest(req)
+         let ret = webView.loadRequest(req)
+         print(ret)
       }
       else {
          print("URL Error : ", urlStr)
       }
    }
    
-   
-
-   override func didReceiveMemoryWarning() {
-      super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
+   func showStrContent() {
+      let htmlStr = "<html><body><h1>Content From String</h1></body></html>"
+      webView.loadHTMLString(htmlStr, baseURL: nil)
    }
-
-
+   
+   func ShowSF() {
+      let urlStr = "https://developer.apple.com/library"
+      if let url = NSURL(string: urlStr) {
+         let safariVC = SFSafariViewController(URL: url)
+         self.showViewController(safariVC, sender: nil)
+      }
+   }
 }
 
