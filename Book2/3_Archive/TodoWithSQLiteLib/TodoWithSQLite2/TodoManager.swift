@@ -108,14 +108,14 @@ class TodoManager {
     
     let (resultSet, err) = SD.executeQuery("SELECT * FROM TODO")
     if nil != err {
-      println("Error \(err)")
+      print("Error \(err)")
     }
     else {
       for row in resultSet {
         let rowId = row["ID"]?.asInt()
         let title = row["title"]?.asString()
         let dueDate = row["duedate"]?.asDate()
-        println("title \(title) due : \(dueDate)")
+        print("title \(title) due : \(dueDate)")
         
         let todo = Todo(rowId: rowId!, title: title!, dueDate: dueDate)
         todoList.append(todo)

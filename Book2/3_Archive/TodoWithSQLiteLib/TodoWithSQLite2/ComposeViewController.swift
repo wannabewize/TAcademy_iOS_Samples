@@ -23,7 +23,7 @@ class ComposeViewController: UIViewController {
     // 모델을 이용해서 할일 저
     let todoTitle = textField.text
     let dueDate = datePicker.date
-    TodoManager.sharedManager.addTodo(todoTitle, dueDate : dueDate)
+    TodoManager.sharedManager.addTodo(todoTitle!, dueDate : dueDate)
     
     dismissViewControllerAnimated(true, completion: nil)
   }
