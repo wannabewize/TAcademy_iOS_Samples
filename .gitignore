@@ -1,5 +1,6 @@
 Draft
 Homework
+*.xcuserstate
 
 # Created by https://www.gitignore.io/api/swift
 
@@ -54,7 +55,8 @@ playground.xcworkspace
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-Carthage/Build
+Carthage
+Cartfile.resolved
 
 # fastlane
 #
@@ -67,4 +69,3 @@ fastlane/report.xml
 fastlane/screenshots
 
 
-*.xcuserstate

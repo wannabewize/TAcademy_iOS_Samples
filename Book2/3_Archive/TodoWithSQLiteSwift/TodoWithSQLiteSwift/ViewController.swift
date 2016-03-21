@@ -1,24 +1,35 @@
 //
 //  ViewController.swift
-//  TodoWithSQLite
+//  TodoWithSQLiteSwift
 //
-//  Created by wannabewize on 2014. 11. 25..
-//  Copyright (c) 2014년 VanillaStep. All rights reserved.
+//  Created by wannabewize on 2016. 3. 18..
+//  Copyright © 2016년 VanillaStep. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController {
    
    @IBOutlet weak var tableView : UITableView!
    var formatter : NSDateFormatter!
    // 모델
    var manager : TodoManager!
    
+   override func viewDidLoad() {
+      super.viewDidLoad()
+      
+      formatter = NSDateFormatter()
+      formatter.dateFormat = "yyyy/MM/dd"
+      
+      manager = TodoManager.sharedManager
+      manager.openDB()
+      manager.resolveAllTodo()
+   }
+   
    // 삭제
    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
       let todo = manager.todoAt(indexPath.row)
-      manager.removeTodo(todo.rowId)
+      manager.removeTodo(todo.todoId)
       
       tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
    }
@@ -41,15 +52,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
       tableView.reloadData()
    }
    
-   override func viewDidLoad() {
-      super.viewDidLoad()
-      
-      formatter = NSDateFormatter()
-      formatter.dateFormat = "yyyy/MM/dd"
-      
-      manager = TodoManager.sharedManager
-      manager.openDB()
-      manager.resolveAllTodo()
-   }
+
 }
 
