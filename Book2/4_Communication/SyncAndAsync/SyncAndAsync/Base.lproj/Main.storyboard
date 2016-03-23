@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -34,24 +34,19 @@
                                             <action selector="handleSync:" destination="vXZ-lx-hvc" id="BYU-wr-wdS"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Async" id="HfZ-IO-172">
-                                        <connections>
-                                            <action selector="handleASync:" destination="vXZ-lx-hvc" id="pGU-Eu-U7T"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Async2" id="BdN-eW-Id7">
-                                        <connections>
-                                            <action selector="handleAsync2:" destination="vXZ-lx-hvc" id="8UJ-TB-u1f"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Task" id="Wx1-c7-Vv3">
+                                    <barButtonItem title="SessionTask" id="Wx1-c7-Vv3">
                                         <connections>
                                             <action selector="handleTask:" destination="vXZ-lx-hvc" id="bG5-p3-X2k"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem title="URLConn" id="HfZ-IO-172">
+                                        <connections>
+                                            <action selector="handleASync:" destination="vXZ-lx-hvc" id="pGU-Eu-U7T"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" id="LvU-nA-R0e">
                                         <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="ZpG-uu-xR1">
-                                            <rect key="frame" x="238" y="6.5" width="118" height="31"/>
+                                            <rect key="frame" x="255" y="6.5" width="118" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </slider>
                                     </barButtonItem>
@@ -78,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="-172"/>
+            <point key="canvasLocation" x="328" y="-167"/>
         </scene>
     </scenes>
 </document>

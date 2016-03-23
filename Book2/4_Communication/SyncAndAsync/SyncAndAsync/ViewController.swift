@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, NSURLConnectionDelegate, NSURLConnectionDataDelegate {
+class ViewController: UIViewController {
    // 이미지 뷰의 아웃렛
    @IBOutlet weak var imageView: UIImageView!
    let urlStr = "http://upload.wikimedia.org/wikipedia/commons/4/4d/Klimt_-_Der_Kuss.jpeg"
@@ -64,38 +64,6 @@ class ViewController: UIViewController, NSURLConnectionDelegate, NSURLConnection
          self.indicator.stopAnimating()
       }
    }
-   
-   // Delegate를 사용하는 방식
-   var buffer : NSMutableData! // 버퍼
-   @IBAction func handleAsync2(sender: AnyObject) {
-      imageView.image = nil
-      buffer = NSMutableData()
-      
-      // 인디케이터 시작
-      indicator.startAnimating()
-      
-      let url = NSURL(string: urlStr)!
-      let request = NSMutableURLRequest(URL: url)
-      
-      NSURLConnection(request: request, delegate: self)
-   }
-   
-   func connection(connection: NSURLConnection, didFailWithError error: NSError) {
-      print("Error : \(error.localizedDescription)")
-   }
-   
-   func connection(connection: NSURLConnection, didReceiveData data: NSData) {
-      print("didReceiveData : \(data.length)")
-      buffer.appendData(data)
-   }
-   
-   func connectionDidFinishLoading(connection: NSURLConnection) {
-      let image = UIImage(data: buffer!)
-      self.imageView.image = image
-      
-      self.indicator.stopAnimating()
-   }
-   
    
    @IBAction func handleTask(sender: AnyObject) {
       imageView.image = nil
