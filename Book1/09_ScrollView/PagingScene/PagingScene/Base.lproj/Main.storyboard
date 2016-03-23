@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -24,9 +24,6 @@
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nit-oE-uzc">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="580"/>
-                                        </variation>
                                         <connections>
                                             <segue destination="tye-HT-XA4" kind="embed" id="3Sm-xv-55z"/>
                                         </connections>
@@ -72,9 +69,6 @@
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="kJc-gj-C3C">
                                 <rect key="frame" x="-19" y="-18" width="39" height="37"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="180" y="543" width="39" height="37"/>
-                                </variation>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -92,12 +86,12 @@
                                 <exclude reference="kJc-gj-C3C"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="vIo-sg-6rh"/>
+                                <exclude reference="zn7-hX-wBb"/>
+                                <exclude reference="HLT-Ts-duB"/>
                                 <exclude reference="Of3-FX-Q2h"/>
                                 <exclude reference="ofT-o5-OqK"/>
                                 <exclude reference="u0u-s4-A5G"/>
-                                <exclude reference="HLT-Ts-duB"/>
-                                <exclude reference="vIo-sg-6rh"/>
-                                <exclude reference="zn7-hX-wBb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -106,12 +100,12 @@
                                 <include reference="kJc-gj-C3C"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="vIo-sg-6rh"/>
+                                <include reference="zn7-hX-wBb"/>
+                                <include reference="HLT-Ts-duB"/>
                                 <include reference="Of3-FX-Q2h"/>
                                 <include reference="ofT-o5-OqK"/>
                                 <include reference="u0u-s4-A5G"/>
-                                <include reference="HLT-Ts-duB"/>
-                                <include reference="vIo-sg-6rh"/>
-                                <include reference="zn7-hX-wBb"/>
                             </mask>
                         </variation>
                     </view>
@@ -128,7 +122,12 @@
         <scene sceneID="Gwc-gl-fJn">
             <objects>
                 <viewController id="tye-HT-XA4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ytu-FF-Dl5"/>
+                        <viewControllerLayoutGuide type="bottom" id="fjv-CT-xTY"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fXK-ek-tGu">
+                        <rect key="frame" x="0.0" y="0.0" width="1600" height="580"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ctU-On-uth">
@@ -147,28 +146,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                     </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="dKO-Qb-CBr" secondAttribute="bottom" id="Jlj-Rs-QP4"/>
-                                    <constraint firstItem="dKO-Qb-CBr" firstAttribute="top" secondItem="ctU-On-uth" secondAttribute="top" id="haK-of-rgE"/>
-                                    <constraint firstItem="8T2-CH-W4E" firstAttribute="leading" secondItem="dKO-Qb-CBr" secondAttribute="trailing" id="rdB-6a-uba"/>
-                                    <constraint firstItem="dKO-Qb-CBr" firstAttribute="leading" secondItem="ctU-On-uth" secondAttribute="leading" id="y4b-M4-4o2"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Jlj-Rs-QP4"/>
-                                        <exclude reference="haK-of-rgE"/>
-                                        <exclude reference="y4b-M4-4o2"/>
-                                        <exclude reference="rdB-6a-uba"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Jlj-Rs-QP4"/>
-                                        <include reference="haK-of-rgE"/>
-                                        <include reference="y4b-M4-4o2"/>
-                                        <include reference="rdB-6a-uba"/>
-                                    </mask>
-                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -220,7 +197,12 @@
         <scene sceneID="UTj-5u-C9X">
             <objects>
                 <viewController id="99d-RU-E8d" customClass="PartialViewController" customModule="PagingScene" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wqp-kH-kXS"/>
+                        <viewControllerLayoutGuide type="bottom" id="JMM-b7-0sV"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lFj-CR-tLG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ep4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rpi-tZ-NbI">
