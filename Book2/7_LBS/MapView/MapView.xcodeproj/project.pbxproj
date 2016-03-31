@@ -13,8 +13,6 @@
 		2CBBE1F31A29AF31007BBFA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBE1F21A29AF31007BBFA3 /* Images.xcassets */; };
 		2CBBE1F61A29AF31007BBFA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBE1F41A29AF31007BBFA3 /* LaunchScreen.xib */; };
 		2CBBE2021A29AF31007BBFA3 /* MapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBE2011A29AF31007BBFA3 /* MapViewTests.swift */; };
-		2CBBE20D1A29B002007BBFA3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBBE20B1A29AFE9007BBFA3 /* MapKit.framework */; };
-		2CBBE20F1A29B011007BBFA3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBBE20E1A29B011007BBFA3 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +36,6 @@
 		2CBBE1FB1A29AF31007BBFA3 /* MapViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBBE2001A29AF31007BBFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBBE2011A29AF31007BBFA3 /* MapViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewTests.swift; sourceTree = "<group>"; };
-		2CBBE20B1A29AFE9007BBFA3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		2CBBE20E1A29B011007BBFA3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBBE20F1A29B011007BBFA3 /* CoreLocation.framework in Frameworks */,
-				2CBBE20D1A29B002007BBFA3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +59,6 @@
 		2CBBE1DD1A29AF31007BBFA3 = {
 			isa = PBXGroup;
 			children = (
-				2CBBE20E1A29B011007BBFA3 /* CoreLocation.framework */,
-				2CBBE20B1A29AFE9007BBFA3 /* MapKit.framework */,
 				2CBBE1E81A29AF31007BBFA3 /* MapView */,
 				2CBBE1FE1A29AF31007BBFA3 /* MapViewTests */,
 				2CBBE1E71A29AF31007BBFA3 /* Products */,
