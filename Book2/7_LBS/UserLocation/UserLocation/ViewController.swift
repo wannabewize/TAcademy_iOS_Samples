@@ -61,8 +61,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
          print("distance filter : \(manager.distanceFilter)")
          print("accuracy : \(manager.desiredAccuracy)")
       case .NotDetermined:
-         manager.requestWhenInUseAuthorization()
-         //      manager.requestAlwaysAuthorization()
+         //         manager.requestWhenInUseAuthorization()
+         manager.requestAlwaysAuthorization()
       default:
          print("위치 정보 접근 권한이 없음 : \(CLLocationManager.authorizationStatus())")
       }
@@ -167,8 +167,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
    }
    
    func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
-         let str = "\(region.identifier) 퇴장\n"
-         textView.text = str + textView.text
-         print(str)
+      let str = "\(region.identifier) 퇴장\n"
+      textView.text = str + textView.text
+      print(str)
    }
 }
