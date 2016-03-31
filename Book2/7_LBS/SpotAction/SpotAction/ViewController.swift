@@ -72,6 +72,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
       if nil == annotationView {
         annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: MUSEUM_ANNOTATIONVIEW)
       }
+      else {
+         annotationView!.annotation = annotation
+      }
       annotationView!.image = UIImage(named: "museum")
       annotationView!.canShowCallout = true
       
@@ -88,6 +91,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
         annotationView!.image = UIImage(named: "coffee")
         annotationView!.canShowCallout = true
       }
+      else {
+         annotationView!.annotation = annotation
+      }
+
       return annotationView
     }
   }
