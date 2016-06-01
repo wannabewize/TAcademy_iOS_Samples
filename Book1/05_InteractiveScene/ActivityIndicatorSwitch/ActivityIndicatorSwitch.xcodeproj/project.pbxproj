@@ -12,7 +12,7 @@
 		2C325D4919A651EA007757D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C325D4719A651EA007757D8 /* Main.storyboard */; };
 		2C325D4B19A651EA007757D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C325D4A19A651EA007757D8 /* Images.xcassets */; };
 		2C325D5719A651EA007757D8 /* ActivityIndicatorSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C325D5619A651EA007757D8 /* ActivityIndicatorSwitchTests.swift */; };
-		2CF624A41BCE68B70043E27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF624A31BCE68B70043E27B /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		2CF624A41BCE68B70043E27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF624A31BCE68B70043E27B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,7 +157,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = VanillaStep;
 				TargetAttributes = {
 					2C325D3D19A651EA007757D8 = {
@@ -268,6 +268,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -331,6 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ActivityIndicatorSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -341,6 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ActivityIndicatorSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -359,6 +362,7 @@
 				);
 				INFOPLIST_FILE = ActivityIndicatorSwitchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityIndicatorSwitch.app/ActivityIndicatorSwitch";
 			};
@@ -374,6 +378,7 @@
 				);
 				INFOPLIST_FILE = ActivityIndicatorSwitchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ActivityIndicatorSwitch.app/ActivityIndicatorSwitch";
 			};
