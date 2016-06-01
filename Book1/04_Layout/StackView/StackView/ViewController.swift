@@ -120,27 +120,21 @@ class ViewController: UIViewController {
       let horizontalFormat = "|-[label(NameWidth)]-NameValueMargin-[value]-|"
       
       let titleViews = ["label":titleLabel, "value":title]
-      let titleConstraints = NSLayoutConstraint.constraintsWithVisualFormat(horizontalFormat, options: [], metrics: metrics, views: titleViews)
+      let titleConstraints = NSLayoutConstraint.constraintsWithVisualFormat(horizontalFormat, options: NSLayoutFormatOptions.AlignAllCenterY, metrics: metrics, views: titleViews)
       self.view.addConstraints(titleConstraints)
       
       let directorViews = ["label":directorLabel, "value":director]
-      let directorConstraints = NSLayoutConstraint.constraintsWithVisualFormat(horizontalFormat, options: [], metrics: metrics, views: directorViews)
+      let directorConstraints = NSLayoutConstraint.constraintsWithVisualFormat(horizontalFormat, options: .AlignAllCenterY, metrics: metrics, views: directorViews)
       self.view.addConstraints(directorConstraints)
       
       let actorViews = ["label":actorLabel, "value":actors]
-      let actorConstratins = NSLayoutConstraint.constraintsWithVisualFormat(horizontalFormat, options: [], metrics: metrics, views: actorViews)
+      let actorConstratins = NSLayoutConstraint.constraintsWithVisualFormat(horizontalFormat, options: .AlignAllCenterY, metrics: metrics, views: actorViews)
       self.view.addConstraints(actorConstratins)
       
       
       let labels : [String:AnyObject] = ["title":titleLabel, "director":directorLabel, "actor":actorLabel, "topGuide":self.topLayoutGuide]
       let verticalConstratins = NSLayoutConstraint.constraintsWithVisualFormat("V:[topGuide]-150-[title]-VerticalMargin-[director]-VerticalMargin-[actor]", options: [], metrics: metrics, views: labels)
       self.view.addConstraints(verticalConstratins)
-      
-      titleLabel.centerYAnchor.constraintEqualToAnchor(title.centerYAnchor).active = true
-      directorLabel.centerYAnchor.constraintEqualToAnchor(director.centerYAnchor).active = true
-      actorLabel.centerYAnchor.constraintEqualToAnchor(actors.centerYAnchor).active = true
-      
    }
-
 }
 
