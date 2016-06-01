@@ -12,7 +12,7 @@
 		2C325D1E19A5CD56007757D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C325D1C19A5CD56007757D8 /* Main.storyboard */; };
 		2C325D2019A5CD56007757D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C325D1F19A5CD56007757D8 /* Images.xcassets */; };
 		2C325D2C19A5CD56007757D8 /* ColorSliderByCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C325D2B19A5CD56007757D8 /* ColorSliderByCodeTests.swift */; };
-		2CF624A61BCE6F5E0043E27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF624A51BCE6F5E0043E27B /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		2CF624A61BCE6F5E0043E27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF624A51BCE6F5E0043E27B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -331,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ColorSliderByCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -342,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ColorSliderByCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vanillastep.ios8.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
