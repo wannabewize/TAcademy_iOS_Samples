@@ -46,10 +46,6 @@ class ViewController: UIViewController {
       button3.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
       self.view.addSubview(button3)
       
-      //    button1.frame = CGRectMake(20, 40, 60, 40)
-      //    button2.frame = CGRectMake(self.view.frame.size.width/2-30, 40, 60, 40)
-      //    button3.frame = CGRectMake(self.view.frame.size.width - 80, 40, 60, 40)
-      
       // 버튼 1,2,3의 제약조건
       button1.translatesAutoresizingMaskIntoConstraints = false
       button2.translatesAutoresizingMaskIntoConstraints = false
@@ -57,12 +53,13 @@ class ViewController: UIViewController {
       
       let constraintViews = ["button1":button1, "button2":button2, "button3":button3]
       
-      // 버튼2의 중앙
+      // 버튼2 중앙 - 비주얼 포맷 언어로는 힘들다.
       let constraint3 = NSLayoutConstraint(item: button2, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: button2.superview, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0)
+      // 버튼2 세로
+      let constraint4 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-40-[button2]", options:[], metrics: nil, views: constraintViews)
+      
       // 버튼1,2,3의 거리
-      let constraint4 = NSLayoutConstraint.constraintsWithVisualFormat("[button1]-60-[button2]-50-[button3]", options:[], metrics: nil, views: constraintViews)
-      // 버튼2의 세로
-      let constraint5 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-40-[button2]", options:[], metrics: nil, views: constraintViews)
+      let constraint5 = NSLayoutConstraint.constraintsWithVisualFormat("[button1]-60-[button2]-60-[button3]", options:NSLayoutFormatOptions.AlignAllCenterY, metrics: nil, views: constraintViews)
       
       self.view.addConstraint(constraint3)
       self.view.addConstraints(constraint4)
