@@ -16,9 +16,14 @@ class ViewController: UIViewController {
       
       // 데이트 피커 객체 생성
       let datePicker = UIDatePicker()
-      // 위치
-      datePicker.center.x = self.view.center.x
-      datePicker.center.y = datePicker.frame.size.height;
+      // 뷰 구조에 추가
+      self.view.addSubview(datePicker)
+      
+      // 오토 레이아웃
+      datePicker.translatesAutoresizingMaskIntoConstraints = false
+      self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|[picker]|", options: [], metrics: nil, views: ["picker":datePicker]))
+      self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-[picker]", options: [], metrics: nil, views: ["picker":datePicker]))
+
       // 날짜/시간 선택 모드
       datePicker.datePickerMode = UIDatePickerMode.DateAndTime
       
@@ -27,11 +32,8 @@ class ViewController: UIViewController {
       datePicker.minimumDate = NSDate(timeIntervalSinceNow: -week)
       datePicker.maximumDate = NSDate(timeIntervalSinceNow: week)
       
-      // 뷰 구조에 추가
-      self.view.addSubview(datePicker)
-      
       // 날짜 변경 이벤트
-      datePicker.addTarget(self, action: Selector("timeChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+      datePicker.addTarget(self, action: #selector(timeChanged(_:)), forControlEvents: UIControlEvents.ValueChanged)
    }
    
    func timeChanged(sender : AnyObject) {
@@ -52,7 +54,5 @@ class ViewController: UIViewController {
       super.didReceiveMemoryWarning()
       // Dispose of any resources that can be recreated.
    }
-   
-   
 }
 

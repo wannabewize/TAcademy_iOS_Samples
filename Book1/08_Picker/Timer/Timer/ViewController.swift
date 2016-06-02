@@ -9,34 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-  var timer : NSTimer!
-  @IBOutlet weak var pickerView: UIDatePicker!
-  @IBAction func startTimer(sender: AnyObject) {
-    let interval : NSTimeInterval = 1
-    timer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: Selector("countDown:"), userInfo: nil, repeats: true)
-  }
-  
-  @IBAction func stopTimer(sender: AnyObject) {
-    if timer != nil {
-      timer.invalidate()
-      timer = nil
-    }
-  }
-  func countDown(timer : NSTimer) {
-    pickerView.countDownDuration -= 60
-  }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-  }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
+   
+   var timer : NSTimer!
+   @IBOutlet weak var pickerView: UIDatePicker!
+   @IBAction func startTimer(sender: AnyObject) {
+      let interval : NSTimeInterval = 1
+      timer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: #selector(countDown(_:)), userInfo: nil, repeats: true)
+   }
+   
+   @IBAction func stopTimer(sender: AnyObject) {
+      if timer != nil {
+         timer.invalidate()
+         timer = nil
+      }
+   }
+   func countDown(timer : NSTimer) {
+      pickerView.countDownDuration -= 60
+   }
+   
+   override func viewDidLoad() {
+      super.viewDidLoad()
+      // Do any additional setup after loading the view, typically from a nib.
+   }
+   
+   override func didReceiveMemoryWarning() {
+      super.didReceiveMemoryWarning()
+      // Dispose of any resources that can be recreated.
+   }
 }
 
