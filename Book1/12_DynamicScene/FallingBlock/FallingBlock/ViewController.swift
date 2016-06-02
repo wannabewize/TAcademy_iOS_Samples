@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     
     self.animator = UIDynamicAnimator(referenceView: self.view)
     
-    let tapGesture = UITapGestureRecognizer(target: self, action:Selector("handleTap:"))
+    let tapGesture = UITapGestureRecognizer(target: self, action:#selector(handleTap(_:)))
     self.view.addGestureRecognizer(tapGesture)
     
     gravityBehavior = UIGravityBehavior()

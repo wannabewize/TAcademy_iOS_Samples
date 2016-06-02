@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     animator.addBehavior(attach)
     
     // 아이템 하나 끌기
-    let panGesture = UIPanGestureRecognizer(target: self, action: "handlePan:")
+    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
     block1.addGestureRecognizer(panGesture)
   }
   

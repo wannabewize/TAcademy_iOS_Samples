@@ -14,16 +14,16 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let pinchGesture = UIPinchGestureRecognizer(target: self, action: Selector("handlePinch:"))
+    let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch(_:)))
     imageView.addGestureRecognizer(pinchGesture)
     
-    let rotateGesture = UIRotationGestureRecognizer(target: self, action: Selector("handleRotate:"))
+    let rotateGesture = UIRotationGestureRecognizer(target: self, action: #selector(handleRotate(_:)))
     imageView.addGestureRecognizer(rotateGesture)
     
-    let tapGesture = UITapGestureRecognizer(target: self, action: "handleTap:")
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
     imageView.addGestureRecognizer(tapGesture)
     
-    let panGesture = UIPanGestureRecognizer(target: self, action: "handlePan:")
+    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
     imageView.addGestureRecognizer(panGesture)
   }
   
