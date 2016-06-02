@@ -63,7 +63,7 @@ class ViewController: UIViewController {
       dialog.addAction(okAction)
 
       self.presentViewController(dialog, animated: true) { () -> Void in
-         NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "closeDialog", userInfo: nil, repeats: false)
+         NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(self.closeDialog), userInfo: nil, repeats: false)
       }
    }
    
