@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1017" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F1Y-fe-8c4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F1Y-fe-8c4">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -15,6 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1HD-Pb-OQT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XPs-K1-SGN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="6wD-9c-oUK">
@@ -28,7 +30,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="키보드에 가려지는 텍스트필드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90n-Pw-SqT">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="100" y="501" width="200" height="21"/>
@@ -42,7 +44,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="키보드에 가려지지 않는 텍스트필드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUe-Jx-4aq">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -68,16 +70,16 @@
                                         <exclude reference="OUe-Jx-4aq"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="3h4-bf-LZg"/>
-                                        <exclude reference="RgN-Fb-5N0"/>
-                                        <exclude reference="kt1-TR-4YF"/>
-                                        <exclude reference="9FI-s0-MHw"/>
-                                        <exclude reference="R5O-uQ-Aj3"/>
                                         <exclude reference="2gS-SJ-VEg"/>
                                         <exclude reference="Zfa-FR-hh2"/>
                                         <exclude reference="nNf-2z-HRN"/>
                                         <exclude reference="rrB-DW-frD"/>
                                         <exclude reference="ySk-P0-lDY"/>
+                                        <exclude reference="3h4-bf-LZg"/>
+                                        <exclude reference="RgN-Fb-5N0"/>
+                                        <exclude reference="kt1-TR-4YF"/>
+                                        <exclude reference="9FI-s0-MHw"/>
+                                        <exclude reference="R5O-uQ-Aj3"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
@@ -88,16 +90,16 @@
                                         <include reference="OUe-Jx-4aq"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="3h4-bf-LZg"/>
-                                        <include reference="RgN-Fb-5N0"/>
-                                        <include reference="kt1-TR-4YF"/>
-                                        <include reference="9FI-s0-MHw"/>
-                                        <include reference="R5O-uQ-Aj3"/>
                                         <include reference="2gS-SJ-VEg"/>
                                         <include reference="Zfa-FR-hh2"/>
                                         <include reference="nNf-2z-HRN"/>
                                         <include reference="rrB-DW-frD"/>
                                         <include reference="ySk-P0-lDY"/>
+                                        <include reference="3h4-bf-LZg"/>
+                                        <include reference="RgN-Fb-5N0"/>
+                                        <include reference="kt1-TR-4YF"/>
+                                        <include reference="9FI-s0-MHw"/>
+                                        <include reference="R5O-uQ-Aj3"/>
                                     </mask>
                                 </variation>
                             </scrollView>
@@ -114,10 +116,10 @@
                                 <exclude reference="6wD-9c-oUK"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="kGT-pY-d08"/>
                                 <exclude reference="Jda-CC-ZDb"/>
                                 <exclude reference="XE0-OM-lfa"/>
                                 <exclude reference="h9m-w7-Cgg"/>
-                                <exclude reference="kGT-pY-d08"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -125,10 +127,10 @@
                                 <include reference="6wD-9c-oUK"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="kGT-pY-d08"/>
                                 <include reference="Jda-CC-ZDb"/>
                                 <include reference="XE0-OM-lfa"/>
                                 <include reference="h9m-w7-Cgg"/>
-                                <include reference="kGT-pY-d08"/>
                             </mask>
                         </variation>
                     </view>
