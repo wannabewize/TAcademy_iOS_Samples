@@ -27,11 +27,14 @@ class ComposeViewController: UIViewController {
    }
    
    func saveMovieInfo() {
-      let params : [String : AnyObject] = [
+      var params : [String : AnyObject] = [
          "title": titleField.text!,
          "director" : directorField.text!,
          "year" : yearField.text!
       ]
+      if synopsis.text!.characters.count > 10 {
+         params["synopsis"] = synopsis.text!.characters.count
+      }
       
       Alamofire.request(.POST, ServerAddress, parameters: params, encoding: .URL, headers: nil)
          .responseJSON { (response : Response<AnyObject, NSError>) in

@@ -14,7 +14,7 @@ struct MovieInfo {
    var title : String!
 }
 
-let ServerAddress = "http://192.168.0.129:3000/movies"
+let ServerAddress = "http://192.168.0.30:3000/movies"
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 

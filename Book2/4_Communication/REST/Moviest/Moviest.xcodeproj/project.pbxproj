@@ -117,6 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C2B5F6C1D1AFBFF00CEFD81 /* Build configuration list for PBXNativeTarget "Moviest" */;
 			buildPhases = (
+				44B24BCC73E5B7934BCFC18A /* 📦 Check Pods Manifest.lock */,
 				ADCF6BB74B8A949BC8E62B3E /* [CP] Check Pods Manifest.lock */,
 				2C2B5F561D1AFBFF00CEFD81 /* Sources */,
 				2C2B5F571D1AFBFF00CEFD81 /* Frameworks */,
@@ -124,6 +125,8 @@
 				E0841F929B7B4DF92AD9E347 /* [CP] Embed Pods Frameworks */,
 				3F33AD8010D67CD922BEAE8B /* [CP] Copy Pods Resources */,
 				2C5B4C411D1AFF0A00BA7324 /* Embed Frameworks */,
+				493A34D701AEEAE9CDB65327 /* 📦 Embed Pods Frameworks */,
+				D0BE7DAAD71C5DC646F51DCB /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +199,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moviest/Pods-Moviest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		44B24BCC73E5B7934BCFC18A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		493A34D701AEEAE9CDB65327 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moviest/Pods-Moviest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ADCF6BB74B8A949BC8E62B3E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +242,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BE7DAAD71C5DC646F51DCB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moviest/Pods-Moviest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E0841F929B7B4DF92AD9E347 /* [CP] Embed Pods Frameworks */ = {

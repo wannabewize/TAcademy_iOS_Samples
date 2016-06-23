@@ -63,7 +63,7 @@ function addMovie(req, res) {
 	newItem.title = title;
 
 	// id는 마지막 항목의 id + 1
-	var last = movies.last;
+	var last = movies[movies.length-1];
 	newItem.id = last.id + 1; 
 
    var director = req.body.director;
