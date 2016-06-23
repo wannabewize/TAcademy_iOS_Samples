@@ -39,12 +39,6 @@ var movies = [
 ];
 
 function findMovie(id) {
-	// movies.forEach(function(item){
-	// 	if ( item.id == id ) {
-	// 		console.log('findMovie : ', item);
-	// 		return item;
-	// 	}
-	// })
 	for(var i = 0 ; i < movies.length ; i++) {
 		var item = movies[i];
 		if ( item.id == id ) {
@@ -150,13 +144,18 @@ function deleteMovie(req, res) {
 }
 
 function editMovie(req, res) {
-	var id = req.params.id;
-	
 	// movie_id에 해당하는 영화 정보 얻기
-	var item = movies[id];
+	var id = req.params.id;	
+	var item = findMovie(id);
 	if (!item) {
 		res.status(404).send({ msg: 'Not Found' });
 		return;
+	}
+
+	// 감독 정보 수정
+	var title = req.body.title;
+	if (title) {
+		item['title'] = title;
 	}
 
 	// 감독 정보 수정
