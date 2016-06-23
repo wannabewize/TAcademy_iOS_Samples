@@ -38,6 +38,23 @@ var movies = [
 	}
 ];
 
+function findMovie(id) {
+	// movies.forEach(function(item){
+	// 	if ( item.id == id ) {
+	// 		console.log('findMovie : ', item);
+	// 		return item;
+	// 	}
+	// })
+	for(var i = 0 ; i < movies.length ; i++) {
+		var item = movies[i];
+		if ( item.id == id ) {
+			console.log('findMovie : ', item);
+			return item;
+		}
+	}
+	return null;
+}
+
 function showMovieList(req, res) {
 	var list = [];
 	movies.forEach(function(item) {
@@ -64,7 +81,12 @@ function addMovie(req, res) {
 
 	// id는 마지막 항목의 id + 1
 	var last = movies[movies.length-1];
-	newItem.id = last.id + 1; 
+	if ( last ) {
+		newItem.id = last.id + 1; 
+	}
+	else {
+		newItem.id = 0;
+	}
 
    var director = req.body.director;
 	if (director) {
@@ -76,7 +98,7 @@ function addMovie(req, res) {
 		var year = parseInt(req.body.year);
 		// 연도는 숫자로만
 		if (!year) {
-			res.status(400).send({ msg: 'year는 int 타입' });
+			res.status(400).send({ msg: 'year는 숫자만 입력' });
 			return;
 		}
 		newItem.year = year;
@@ -96,24 +118,35 @@ function addMovie(req, res) {
 function showMovieDetail(req, res) {
 	var id = req.params.id;
 	if (!id) {
-		res.status(404).send({ msg: 'Not Found' });
+		res.status(404).send({ msg: 'Not Found movie id' });
 		return;
 	}
 
-	var item = movies[id];
-
-	if (!item) {
+	var item = findMovie(id);
+	console.log(item)
+	if (item) {
+		res.status(200).json({'data': item })
+	}
+	else {
 		// 에러 처리 404
 		res.status(404).send({ msg: 'Not Found' });
-		return;
 	}
-
-	res.status(200).json({'data': item })
 }
 
 // 영화 삭제
-function deleteMovie(req, res) {	
-	res.status(500).send({ msg: 'delete not supported' });
+function deleteMovie(req, res) {		
+	var id = req.params.id;
+	item = findMovie(id);
+
+	if ( ! item ) {
+		res.status(400).send({msg:'Can not find movie'});
+		return;
+	}
+
+	var index = movies.indexOf(item);
+	movies.splice(index, 1);
+
+	res.status(200).send({msg:'Success', data:item});
 }
 
 function editMovie(req, res) {
@@ -138,7 +171,7 @@ function editMovie(req, res) {
 		var year = parseInt(req.body.year);
 		// 연도는 숫자로만
 		if (!year) {
-			res.status(400).send({ msg: 'year는 int 타입' });
+			res.status(400).send({ msg: 'year는 숫자만 입력' });
 			return;
 		}
 		item['year'] = year;
