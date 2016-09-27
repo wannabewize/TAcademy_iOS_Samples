@@ -12,7 +12,6 @@ struct SongInfo {
    var title : String?
    var image : String?
    var artist : String?
-   init() {}
 }
 
 class ViewController: UIViewController, UITableViewDataSource {
@@ -44,21 +43,58 @@ class ViewController: UIViewController, UITableViewDataSource {
       return cell
    }
    
+   // NSArray, NSDictionary를 이용한 JSON 파싱
+   /*
    func parseJSON() {
       if let url = NSURL(string: urlStr), let data = NSData(contentsOfURL: url) {
          do {
             // JSON 파싱
-            if let result = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0)) as? NSDictionary,
+            if let result = try NSJSONSerialization.JSONObjectWithData(data, options: []) as? NSDictionary,
                let feed = result["feed"] as? NSDictionary,
                let entry = feed["entry"] as? NSArray {
+               for one in entry {
+                  var song = SongInfo()
+                  
+                  let title = (one["title"] as! NSDictionary)["label"] as! String
+                  song.title = title
+                  
+                  let images = one["im:image"] as! NSArray
+                  if let image = (images[0] as! NSDictionary)["label"] as? String {
+                     song.image = image
+                  }
+                  
+                  songList.append(song)
+               }
+               tableView.reloadData()
+            }
+         }
+         catch let error {
+            print("Error : ", error)
+         }
+      }
+   }
+ */
+   
+   // https://developer.apple.com/swift/blog/?id=37
+   func parseJSON() {
+      if let url = NSURL(string: urlStr),
+         let data = NSData(contentsOfURL: url) {
+         
+         do {
+            // JSON 파싱
+            if let result = try NSJSONSerialization.JSONObjectWithData(data, options: []) as? [String:Any],
+               let feed = result["feed"] as? [String:Any],
+               let entry = feed["entry"] as? [ [String:Any] ] { // Dictionary의 배열
                   for one in entry {
                      var song = SongInfo()
                      
-                     let title = (one["title"] as! NSDictionary)["label"] as! String
-                     song.title = title
+                     if let titleNode = one["title"] as? [String:AnyObject],
+                        let title = titleNode["label"] as? String {
+                        song.title = title
+                     }
                      
-                     let images = one["im:image"] as! NSArray
-                     if let image = (images[0] as! NSDictionary)["label"] as? String {
+                     if let imageNode = one["im:image"] as? [ [String:AnyObject] ], // Dictionary의 배열
+                        let image = imageNode[0]["label"] as? String {
                         song.image = image
                      }
                      
