@@ -14,24 +14,25 @@ struct MovieInfo {
    var title : String!
 }
 
-let ServerAddress = "http://192.168.0.30:3000/movies"
+let ServerAddress = "http://192.168.0.129:3000/movies"
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
    @IBOutlet weak var tableView: UITableView!
    
-   
-   
    var movies = [MovieInfo]()
    
-   @IBAction func resolveMovieList(sender: AnyObject) {
+   @IBAction func resolveMovieList() {
       movies.removeAll()
       
       Alamofire.request(.GET, ServerAddress).responseJSON { (response : Response<AnyObject, NSError>) in
-         print(response)
-         if let root = response.result.value as? NSDictionary,
-            let movieList = root["data"] as? NSArray {
+         
+         print(response.result.value)
+
+         if let root = response.result.value as? [String:AnyObject],
+            let movieList = root["data"] as? [ [String:AnyObject] ] {
             for item in movieList {
+               print(item)
                let id = item["id"] as! Int
                let title = item["title"] as! String
                let movie = MovieInfo(movieId: id, title: title)
@@ -53,16 +54,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
       return cell
    }
    
+   func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+      // TODO : 구현
+   }
+   
+   override func viewWillAppear(animated: Bool) {
+      resolveMovieList()
+   }
+   
    override func viewDidLoad() {
       super.viewDidLoad()
-      // Do any additional setup after loading the view, typically from a nib.
+      super.automaticallyAdjustsScrollViewInsets = false
    }
-
-   override func didReceiveMemoryWarning() {
-      super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
-   }
-
-
 }
 
