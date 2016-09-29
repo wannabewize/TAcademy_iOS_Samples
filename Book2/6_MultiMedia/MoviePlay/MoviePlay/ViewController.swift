@@ -25,10 +25,14 @@ class ViewController: UIViewController {
       let avPlayer = AVPlayerViewController()
       avPlayer.player = player
       
-      avPlayer.view.frame = containerView.frame
-      containerView.addSubview(avPlayer.view)
+      // 일부 화면 재생
+//      avPlayer.view.frame = containerView.frame
+//      containerView.addSubview(avPlayer.view)
       
-      player.play()
+//      player.play()
+      
+      // 전체 화면 재생
+      self.showViewController(avPlayer, sender: nil)
    }
    
    // MPMoviePlayerController - deprecated 9.0
